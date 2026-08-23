@@ -3,14 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>wangdwn · 站点总目录</title>
+<title>wangdwn · 海洋系列 · 三盘一底座</title>
 <style>
-:root{--bg:#f8fafc;--card:#fff;--fg:#0f172a;--muted:#64748b;--blue:#3b82f6;--green:#0d9488;--amber:#d97706;--border:#e2e8f0}
+:root{--bg:#f8fafc;--card:#fff;--fg:#0f172a;--muted:#64748b;--blue:#3b82f6;--green:#0d9488;--amber:#d97706;--red:#dc2626;--border:#e2e8f0}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font:16px/1.6 system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--fg);padding:24px}
-.container{max-width:900px;margin:0 auto}
-h1{font-size:22px;color:#1e3a8a;margin-bottom:4px}
-.sub{font-size:13px;color:var(--muted);margin-bottom:24px}
+.container{max-width:1000px;margin:0 auto}
+h1{font-size:24px;color:#1e3a8a;margin-bottom:4px}
+.sub{font-size:13px;color:var(--muted);margin-bottom:8px}
+.theory{font-size:12px;color:var(--muted);background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px 14px;margin-bottom:22px}
+.theory b{color:#1e40af}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:28px}
+@media(max-width:680px){.grid{grid-template-columns:1fr}}
+.pan{background:var(--card);border-radius:10px;padding:18px 20px;border:1px solid var(--border);border-top:4px solid var(--c);transition:.15s}
+.pan:hover{box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.pan .tag{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:var(--c);padding:2px 10px;border-radius:4px;margin-bottom:8px}
+.pan .q{font-size:17px;font-weight:700;margin-bottom:4px}
+.pan .role{font-size:12px;color:var(--muted);margin-bottom:12px}
+.pan .go{display:inline-block;padding:7px 16px;background:var(--c);color:#fff;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600}
+.pan .sub2{margin-top:12px;font-size:12px;color:var(--muted)}
+.pan .sub2 a{color:#0369a1;text-decoration:none}
+.pan .sub2 a:hover{text-decoration:underline}
 .section{margin-bottom:24px}
 .section h2{font-size:15px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px;border-bottom:1px solid var(--border);padding-bottom:6px}
 .card{background:var(--card);border-radius:8px;padding:14px 18px;margin-bottom:8px;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:12px;transition:.15s}
@@ -21,182 +34,83 @@ h1{font-size:22px;color:#1e3a8a;margin-bottom:4px}
 .card-right{flex-shrink:0}
 .card-right a{display:inline-block;padding:6px 14px;background:var(--blue);color:#fff;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap}
 .card-right a:hover{background:#2563eb}
-.tag{display:inline-block;padding:1px 8px;border-radius:3px;font-size:10px;font-weight:700;margin-left:6px}
-.tag-ocean{background:#e0f2fe;color:#0369a1}
-.tag-edu{background:#f0fdf4;color:#166534}
-.tag-tool{background:#faf5ff;color:#6b21a8}
-.tag-new{background:#fef2f2;color:#dc2626}
-.tag-off{background:#f1f5f9;color:#94a3b8}
+.tag-edu{display:inline-block;padding:1px 8px;border-radius:3px;font-size:10px;font-weight:700;margin-left:6px;background:#f0fdf4;color:#166534}
+.tag-tool{display:inline-block;padding:1px 8px;border-radius:3px;font-size:10px;font-weight:700;margin-left:6px;background:#faf5ff;color:#6b21a8}
+.tag-new{display:inline-block;padding:1px 8px;border-radius:3px;font-size:10px;font-weight:700;margin-left:6px;background:#fef2f2;color:#dc2626}
 footer{text-align:center;font-size:12px;color:var(--muted);margin-top:32px;padding-top:16px;border-top:1px solid var(--border)}
 </style>
 </head>
 <body>
 <div class="container">
-<h1>站点总目录</h1>
-<p class="sub">wangdwn.github.io · 2026-08-22 · 全部可用站点</p>
-
-<div class="section">
-<h2>🌊 海洋经济与产业</h2>
-
-<div class="card">
-<div class="card-left"><div class="name">广州涉海企业三体系融合看板 <span class="tag tag-ocean">核心</span></div><div class="desc">身份(GB/T20794)×身价(932056)×身家(深水试验) · 企业名录+总览仪表盘+资本化对照+深水设施</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/guangzhou-marine-enterprises/">打开</a></div>
+<h1>海洋系列 · 三盘一底座</h1>
+<p class="sub">wangdwn.github.io · 2026-08-23 整合版 · 打开就知道看哪个站</p>
+<div class="theory">
+理论桥接（宁高宁《三生万物》"三张表"）：把海洋经济当成一家"巨型企业"，监测网站就是它的数字镜像 ——
+<b>资产负债表→家底盘</b>（有什么）、<b>损益表→经营盘</b>（干得怎样）、<b>现金流量表→质量盘</b>（会不会爆雷）、<b>会计准则→政策底座</b>（数怎么算）。
 </div>
 
-<div class="card">
-<div class="card-left"><div class="name">海洋经济周报</div><div class="desc">海洋经济与蓝色国土周报 · 情报分析</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/marine-weekly/">打开</a></div>
-</div>
+<div class="grid">
+  <div class="pan" style="--c:var(--blue)">
+    <span class="tag">A · 家底盘</span>
+    <div class="q">广州涉海企业，谁值得跟？</div>
+    <div class="role">广海汇·企业全景看板 —— 名录 / 地图 / 三表画像</div>
+    <a class="go" href="https://wangdwn.github.io/guangzhou-marine-enterprises/">打开家底盘</a>
+    <div class="sub2">子模块：<a href="https://wangdwn.github.io/ocean-node-map/">涉海创新节点地图</a></div>
+  </div>
 
-<div class="card">
-<div class="card-left"><div class="name">涉海创新节点数据采集系统</div><div class="desc">数据自动采集 + 可视化展示 · 实时更新</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/ocean-node-map/">打开</a></div>
-</div>
+  <div class="pan" style="--c:var(--green)">
+    <span class="tag">B · 经营盘</span>
+    <div class="q">海洋经济，正在发生什么？</div>
+    <div class="role">海洋经济监测站 —— 政策口径 / 产业数据 / 深度分析 / 招标雷达</div>
+    <a class="go" href="https://wangdwn.github.io/marine-monitor/">打开经营盘</a>
+    <div class="sub2">并入：<a href="https://wangdwn.github.io/gz-marine-analysis/">深度分析</a> · <a href="https://wangdwn.github.io/geo-ocean-bidding/">招标雷达</a></div>
+  </div>
 
-<div class="card">
-<div class="card-left"><div class="name">广州海洋经济战略分析</div><div class="desc">产业周期研判 · 四阶段判据 · 政策建议自动生成</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/gz-marine-analysis/">打开</a></div>
-</div>
+  <div class="pan" style="--c:var(--amber)">
+    <span class="tag">C · 质量盘</span>
+    <div class="q">现在，健康吗？</div>
+    <div class="role">海洋经济信号灯 —— 海温 / 港口 / AIS / 灾害 / 企业风险 五路预警</div>
+    <a class="go" href="https://wangdwn.github.io/guangzhou-ocean-dashboard/">打开质量盘</a>
+  </div>
 
-<div class="card">
-<div class="card-left"><div class="name">海洋经济智能监测平台</div><div class="desc">广州海洋经济智能监测与资源保障</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/marine-monitor/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">广州涉海创新节点地图</div><div class="desc">卫星影像底图 · 五赛道分列 · 战略定位与实施框架</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/guangzhou-sea-node-map/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">海洋经济企业动态监测数据库</div><div class="desc">广州市海洋经济企业动态监测 · 数据管理与分析</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/marine-economy-monitor/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">地质海洋招投标情报系统</div><div class="desc">Guangdong Geo-Ocean Bidding Intelligence</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/geo-ocean-bidding/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">广州海域三维确权试点研究</div><div class="desc">海域立体分层设权 · 三维可视化报告</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/3D/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">广州海洋经济信号灯仪表盘</div><div class="desc">多维信号交叉验证 · 海洋经济指标可视化</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/guangzhou-ocean-dashboard/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">蔚蓝之城：珠江口传奇 <span class="tag tag-new">新</span></div><div class="desc">海洋主题互动 · 珠江口故事</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/web.game.github.io/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">大湾区时空装备检测基地 <span class="tag tag-new">新</span></div><div class="desc">粤港澳大湾区时空装备综合检测基地建设方案</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/cehui.github.io/">打开</a></div>
-</div>
+  <div class="pan" style="--c:var(--red)">
+    <span class="tag">D · 底座</span>
+    <div class="q">历史趋势，怎么走的？</div>
+    <div class="role">海洋周报·时间序列档案 —— 按期归档，回头看趋势</div>
+    <a class="go" href="https://wangdwn.github.io/marine-weekly/">打开底座</a>
+  </div>
 </div>
 
 <div class="section">
 <h2>📚 教育与学习</h2>
-
-<div class="card">
-<div class="card-left"><div class="name">IESO 地球科学奥林匹克学习平台 <span class="tag tag-edu">学习</span></div><div class="desc">地质海洋行业 · 备考资源 · 真题训练</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/ieso-learning-site/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">诗经·风雅颂穿越指南 <span class="tag tag-new">新</span></div><div class="desc">市井生活穿越指南 · 十首原文+注音+地理背景+白话对照 · 关中—中原地图</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/ieso-learning-site/shijing.html">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">高中数学知识卡片 <span class="tag tag-edu">热门</span></div><div class="desc">人教A版（2019）必修第一册+第二册</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/gaozhong-shuxue-card/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">数学答题RPG <span class="tag tag-new">新</span></div><div class="desc">副本闯关 + 复习卡片联动</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/math-rpg/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">IESO英语词汇学习</div><div class="desc">词根记忆法 · 情景阅读 · 中英双语</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/ieso-vocab/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">AI智学工坊</div><div class="desc">地质海洋监测行业 AI 能力提升平台</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/ai-learning-hub/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">成绩打怪 · 进阶版 <span class="tag tag-new">新</span></div><div class="desc">高考成绩闯关 · 游戏化学习</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/gaokao.github.io/">打开</a></div>
-</div>
+<div class="card"><div class="card-left"><div class="name">IESO 地球科学奥林匹克学习平台 <span class="tag-edu">学习</span></div><div class="desc">地质海洋行业 · 备考资源 · 真题训练</div></div><div class="card-right"><a href="https://wangdwn.github.io/ieso-learning-site/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">诗经·风雅颂穿越指南 <span class="tag-new">新</span></div><div class="desc">十首原文+注音+地理背景+白话对照 · 关中—中原地图</div></div><div class="card-right"><a href="https://wangdwn.github.io/ieso-learning-site/shijing.html">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">高中数学知识卡片 <span class="tag-edu">热门</span></div><div class="desc">人教A版（2019）必修第一册+第二册</div></div><div class="card-right"><a href="https://wangdwn.github.io/gaozhong-shuxue-card/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">数学答题RPG <span class="tag-new">新</span></div><div class="desc">副本闯关 + 复习卡片联动</div></div><div class="card-right"><a href="https://wangdwn.github.io/math-rpg/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">IESO英语词汇学习</div><div class="desc">词根记忆法 · 情景阅读 · 中英双语</div></div><div class="card-right"><a href="https://wangdwn.github.io/ieso-vocab/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">AI智学工坊</div><div class="desc">地质海洋监测行业 AI 能力提升平台</div></div><div class="card-right"><a href="https://wangdwn.github.io/ai-learning-hub/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">成绩打怪 · 进阶版 <span class="tag-new">新</span></div><div class="desc">高考成绩闯关 · 游戏化学习</div></div><div class="card-right"><a href="https://wangdwn.github.io/gaokao.github.io/">打开</a></div></div>
 </div>
 
 <div class="section">
 <h2>🔬 知识库与研究</h2>
-
-<div class="card">
-<div class="card-left"><div class="name">高端论文数据库</div><div class="desc">地质灾害与矿产资源方向 · 315篇中英双语</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/paper-db/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">马斯克知识库 <span class="tag tag-tool">推荐</span></div><div class="desc">第一性原理 × 五步工作法 × 风险不对称决策</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/muskpedia/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">命理学数字实验室</div><div class="desc">学术级八字排盘与铁板神数研究</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/mingli-lab/">打开</a></div>
-</div>
+<div class="card"><div class="card-left"><div class="name">高端论文数据库</div><div class="desc">地质灾害与矿产资源方向 · 315篇中英双语</div></div><div class="card-right"><a href="https://wangdwn.github.io/paper-db/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">马斯克知识库 <span class="tag-tool">推荐</span></div><div class="desc">第一性原理 × 五步工作法 × 风险不对称决策</div></div><div class="card-right"><a href="https://wangdwn.github.io/muskpedia/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">命理学数字实验室</div><div class="desc">学术级八字排盘与铁板神数研究</div></div><div class="card-right"><a href="https://wangdwn.github.io/mingli-lab/">打开</a></div></div>
 </div>
 
 <div class="section">
 <h2>🛠 工具</h2>
-
-<div class="card">
-<div class="card-left"><div class="name">装机优化工具 <span class="tag tag-new">新</span></div><div class="desc">Win11游戏优化 + 微星BIOS指南 + 常用工具导航</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/pc-setup-tool/">打开</a></div>
+<div class="card"><div class="card-left"><div class="name">装机优化工具 <span class="tag-new">新</span></div><div class="desc">Win11游戏优化 + 微星BIOS指南 + 常用工具导航</div></div><div class="card-right"><a href="https://wangdwn.github.io/pc-setup-tool/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">GeoLibre 使用手册</div><div class="desc">开源GIS平台中文手册 · 插件教程 · SQL工作区</div></div><div class="card-right"><a href="https://wangdwn.github.io/geolibre-manual/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">极简Markdown编辑器</div><div class="desc">分栏预览 · 自动保存 · 导出HTML/PDF · 零依赖</div></div><div class="card-right"><a href="https://wangdwn.github.io/md-viewer/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">Pro Split-Flap Clock <span class="tag-new">新</span></div><div class="desc">翻牌时钟 · 平板版</div></div><div class="card-right"><a href="https://wangdwn.github.io/ipad.clock.github.io/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">Pro Split-Flap Clock (iclock) <span class="tag-new">新</span></div><div class="desc">翻牌时钟 · 变体版</div></div><div class="card-right"><a href="https://wangdwn.github.io/ipad.iclock.github.io/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">Pro Split-Flap Clock (ipad) <span class="tag-new">新</span></div><div class="desc">翻牌时钟 · 变体版</div></div><div class="card-right"><a href="https://wangdwn.github.io/iclock-ipad-github.io/">打开</a></div></div>
+<div class="card"><div class="card-left"><div class="name">Tech-Noir Clock iPad2 <span class="tag-new">新</span></div><div class="desc">翻牌时钟 · iPad2 版</div></div><div class="card-right"><a href="https://wangdwn.github.io/clock.ipad2.github.io/">打开</a></div></div>
 </div>
 
-<div class="card">
-<div class="card-left"><div class="name">GeoLibre 使用手册</div><div class="desc">开源GIS平台中文手册 · 插件教程 · SQL工作区</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/geolibre-manual/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">极简Markdown编辑器</div><div class="desc">分栏预览 · 自动保存 · 导出HTML/PDF · 零依赖</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/md-viewer/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">Pro Split-Flap Clock <span class="tag tag-new">新</span></div><div class="desc">翻牌时钟 · 平板版</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/ipad.clock.github.io/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">Pro Split-Flap Clock (iclock) <span class="tag tag-new">新</span></div><div class="desc">翻牌时钟 · 变体版</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/ipad.iclock.github.io/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">Pro Split-Flap Clock (ipad) <span class="tag tag-new">新</span></div><div class="desc">翻牌时钟 · 变体版</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/iclock-ipad-github.io/">打开</a></div>
-</div>
-
-<div class="card">
-<div class="card-left"><div class="name">Tech-Noir Clock iPad2 <span class="tag tag-new">新</span></div><div class="desc">翻牌时钟 · iPad2 版</div></div>
-<div class="card-right"><a href="https://wangdwn.github.io/clock.ipad2.github.io/">打开</a></div>
-</div>
-</div>
-
-<footer>共29个活跃站点 · 托管于 GitHub Pages · 免费</footer>
+<footer>海洋系列已整合为「三盘一底座」4 个精品站点 · 其余站点照常 · 托管于 GitHub Pages</footer>
 </div>
 </body>
 </html>
