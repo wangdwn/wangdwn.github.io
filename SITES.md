@@ -43,7 +43,6 @@
 | 数学答题 RPG | [math-rpg](https://wangdwn.github.io/math-rpg/) |
 | 成绩打怪 · 进阶版 | [gaokao.github.io](https://wangdwn.github.io/gaokao.github.io/) |
 | AI 智学工坊 | [ai-learning-hub](https://wangdwn.github.io/ai-learning-hub/) |
-| 古典名著阅读站 | [classics](https://wangdwn.github.io/classics/) |
 
 ---
 
@@ -73,7 +72,7 @@
 
 ## 5. 实验与归档（门户默认折叠）
 
-时钟、游戏、旧版海洋站。仍可打开，但不作为常用入口。
+时钟与游戏。仍可打开，但不作为常用入口。
 
 | 站点 | 说明 | Pages |
 |---|---|---|
@@ -82,10 +81,18 @@
 | Tech-Noir Clock iPad2 | 实验时钟 | [clock.ipad2.github.io](https://wangdwn.github.io/clock.ipad2.github.io/) |
 | Pro Split-Flap Clock (ipad) | 实验时钟 | [iclock-ipad-github.io](https://wangdwn.github.io/iclock-ipad-github.io/) |
 | 蔚蓝之城：珠江口传奇 | 游戏 | [web.game.github.io](https://wangdwn.github.io/web.game.github.io/) |
-| 广州海域三维确权试点研究 | 旧报告 | [3D](https://wangdwn.github.io/3D/) |
-| 大湾区时空装备检测基地 | 旧方案 | [cehui.github.io](https://wangdwn.github.io/cehui.github.io/) |
-| 广州涉海创新节点地图（旧版） | 已并入 A · ocean-node-map | [guangzhou-sea-node-map](https://wangdwn.github.io/guangzhou-sea-node-map/) |
-| 海洋经济企业动态监测数据库（旧版） | 已并入 B · marine-monitor | [marine-economy-monitor](https://wangdwn.github.io/marine-economy-monitor/) |
+
+---
+
+## 6. 私密（不对外）
+
+以下仓库不对外公开，门户不放卡片、不列 Pages URL。此处只记仓库名。
+
+| 仓库 | 状态 |
+|---|---|
+| `wangdwn/classics` | private |
+| `wangdwn/3D` | private |
+| `wangdwn/cehui.github.io` | private |
 
 ---
 
@@ -109,3 +116,4 @@
 2. **海洋系列新子站**：挂在 A/B/C/D 对应宫格的「子模块 / 并入」行，不要再在下面栏目重复。
 3. **时钟 / 一次性实验**：默认进「实验与归档」，用 `<details>` 收起。
 4. **刷新节奏**：四盘 + `awards-guide` + `paper-db` 视为内容型站点，资料或数据过期时优先更新这几处。
+5. **私密仓库**：只记仓库名，不写公开 Pages URL，也不在 `index.html` 放卡片。
