@@ -54,7 +54,6 @@
 | 高端论文数据库 | **内容会过期，需定期刷新**（收录与摘要） | [paper-db](https://wangdwn.github.io/paper-db/) |
 | 马斯克知识库 | | [muskpedia](https://wangdwn.github.io/muskpedia/) |
 | GeoLibre 使用手册 | 学术工具 | [geolibre-manual](https://wangdwn.github.io/geolibre-manual/) |
-| 命理学数字实验室 | 学术工具 | [mingli-lab](https://wangdwn.github.io/mingli-lab/) |
 
 ---
 
@@ -93,6 +92,7 @@
 | `wangdwn/classics` | private |
 | `wangdwn/3D` | private |
 | `wangdwn/cehui.github.io` | private |
+| `wangdwn/mingli-lab` | private |
 
 ---
 
