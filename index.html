@@ -4,43 +4,62 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>wangdwn · 海洋系列 · 三盘一底座</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/design-system/tokens.css">
+<link rel="stylesheet" href="/design-system/nav.css">
 <style>
-:root{--bg:#f8fafc;--card:#fff;--fg:#0f172a;--muted:#64748b;--blue:#3b82f6;--green:#0d9488;--amber:#d97706;--red:#dc2626;--border:#e2e8f0}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font:16px/1.6 system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--fg);padding:24px}
-.container{max-width:1000px;margin:0 auto}
-h1{font-size:24px;color:#1e3a8a;margin-bottom:4px}
-.sub{font-size:13px;color:var(--muted);margin-bottom:8px}
-.theory{font-size:12px;color:var(--muted);background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px 14px;margin-bottom:22px}
-.theory b{color:#1e40af}
+body{font:var(--text-base)/var(--leading) var(--font-sans);background:var(--bg);color:var(--fg)}
+.container{max-width:1000px;margin:0 auto;padding:var(--s-6)}
+h1{font-size:var(--text-2xl);color:var(--primary);margin-bottom:4px}
+.sub{font-size:var(--text-sm);color:var(--muted);margin-bottom:8px}
+.theory{font-size:var(--text-xs);color:var(--muted);background:var(--info-bg);border:1px solid #bfdbfe;border-radius:var(--radius);padding:10px 14px;margin-bottom:22px}
+.theory b{color:var(--info)}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:28px}
 @media(max-width:680px){.grid{grid-template-columns:1fr}}
 .pan{background:var(--card);border-radius:10px;padding:18px 20px;border:1px solid var(--border);border-top:4px solid var(--c);transition:.15s}
-.pan:hover{box-shadow:0 4px 14px rgba(0,0,0,.08)}
-.pan .tag{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:var(--c);padding:2px 10px;border-radius:4px;margin-bottom:8px}
-.pan .q{font-size:17px;font-weight:700;margin-bottom:4px}
-.pan .role{font-size:12px;color:var(--muted);margin-bottom:12px}
-.pan .go{display:inline-block;padding:7px 16px;background:var(--c);color:#fff;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600}
-.pan .sub2{margin-top:12px;font-size:12px;color:var(--muted)}
-.pan .sub2 a{color:#0369a1;text-decoration:none}
+.pan:hover{box-shadow:var(--shadow-lg)}
+.pan .tag{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:var(--c);padding:2px 10px;border-radius:var(--radius-sm);margin-bottom:8px}
+.pan .q{font-size:var(--text-lg);font-weight:700;margin-bottom:4px}
+.pan .role{font-size:var(--text-xs);color:var(--muted);margin-bottom:12px}
+.pan .go{display:inline-block;padding:7px 16px;background:var(--c);color:#fff;border-radius:6px;text-decoration:none;font-size:var(--text-sm);font-weight:600}
+.pan .sub2{margin-top:12px;font-size:var(--text-xs);color:var(--muted)}
+.pan .sub2 a{color:var(--accent);text-decoration:none}
 .pan .sub2 a:hover{text-decoration:underline}
 .section{margin-bottom:24px}
 .section h2{font-size:15px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px;border-bottom:1px solid var(--border);padding-bottom:6px}
-.card{background:var(--card);border-radius:8px;padding:14px 18px;margin-bottom:8px;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:12px;transition:.15s}
-.card:hover{box-shadow:0 2px 8px rgba(0,0,0,.06);border-color:#cbd5e1}
+.card{background:var(--card);border-radius:var(--radius);padding:14px 18px;margin-bottom:8px;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:12px;transition:.15s}
+.card:hover{box-shadow:var(--shadow);border-color:var(--border-strong)}
 .card-left{flex:1;min-width:0}
 .card-left .name{font-weight:600;font-size:15px;margin-bottom:2px}
-.card-left .desc{font-size:12px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-left .desc{font-size:var(--text-xs);color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .card-right{flex-shrink:0}
-.card-right a{display:inline-block;padding:6px 14px;background:var(--blue);color:#fff;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap}
+.card-right a{display:inline-block;padding:6px 14px;background:var(--pan-a);color:#fff;border-radius:6px;text-decoration:none;font-size:var(--text-sm);font-weight:600;white-space:nowrap}
 .card-right a:hover{background:#2563eb}
-.tag-edu{display:inline-block;padding:1px 8px;border-radius:3px;font-size:10px;font-weight:700;margin-left:6px;background:#f0fdf4;color:#166534}
+.tag-edu{display:inline-block;padding:1px 8px;border-radius:3px;font-size:10px;font-weight:700;margin-left:6px;background:var(--success-bg);color:var(--success)}
 .tag-tool{display:inline-block;padding:1px 8px;border-radius:3px;font-size:10px;font-weight:700;margin-left:6px;background:#faf5ff;color:#6b21a8}
-.tag-new{display:inline-block;padding:1px 8px;border-radius:3px;font-size:10px;font-weight:700;margin-left:6px;background:#fef2f2;color:#dc2626}
-footer{text-align:center;font-size:12px;color:var(--muted);margin-top:32px;padding-top:16px;border-top:1px solid var(--border)}
+.tag-new{display:inline-block;padding:1px 8px;border-radius:3px;font-size:10px;font-weight:700;margin-left:6px;background:var(--danger-bg);color:var(--pan-d)}
+footer{text-align:center;font-size:var(--text-xs);color:var(--muted);margin-top:32px;padding-top:16px;border-top:1px solid var(--border)}
 </style>
 </head>
 <body>
+<nav class="os-nav" aria-label="海洋系列">
+  <div class="os-nav__inner">
+    <a class="os-nav__brand" href="https://wangdwn.github.io/">
+      <span class="os-nav__mark" aria-hidden="true"></span>
+      <span class="os-nav__brand-text">海洋系列</span>
+    </a>
+    <div class="os-nav__pills">
+      <a class="os-nav__pill os-nav__pill--a" href="https://wangdwn.github.io/guangzhou-marine-enterprises/">A 家底</a>
+      <a class="os-nav__pill os-nav__pill--b" href="https://wangdwn.github.io/marine-monitor/">B 经营</a>
+      <a class="os-nav__pill os-nav__pill--c" href="https://wangdwn.github.io/guangzhou-ocean-dashboard/">C 质量</a>
+      <a class="os-nav__pill os-nav__pill--d" href="https://wangdwn.github.io/marine-weekly/">D 底座</a>
+    </div>
+    <a class="os-nav__ds" href="/design-system/">设计系统</a>
+  </div>
+</nav>
 <div class="container">
 <h1>海洋系列 · 三盘一底座</h1>
 <p class="sub">wangdwn.github.io · 2026-09-03 整合版 · 打开就知道看哪个站</p>
@@ -50,7 +69,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);margin-top:32px;paddi
 </div>
 
 <div class="grid">
-  <div class="pan" style="--c:var(--blue)">
+  <div class="pan" style="--c:var(--pan-a)">
     <span class="tag">A · 家底盘</span>
     <div class="q">广州涉海企业，谁值得跟？</div>
     <div class="role">广海汇·企业全景看板 —— 名录 / 地图 / 三表画像</div>
@@ -58,7 +77,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);margin-top:32px;paddi
     <div class="sub2">子模块：<a href="https://wangdwn.github.io/ocean-node-map/">涉海创新节点地图</a></div>
   </div>
 
-  <div class="pan" style="--c:var(--green)">
+  <div class="pan" style="--c:var(--pan-b)">
     <span class="tag">B · 经营盘</span>
     <div class="q">海洋经济，正在发生什么？</div>
     <div class="role">海洋经济监测站 —— 政策口径 / 产业数据 / 深度分析 / 招标雷达</div>
@@ -66,14 +85,14 @@ footer{text-align:center;font-size:12px;color:var(--muted);margin-top:32px;paddi
     <div class="sub2">并入：<a href="https://wangdwn.github.io/gz-marine-analysis/">深度分析</a> · <a href="https://wangdwn.github.io/geo-ocean-bidding/">招标雷达</a></div>
   </div>
 
-  <div class="pan" style="--c:var(--amber)">
+  <div class="pan" style="--c:var(--pan-c)">
     <span class="tag">C · 质量盘</span>
     <div class="q">现在，健康吗？</div>
     <div class="role">海洋经济信号灯 —— 海温 / 港口 / AIS / 灾害 / 企业风险 五路预警</div>
     <a class="go" href="https://wangdwn.github.io/guangzhou-ocean-dashboard/">打开质量盘</a>
   </div>
 
-  <div class="pan" style="--c:var(--red)">
+  <div class="pan" style="--c:var(--pan-d)">
     <span class="tag">D · 底座</span>
     <div class="q">历史趋势，怎么走的？</div>
     <div class="role">海洋周报·时间序列档案 —— 按期归档，回头看趋势</div>

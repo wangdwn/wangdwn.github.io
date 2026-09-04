@@ -1,0 +1,128 @@
+/* =========================================================================
+ * 海洋系列 · 统一设计系统 tokens
+ * Ocean Series Design Tokens v0.1
+ *
+ * 原则：
+ * 1. 产品壳（门户 / 四盘看板）用「日光海」浅色体系
+ * 2. 「红头周报」保留机关红刊头，作为内容体裁变体，不污染看板
+ * 3. 地图 / 沉浸分析可用「深海」暗色变体，但语义色与浅色对齐
+ * ========================================================================= */
+
+:root {
+  /* —— Brand / Pan accents（与门户 A/B/C/D 对齐） —— */
+  --pan-a: #3b82f6;          /* 家底盘 · 蓝 */
+  --pan-b: #0d9488;          /* 经营盘 · 青 */
+  --pan-c: #d97706;          /* 质量盘 · 琥珀 */
+  --pan-d: #dc2626;          /* 底座 · 红（警示/档案） */
+
+  /* —— Surfaces（日光海 Light） —— */
+  --bg: #f8fafc;
+  --bg-subtle: #f1f5f9;
+  --card: #ffffff;
+  --overlay: rgba(15, 23, 42, 0.45);
+
+  /* —— Ink —— */
+  --fg: #0f172a;
+  --fg-secondary: #334155;
+  --muted: #64748b;
+  --faint: #94a3b8;
+
+  /* —— Chrome —— */
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --ring: #1e3a8a;
+  --primary: #1e3a8a;        /* 海军主色 · 门户标题同源 */
+  --primary-hover: #1e40af;
+  --primary-fg: #ffffff;
+  --accent: #0d6b7d;         /* 海青强调 · 数字/链接 */
+  --accent-fg: #ffffff;
+
+  /* —— Semantic —— */
+  --success: #166534;
+  --success-bg: #f0fdf4;
+  --warning: #92400e;
+  --warning-bg: #fffbeb;
+  --danger: #b91c1c;
+  --danger-bg: #fef2f2;
+  --info: #1e40af;
+  --info-bg: #eff6ff;
+
+  /* —— Market（周报 / 行情：红涨绿跌） —— */
+  --up: #c0392b;
+  --down: #1e8449;
+
+  /* —— Type —— */
+  --font-sans: "Noto Sans SC", "PingFang SC", "Microsoft YaHei",
+               -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Noto Serif SC", "Songti SC", "STZhongsong", serif;
+  --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-md: 14px;
+  --text-base: 15px;
+  --text-lg: 17px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+
+  --leading: 1.65;
+  --leading-tight: 1.35;
+
+  /* —— Space (4px base) —— */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+
+  /* —— Radius / Shadow / Layout —— */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.10);
+  --maxw: 1120px;
+  --nav-h: 56px;
+}
+
+/* 深海变体：地图 / 节点图 / 沉浸分析 */
+[data-theme="deep"] {
+  --bg: #071f2b;
+  --bg-subtle: #0b2a39;
+  --card: #103140;
+  --fg: #e9f3f4;
+  --fg-secondary: #c5d6dc;
+  --muted: #7d9aa6;
+  --faint: #4d6b78;
+  --border: #16404f;
+  --border-strong: #1e5a6c;
+  --primary: #4da3ff;
+  --primary-hover: #7bb8ff;
+  --primary-fg: #04141d;
+  --accent: #5eead4;
+  --accent-fg: #04141d;
+  --overlay: rgba(4, 20, 29, 0.6);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* 周报变体：红头文件体裁（只用于 marine-weekly） */
+[data-theme="gazette"] {
+  --primary: #b5121b;
+  --primary-hover: #8e0e15;
+  --primary-fg: #ffffff;
+  --accent: #0e6e8c;
+  --fg: #22303e;
+  --muted: #5b6b7b;
+  --bg: #eef2f4;
+  --card: #ffffff;
+  --border: #dce4ea;
+  --pan-d: #b5121b;
+}
