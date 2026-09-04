@@ -58,7 +58,9 @@ h1{font-size:var(--text-2xl);color:var(--primary);margin-bottom:4px;line-height:
 .archive summary::-webkit-details-marker{display:none}
 .archive summary h2{font-size:var(--text-xl);color:var(--primary);font-weight:700;margin:0}
 .archive summary .meta{font-size:var(--text-xs);color:var(--muted)}
-.archive summary .chev{font-size:var(--text-xs);color:var(--accent);font-weight:600}
+.archive .when-open{display:none}
+.archive[open] .when-closed{display:none}
+.archive[open] .when-open{display:inline}
 .archive[open] summary{margin-bottom:12px;padding-bottom:10px;border-bottom:2px solid var(--border)}
 .archive .note{font-size:var(--text-xs);color:var(--muted);margin-bottom:12px}
 footer{text-align:center;font-size:var(--text-xs);color:var(--muted);margin-top:var(--s-10);padding-top:16px;border-top:1px solid var(--border)}
@@ -263,7 +265,7 @@ footer a:hover{text-decoration:underline}
 <details class="archive" id="archive">
 <summary>
   <h2>实验与归档</h2>
-  <span class="meta">时钟 / 游戏 / 旧版 · 默认收起 <span class="chev">展开</span></span>
+  <span class="meta">时钟 / 游戏 / 旧版 · <span class="when-closed">点击展开</span><span class="when-open">点击收起</span></span>
 </summary>
 <p class="note">以下仍可打开，但不作为常用入口。旧海洋站点已并入「三盘一底座」，仓库无独立 Pages 的项目见 <a href="https://github.com/wangdwn/wangdwn.github.io/blob/main/SITES.md">SITES.md</a>。</p>
 <div class="card">
