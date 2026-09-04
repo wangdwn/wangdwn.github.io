@@ -34,15 +34,15 @@
 
 ## 2. 教育与学习
 
-| 站点 | Pages |
-|---|---|
-| IESO 地球科学奥林匹克学习平台 | [ieso-learning-site](https://wangdwn.github.io/ieso-learning-site/) |
-| 诗经·风雅颂穿越指南（IESO 子页） | [shijing.html](https://wangdwn.github.io/ieso-learning-site/shijing.html) |
-| IESO 英语词汇学习 | [ieso-vocab](https://wangdwn.github.io/ieso-vocab/) |
-| 高中数学知识卡片 | [gaozhong-shuxue-card](https://wangdwn.github.io/gaozhong-shuxue-card/) |
-| 数学答题 RPG | [math-rpg](https://wangdwn.github.io/math-rpg/) |
-| 成绩打怪 · 进阶版 | [gaokao.github.io](https://wangdwn.github.io/gaokao.github.io/) |
-| AI 智学工坊 | [ai-learning-hub](https://wangdwn.github.io/ai-learning-hub/) |
+| 站点 | 备注 | Pages |
+|---|---|---|
+| IESO 地球科学奥林匹克学习平台 | | [ieso-learning-site](https://wangdwn.github.io/ieso-learning-site/) |
+| 诗经·风雅颂穿越指南 | 独立教育入口；页面托管在 `ieso-learning-site` 仓库的 `shijing.html` | [shijing.html](https://wangdwn.github.io/ieso-learning-site/shijing.html) |
+| IESO 英语词汇学习 | | [ieso-vocab](https://wangdwn.github.io/ieso-vocab/) |
+| 高中数学知识卡片 | | [gaozhong-shuxue-card](https://wangdwn.github.io/gaozhong-shuxue-card/) |
+| 数学答题 RPG | | [math-rpg](https://wangdwn.github.io/math-rpg/) |
+| 成绩打怪 · 进阶版 | | [gaokao.github.io](https://wangdwn.github.io/gaokao.github.io/) |
+| AI 智学工坊 | | [ai-learning-hub](https://wangdwn.github.io/ai-learning-hub/) |
 
 ---
 
