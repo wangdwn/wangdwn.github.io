@@ -5,7 +5,7 @@
  * 约定 markup（门户与 styleguide 共用）：
  * <nav class="os-nav" aria-label="海洋系列">
  *   <div class="os-nav__inner">
- *     <a class="os-nav__brand" href="https://wangdwn.github.io/">…</a>
+ *     <a class="os-nav__brand" href="http://wangdw.xyz/">…</a>
  *     <div class="os-nav__pills">A/B/C/D pills</div>
  *     <a class="os-nav__ds" href="/design-system/">设计系统</a>
  *   </div>

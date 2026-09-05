@@ -1,10 +1,10 @@
 # wangdwn 站点分类
 
-门户：<https://wangdwn.github.io/>
+门户：<http://wangdw.xyz/>
 
 本文件是根域目录的分类源。`index.html` 按同一套分类渲染；每个 **活 Pages URL 只出现在一个栏目**（顶栏 / 页脚的设计系统与四盘快捷入口除外，那是 chrome，不是目录卡片）。
 
-视觉源：[`/design-system/`](https://wangdwn.github.io/design-system/)（`tokens.css` + `nav.css`）。兄弟仓库请直接链接线上 CSS，不要复制一份 tokens。
+视觉源：[`/design-system/`](http://wangdw.xyz/design-system/)（`tokens.css` + `nav.css`）。兄弟仓库请直接链接线上 CSS，不要复制一份 tokens。
 
 ---
 
@@ -14,10 +14,10 @@
 
 | 盘 | 主站 | 子站 / 并入 | Pages |
 |---|---|---|---|
-| A 家底 | 广海汇·企业全景看板 | 涉海创新节点地图 | [guangzhou-marine-enterprises](https://wangdwn.github.io/guangzhou-marine-enterprises/) · [ocean-node-map](https://wangdwn.github.io/ocean-node-map/) |
-| B 经营 | 海洋经济监测站 | 深度分析、招标雷达 | [marine-monitor](https://wangdwn.github.io/marine-monitor/) · [gz-marine-analysis](https://wangdwn.github.io/gz-marine-analysis/) · [geo-ocean-bidding](https://wangdwn.github.io/geo-ocean-bidding/) |
-| C 质量 | 海洋经济信号灯 | — | [guangzhou-ocean-dashboard](https://wangdwn.github.io/guangzhou-ocean-dashboard/) |
-| D 底座 | 海洋周报·时间序列档案 | — | [marine-weekly](https://wangdwn.github.io/marine-weekly/) |
+| A 家底 | 广海汇·企业全景看板 | 涉海创新节点地图 | [guangzhou-marine-enterprises](http://wangdw.xyz/guangzhou-marine-enterprises/) · [ocean-node-map](http://wangdw.xyz/ocean-node-map/) |
+| B 经营 | 海洋经济监测站 | 深度分析、招标雷达 | [marine-monitor](http://wangdw.xyz/marine-monitor/) · [gz-marine-analysis](http://wangdw.xyz/gz-marine-analysis/) · [geo-ocean-bidding](http://wangdw.xyz/geo-ocean-bidding/) |
+| C 质量 | 海洋经济信号灯 | — | [guangzhou-ocean-dashboard](http://wangdw.xyz/guangzhou-ocean-dashboard/) |
+| D 底座 | 海洋周报·时间序列档案 | — | [marine-weekly](http://wangdw.xyz/marine-weekly/) |
 
 本仓库内的 `/funding/`、`/map/` 是跳转到经营盘对应页的快捷入口，不算独立站点。
 
@@ -36,13 +36,13 @@
 
 | 站点 | 备注 | Pages |
 |---|---|---|
-| IESO 地球科学奥林匹克学习平台 | | [ieso-learning-site](https://wangdwn.github.io/ieso-learning-site/) |
-| 诗经·风雅颂穿越指南 | 独立教育入口；页面托管在 `ieso-learning-site` 仓库的 `shijing.html` | [shijing.html](https://wangdwn.github.io/ieso-learning-site/shijing.html) |
-| IESO 英语词汇学习 | | [ieso-vocab](https://wangdwn.github.io/ieso-vocab/) |
-| 高中数学知识卡片 | | [gaozhong-shuxue-card](https://wangdwn.github.io/gaozhong-shuxue-card/) |
-| 数学答题 RPG | | [math-rpg](https://wangdwn.github.io/math-rpg/) |
-| 成绩打怪 · 进阶版 | | [gaokao.github.io](https://wangdwn.github.io/gaokao.github.io/) |
-| AI 智学工坊 | | [ai-learning-hub](https://wangdwn.github.io/ai-learning-hub/) |
+| IESO 地球科学奥林匹克学习平台 | | [ieso-learning-site](http://wangdw.xyz/ieso-learning-site/) |
+| 诗经·风雅颂穿越指南 | 独立教育入口；页面托管在 `ieso-learning-site` 仓库的 `shijing.html` | [shijing.html](http://wangdw.xyz/ieso-learning-site/shijing.html) |
+| IESO 英语词汇学习 | | [ieso-vocab](http://wangdw.xyz/ieso-vocab/) |
+| 高中数学知识卡片 | | [gaozhong-shuxue-card](http://wangdw.xyz/gaozhong-shuxue-card/) |
+| 数学答题 RPG | | [math-rpg](http://wangdw.xyz/math-rpg/) |
+| 成绩打怪 · 进阶版 | | [gaokao.github.io](http://wangdw.xyz/gaokao.github.io/) |
+| AI 智学工坊 | | [ai-learning-hub](http://wangdw.xyz/ai-learning-hub/) |
 
 ---
 
@@ -50,10 +50,10 @@
 
 | 站点 | 备注 | Pages |
 |---|---|---|
-| 地海测·科技奖励申报指南 | **内容会过期，需定期刷新**（奖励批次、政策口径） | [awards-guide](https://wangdwn.github.io/awards-guide/) |
-| 高端论文数据库 | **内容会过期，需定期刷新**（收录与摘要） | [paper-db](https://wangdwn.github.io/paper-db/) |
-| 马斯克知识库 | | [muskpedia](https://wangdwn.github.io/muskpedia/) |
-| GeoLibre 使用手册 | 学术工具 | [geolibre-manual](https://wangdwn.github.io/geolibre-manual/) |
+| 地海测·科技奖励申报指南 | **内容会过期，需定期刷新**（奖励批次、政策口径） | [awards-guide](http://wangdw.xyz/awards-guide/) |
+| 高端论文数据库 | **内容会过期，需定期刷新**（收录与摘要） | [paper-db](http://wangdw.xyz/paper-db/) |
+| 马斯克知识库 | | [muskpedia](http://wangdw.xyz/muskpedia/) |
+| GeoLibre 使用手册 | 学术工具 | [geolibre-manual](http://wangdw.xyz/geolibre-manual/) |
 
 ---
 
@@ -61,9 +61,9 @@
 
 | 站点 | Pages |
 |---|---|
-| 极简 Markdown 编辑器 | [md-viewer](https://wangdwn.github.io/md-viewer/) |
-| 装机优化工具 | [pc-setup-tool](https://wangdwn.github.io/pc-setup-tool/) |
-| 海洋系列设计系统 | [design-system](https://wangdwn.github.io/design-system/) |
+| 极简 Markdown 编辑器 | [md-viewer](http://wangdw.xyz/md-viewer/) |
+| 装机优化工具 | [pc-setup-tool](http://wangdw.xyz/pc-setup-tool/) |
+| 海洋系列设计系统 | [design-system](http://wangdw.xyz/design-system/) |
 
 设计系统同时出现在顶栏与页脚，方便四盘站点跳转；目录卡片只放在本栏。
 
@@ -75,11 +75,11 @@
 
 | 站点 | 说明 | Pages |
 |---|---|---|
-| Pro Split-Flap Clock | 实验时钟 | [ipad.clock.github.io](https://wangdwn.github.io/ipad.clock.github.io/) |
-| Pro Split-Flap Clock (iclock) | 实验时钟 | [ipad.iclock.github.io](https://wangdwn.github.io/ipad.iclock.github.io/) |
-| Tech-Noir Clock iPad2 | 实验时钟 | [clock.ipad2.github.io](https://wangdwn.github.io/clock.ipad2.github.io/) |
-| Pro Split-Flap Clock (ipad) | 实验时钟 | [iclock-ipad-github.io](https://wangdwn.github.io/iclock-ipad-github.io/) |
-| 蔚蓝之城：珠江口传奇 | 游戏 | [web.game.github.io](https://wangdwn.github.io/web.game.github.io/) |
+| Pro Split-Flap Clock | 实验时钟 | [ipad.clock.github.io](http://wangdw.xyz/ipad.clock.github.io/) |
+| Pro Split-Flap Clock (iclock) | 实验时钟 | [ipad.iclock.github.io](http://wangdw.xyz/ipad.iclock.github.io/) |
+| Tech-Noir Clock iPad2 | 实验时钟 | [clock.ipad2.github.io](http://wangdw.xyz/clock.ipad2.github.io/) |
+| Pro Split-Flap Clock (ipad) | 实验时钟 | [iclock-ipad-github.io](http://wangdw.xyz/iclock-ipad-github.io/) |
+| 蔚蓝之城：珠江口传奇 | 游戏 | [web.game.github.io](http://wangdw.xyz/web.game.github.io/) |
 
 ---
 

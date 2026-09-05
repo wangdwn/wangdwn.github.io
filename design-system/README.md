@@ -4,14 +4,14 @@
 
 ## 兄弟仓库怎么接入
 
-在页面 `<head>` 中引入（用户站 `wangdwn.github.io` 根路径）：
+在页面 `<head>` 中引入（用户站 `wangdw.xyz` 根路径）：
 
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://wangdwn.github.io/design-system/tokens.css">
-<link rel="stylesheet" href="https://wangdwn.github.io/design-system/nav.css">
+<link rel="stylesheet" href="http://wangdw.xyz/design-system/tokens.css">
+<link rel="stylesheet" href="http://wangdw.xyz/design-system/nav.css">
 ```
 
 也可用站点根绝对路径（仅本仓库页面）：
@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="/design-system/nav.css">
 ```
 
-活样式指南：<https://wangdwn.github.io/design-system/>
+活样式指南：<http://wangdw.xyz/design-system/>
 
 ## 三套主题
 
@@ -35,7 +35,7 @@
 
 ## 四盘强调色
 
-- `--pan-a` 家底蓝 → [广海汇](https://wangdwn.github.io/guangzhou-marine-enterprises/)
-- `--pan-b` 经营青 → [监测站](https://wangdwn.github.io/marine-monitor/)
-- `--pan-c` 质量琥珀 → [信号灯](https://wangdwn.github.io/guangzhou-ocean-dashboard/)
-- `--pan-d` 底座红 → [周报档案](https://wangdwn.github.io/marine-weekly/)
+- `--pan-a` 家底蓝 → [广海汇](http://wangdw.xyz/guangzhou-marine-enterprises/)
+- `--pan-b` 经营青 → [监测站](http://wangdw.xyz/marine-monitor/)
+- `--pan-c` 质量琥珀 → [信号灯](http://wangdw.xyz/guangzhou-ocean-dashboard/)
+- `--pan-d` 底座红 → [周报档案](http://wangdw.xyz/marine-weekly/)
