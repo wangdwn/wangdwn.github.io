@@ -32,7 +32,7 @@
           "support": 92,
           "peripheral": 5624
         },
-        "source": "enterprises.json#enterprises.json#meta.layer_distribution"
+        "source": "enterprises.json#meta.layer_distribution"
       },
       {
         "id": "sector_pending",
