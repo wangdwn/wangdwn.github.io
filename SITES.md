@@ -15,7 +15,7 @@
 | 盘 | 主站 | 子站 / 并入 | Pages |
 |---|---|---|---|
 | A 家底 | 广海汇·企业全景看板 | 涉海创新节点地图 | [guangzhou-marine-enterprises](http://wangdw.xyz/guangzhou-marine-enterprises/) · [ocean-node-map](http://wangdw.xyz/ocean-node-map/) |
-| B 经营 | 海洋经济监测站 | 深度分析、招标雷达 | [marine-monitor](http://wangdw.xyz/marine-monitor/) · [gz-marine-analysis](http://wangdw.xyz/gz-marine-analysis/) · [geo-ocean-bidding](http://wangdw.xyz/geo-ocean-bidding/) |
+| B 经营 | 海洋经济监测站 | 结构判断台、深度分析、招标雷达 | [structure.html](http://wangdw.xyz/structure.html) · [marine-monitor](http://wangdw.xyz/marine-monitor/) · [gz-marine-analysis](http://wangdw.xyz/gz-marine-analysis/) · [geo-ocean-bidding](http://wangdw.xyz/geo-ocean-bidding/) |
 | C 质量 | 海洋经济信号灯 | — | [guangzhou-ocean-dashboard](http://wangdw.xyz/guangzhou-ocean-dashboard/) |
 | D 底座 | 海洋周报·时间序列档案 | — | [marine-weekly](http://wangdw.xyz/marine-weekly/) |
 
