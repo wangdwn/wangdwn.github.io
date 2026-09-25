@@ -47,12 +47,15 @@ h1{font-size:var(--text-2xl);color:var(--primary);margin-bottom:4px;line-height:
 .card-right{flex-shrink:0}
 .card-right a{display:inline-block;padding:6px 14px;background:var(--pan-a);color:#fff;border-radius:6px;text-decoration:none;font-size:var(--text-sm);font-weight:600;white-space:nowrap}
 .card-right a:hover{background:#2563eb}
+.card-right a.locked{background:var(--bg-subtle);color:var(--muted);border:1px dashed var(--border-strong)}
+.card-right a.locked:hover{background:var(--bg);color:var(--fg-secondary)}
 .tag-edu,.tag-tool,.tag-new,.tag-academic,.tag-off{display:inline-block;padding:1px 8px;border-radius:3px;font-size:10px;font-weight:700;margin-left:6px;vertical-align:middle}
 .tag-edu{background:var(--success-bg);color:var(--success)}
 .tag-tool{background:#faf5ff;color:#6b21a8}
 .tag-new{background:var(--danger-bg);color:var(--pan-d)}
 .tag-academic{background:var(--info-bg);color:var(--info)}
 .tag-off{background:var(--bg-subtle);color:var(--muted)}
+.tag-private{background:var(--bg-subtle);color:var(--muted);border:1px dashed var(--border-strong)}
 .archive{background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--radius-lg);padding:var(--s-4) var(--s-5);box-shadow:var(--shadow-sm)}
 .archive summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;justify-content:space-between;gap:var(--s-3);padding:2px 0}
 .archive summary::-webkit-details-marker{display:none}
@@ -195,7 +198,7 @@ footer a:hover{text-decoration:underline}
 <section class="section" id="kb" aria-labelledby="kb-title">
 <div class="section-head">
   <h2 id="kb-title">知识库与研究</h2>
-  <span class="meta">4 站 · 手册与学术工具</span>
+  <span class="meta">6 站 · 4 公开 + 2 私人</span>
 </div>
 <div class="card">
   <div class="card-left">
@@ -224,6 +227,20 @@ footer a:hover{text-decoration:underline}
     <div class="desc">开源GIS平台中文手册 · 插件教程 · SQL工作区</div>
   </div>
   <div class="card-right"><a href="http://wangdw.xyz/geolibre-manual/">打开</a></div>
+</div>
+<div class="card">
+  <div class="card-left">
+    <div class="name">古文典籍 <span class="tag-private">🔒 私人</span></div>
+    <div class="desc">金瓶梅 / 史记 / 资治通鉴 · 公有领域原文阅读站（私有仓库）</div>
+  </div>
+  <div class="card-right"><a class="locked" href="https://github.com/wangdwn/classics" target="_blank" rel="noopener noreferrer">🔒 私有仓库</a></div>
+</div>
+<div class="card">
+  <div class="card-left">
+    <div class="name">命理 <span class="tag-private">🔒 私人</span></div>
+    <div class="desc">八字排盘 / 铁板神数 / 历史命例（私有仓库）</div>
+  </div>
+  <div class="card-right"><a class="locked" href="https://github.com/wangdwn/mingli-lab" target="_blank" rel="noopener noreferrer">🔒 私有仓库</a></div>
 </div>
 </section>
 
