@@ -75,6 +75,7 @@
 | 极简 Markdown 编辑器 | [md-viewer](http://wangdw.xyz/md-viewer/) |
 | 装机优化工具 | [pc-setup-tool](http://wangdw.xyz/pc-setup-tool/) |
 | 海洋系列设计系统 | [design-system](http://wangdw.xyz/design-system/) |
+| 土地出让测算与监测校准 | [parcel-decision-workbench](http://wangdw.xyz/parcel-decision-workbench/) |
 
 设计系统同时出现在顶栏与页脚，方便四盘站点跳转；目录卡片只放在本栏。
 
@@ -91,6 +92,7 @@
 | Tech-Noir Clock iPad2 | 实验时钟 | [clock.ipad2.github.io](http://wangdw.xyz/clock.ipad2.github.io/) |
 | Pro Split-Flap Clock (ipad) | 实验时钟 | [iclock-ipad-github.io](http://wangdw.xyz/iclock-ipad-github.io/) |
 | 蔚蓝之城：珠江口传奇 | 游戏 | [web.game.github.io](http://wangdw.xyz/web.game.github.io/) |
+| 中秋音乐卡 | 一次性节日页 · 转发卡片 | [zhongqiu-card](http://wangdw.xyz/zhongqiu-card/) |
 
 ---
 
