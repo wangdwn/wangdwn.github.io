@@ -40,6 +40,7 @@
 | 诗经·风雅颂穿越指南 | 独立教育入口；页面托管在 `ieso-learning-site` 仓库的 `shijing.html` | [shijing.html](http://wangdw.xyz/ieso-learning-site/shijing.html) |
 | IESO 英语词汇学习 | | [ieso-vocab](http://wangdw.xyz/ieso-vocab/) |
 | 高中数学知识卡片 | | [gaozhong-shuxue-card](http://wangdw.xyz/gaozhong-shuxue-card/) |
+| 高中母题 · 数学／物理／化学 | 母题地图＋母题卷 · 一模型一题 · 高一／高二 | [muti](http://wangdw.xyz/muti/) |
 | 数学答题 RPG | | [math-rpg](http://wangdw.xyz/math-rpg/) |
 | 成绩打怪 · 进阶版 | | [gaokao.github.io](http://wangdw.xyz/gaokao.github.io/) |
 | AI 智学工坊 | | [ai-learning-hub](http://wangdw.xyz/ai-learning-hub/) |
