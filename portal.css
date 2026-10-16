@@ -255,3 +255,44 @@ a:focus-visible { outline: 3px solid rgba(0,113,227,.45); outline-offset: 3px; b
 }
 .footer a { color: var(--learn); font-weight: 500; }
 .footer a:hover { text-decoration: underline; }
+
+/* Featured list card (e.g. novella) */
+.item--feature {
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  min-height: 160px;
+  padding: 0;
+  background:
+    linear-gradient(135deg, rgba(0,168,107,.08), rgba(191,72,0,.06)),
+    var(--portal-card);
+}
+.item--feature .item__banner {
+  display: block;
+  height: 120px;
+  background:
+    linear-gradient(120deg, rgba(28,25,23,.55), rgba(28,25,23,.15)),
+    url("https://images.unsplash.com/photo-1508804185872-d7aad8140a9a?auto=format&fit=crop&w=1200&q=70") center/cover no-repeat;
+}
+.item--feature .item__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px clamp(20px, 3vw, 28px) 22px;
+}
+.item--feature .item__badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--life);
+  margin-bottom: 6px;
+}
+@media (max-width: 720px) {
+  .item--feature .item__body { flex-direction: column; align-items: stretch; }
+  .item--feature .item__go { align-self: stretch; text-align: center; }
+}

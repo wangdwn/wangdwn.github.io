@@ -28,6 +28,7 @@
 
 | 站点 | 备注 | Pages |
 |---|---|---|
+| 木棉泣血 | 中篇小说《木棉泣血——1938年广州沦陷纪略》· 德文 · 只读阅读页 `novels/mucian-qixue.html` | [mucian-qixue](https://wangdw.xyz/novels/mucian-qixue.html) |
 | 诗经·风雅颂穿越指南 | 文学；页面托管在 `ieso-learning-site` 的 `shijing.html` | [shijing.html](https://wangdw.xyz/ieso-learning-site/shijing.html) |
 | 数字广州 · 城脉千年 | 历代城图与城市考古 | [chengmai-qiannian](https://wangdw.xyz/chengmai-qiannian/) |
 | 装机优化工具 | | [pc-setup-tool](https://wangdw.xyz/pc-setup-tool/) |
