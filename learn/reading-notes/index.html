@@ -2,192 +2,104 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="theme-color" content="#0f1312">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>读书笔记 · 德王府</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#f7f3ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c1a17" media="(prefers-color-scheme: dark)">
+<title>读书笔记 · 学习 · 德王府</title>
 <meta name="description" content="姚班式精读专栏：啃一手、抓定律、连工作、出判断。已收录《奇点更近》全书笔记与判断。">
-<style>
-  :root{
-  color-scheme:dark;
-    --bg:#0f1312; --card:#161b1a; --card-edge:#252d2b;
-    --green:#5fd0a0; --green-dim:#2b6b52;
-    --orange:#e3a15c; --red:#e07a7a; --blue:#77b3e0;
-    --text:#e6ebe9; --muted:#9aa5a1;
-    --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
-    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.6;
-    -webkit-font-smoothing:antialiased; overflow-x:hidden}
-  body::after{content:""; position:fixed; inset:0; pointer-events:none; z-index:9999;
-    background:repeating-linear-gradient(0deg,rgba(95,208,160,0.012) 0 1px,transparent 1px 3px);
-    mix-blend-mode:screen; opacity:.25}
-  a{color:inherit;text-decoration:none}
-
-  nav{position:sticky; top:0; z-index:100; background:rgba(10,10,10,.92);
-    backdrop-filter:blur(8px); border-bottom:2px solid var(--green-dim);
-    display:flex; align-items:center; gap:18px; padding:12px 22px; flex-wrap:wrap}
-  .logo{font-family:var(--mono); font-weight:700; color:var(--green); font-size:1rem; letter-spacing:.5px;
-    text-shadow:0 0 10px rgba(95,208,160,0.16); white-space:nowrap}
-  .logo .blink{animation:blink 1.1s steps(2) infinite}
-  @keyframes blink{50%{opacity:0}}
-  .navlinks{display:flex; gap:16px; font-family:var(--mono); font-size:.8rem; flex-wrap:wrap; margin-left:auto}
-  .navlinks a{color:var(--muted); transition:color .15s, text-shadow .15s; white-space:nowrap; flex:0 0 auto}
-  .navlinks a:hover{color:var(--green); text-shadow:0 0 7px rgba(95,208,160,0.18)}
-
-  header.hero{position:relative; text-align:center; padding:76px 22px 58px; overflow:hidden;
-    border-bottom:2px solid var(--card-edge)}
-  .hexbg{position:absolute; inset:0; z-index:0; opacity:.5;
-    background-image:
-      repeating-linear-gradient(60deg, rgba(95,208,160,0.031) 0 1px, transparent 1px 44px),
-      repeating-linear-gradient(-60deg, rgba(95,208,160,0.031) 0 1px, transparent 1px 44px),
-      repeating-linear-gradient(0deg, rgba(95,208,160,0.025) 0 1px, transparent 1px 38px);
-    -webkit-mask-image:radial-gradient(ellipse 70% 80% at 50% 40%, #000 0%, transparent 75%);
-    mask-image:radial-gradient(ellipse 70% 80% at 50% 40%, #000 0%, transparent 75%)}
-  .hero-inner{position:relative; z-index:1}
-  .hero .eyebrow{font-family:var(--mono); color:var(--green); font-size:.75rem; letter-spacing:3px; margin-bottom:18px; opacity:.85}
-  .hero h1{font-family:var(--mono); font-weight:800; font-size:clamp(1.6rem,5.2vw,3rem); line-height:1.15;
-    color:#fff; text-shadow:0 0 20px rgba(95,208,160,0.11)}
-  .hero .sub{margin-top:18px; font-family:var(--mono); color:var(--muted); font-size:clamp(.82rem,2.4vw,1rem); letter-spacing:1px}
-  .hero .sub b{color:var(--green); font-weight:600}
-
-  main{max-width:1100px; margin:0 auto; padding:0 22px 70px}
-  section{padding-top:54px}
-  .sec-head{display:flex; align-items:baseline; gap:14px; margin-bottom:24px;
-    border-left:4px solid var(--green); padding-left:14px; flex-wrap:wrap}
-  .sec-head h2{font-family:var(--mono); font-size:1.3rem; color:#fff; font-weight:700}
-  .sec-head .tag{font-family:var(--mono); font-size:.72rem; color:var(--muted); letter-spacing:1.5px}
-
-  .grid{display:grid; gap:14px}
-  .grid.cols{grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
-  .card{background:var(--card); border:1px solid var(--card-edge); border-left:3px solid var(--green-dim);
-    padding:18px; transition:border-color .18s, transform .12s, box-shadow .18s; display:block}
-  .card:hover{border-left-color:var(--green); transform:translateY(-2px);
-    box-shadow:0 6px 24px rgba(0,0,0,.6), -3px 0 14px rgba(95,208,160,0.074)}
-  .card .num{font-family:var(--mono); font-size:.7rem; color:var(--green-dim); letter-spacing:2px}
-  .card h3{font-family:var(--mono); font-size:1.02rem; color:#fff; margin:6px 0 8px}
-  .card p{font-size:.9rem; color:var(--text)}
-  .card .meta{font-family:var(--mono); font-size:.72rem; color:var(--muted); margin-top:12px; line-height:1.7}
-
-  .book{border-left-color:var(--green)}
-  .book .state{display:inline-block; font-family:var(--mono); font-size:.68rem; color:var(--green);
-    border:1px solid var(--green-dim); padding:2px 7px; margin:0 6px 8px 0; letter-spacing:.5px}
-  .book .state.warn{color:var(--orange); border-color:#5a2f00}
-  .book .title{font-family:var(--mono); font-size:1.25rem; color:#fff; margin:8px 0 4px}
-  .book .by{font-family:var(--mono); font-size:.74rem; color:var(--muted); margin-bottom:12px}
-  .book .quote{margin:12px 0 8px; padding:10px 12px; border-left:2px solid var(--green);
-    background:rgba(95,208,160,0.025); color:#d8dedb; font-size:.86rem; font-style:italic; line-height:1.6}
-  .book .quote .qsrc{display:block; margin-top:8px; font-style:normal; font-family:var(--mono);
-    font-size:.66rem; color:var(--muted)}
-  .stats{display:flex; gap:10px; flex-wrap:wrap; margin:14px 0 6px}
-  .stat{background:#000; border:1px solid var(--card-edge); padding:8px 12px; font-family:var(--mono); font-size:.72rem; color:var(--muted)}
-  .stat b{display:block; color:var(--green); font-size:1.05rem; font-weight:700}
-  .enter{display:inline-block; margin-top:12px; font-family:var(--mono); font-size:.78rem;
-    color:var(--green); border:1px solid var(--green-dim); padding:7px 14px; transition:all .15s}
-  .enter:hover{background:rgba(95,208,160,0.05); box-shadow:0 0 14px rgba(95,208,160,0.155)}
-  .note{font-family:var(--mono); font-size:.72rem; color:#666; margin-top:12px; line-height:1.6}
-
-  footer{border-top:1px solid var(--card-edge); padding:26px 22px 40px; text-align:center;
-    font-family:var(--mono); font-size:.72rem; color:var(--muted); line-height:1.9}
-  footer a{color:var(--green)}
-  @media(max-width:640px){
-    nav{gap:12px} .navlinks{margin-left:0; width:100%}
-    header.hero{padding:56px 18px 44px}
-    main{padding:0 18px 60px}
-  }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/design-system/tokens.css">
+<link rel="stylesheet" href="/portal.css">
+<link rel="stylesheet" href="/learn/reading-notes/notes.css">
 </head>
-<body>
-
-<nav>
-  <div class="logo">读书笔记<span class="blink">_</span></div>
-  <div class="navlinks">
-    <a href="#method">读法</a>
-    <a href="#shelf">书架</a>
-    <a href="/learn.html">← 学习</a>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="hexbg"></div>
-  <div class="hero-inner">
-    <div class="eyebrow">READING NOTES // 姚班式精读</div>
-    <h1>把书读成自己的东西</h1>
-    <div class="sub">啃一手 <b>×</b> 抓定律 <b>×</b> 连工作 <b>×</b> 出判断</div>
+<body class="cat-learn notes">
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="https://wangdw.xyz/"><span class="brand__dot" aria-hidden="true"></span>德王府</a>
+    <nav class="nav-links" aria-label="栏目">
+      <a class="is-active" href="/learn.html">学习</a>
+      <a href="/life.html">生活</a>
+      <a href="/work.html">工作</a>
+      <a href="/flywheel.html">飞轮</a>
+    </nav>
   </div>
 </header>
-
 <main>
+  <header class="n-hero n-wide">
+    <a class="n-back" href="/learn.html">← 学习</a>
+    <p class="n-kicker">读书笔记 · 姚班式精读</p>
+    <h1 class="n-title">把书读成自己的东西</h1>
+    <p class="n-lead">啃一手<span class="n-dots">·</span>抓定律<span class="n-dots">·</span>连工作<span class="n-dots">·</span>出判断</p>
+  </header>
 
-  <section id="method">
-    <div class="sec-head"><h2>四步读法</h2><span class="tag">不是书评 · 是长出来的判断</span></div>
-    <div class="grid cols">
-      <div class="card">
-        <div class="num">STEP 01</div>
-        <h3>啃一手</h3>
-        <p>只读原书，不读二手解读。引文标页码、留出处；版本和获取时间记清楚。</p>
-      </div>
-      <div class="card">
-        <div class="num">STEP 02</div>
-        <h3>抓定律</h3>
-        <p>把作者的核心机制抽出来，写成一句话。抽不出来的，说明还没读懂。</p>
-      </div>
-      <div class="card">
-        <div class="num">STEP 03</div>
-        <h3>连工作</h3>
-        <p>每读一章问一句：这条和我手上的事有什么关系？连不上就先挂着。</p>
-      </div>
-      <div class="card">
-        <div class="num">STEP 04</div>
-        <h3>出判断</h3>
-        <p>同意什么、反对什么，写成自己的判断条目——书是引子，判断才是产出。</p>
-      </div>
-    </div>
-  </section>
+  <div class="n-main n-wide">
+    <section class="n-sec" id="shelf" style="padding-top:8px">
+      <div class="n-head"><h2 class="n-h2">书架</h2><p class="n-sub">已读 / 在读</p></div>
+      <div class="n-shelf">
+        <a class="n-book" href="singularity-nearer.html">
+          <div class="n-cover" aria-hidden="true"><span>奇点更近</span></div>
+          <div>
+            <div class="n-book__tags"><span class="n-tag">已读完</span><span class="n-tag">42 条笔记 · 19 条判断</span></div>
+            <div class="n-book__title">《奇点更近》</div>
+            <div class="n-book__by">[美] 雷·库兹韦尔 · 2024 · 中文版</div>
+            <div class="n-quote">
+              算力是尺子，不是答案。
+              <span class="src">——读完本书后的第一句判断</span>
+            </div>
+            <div class="n-stats">
+              <div class="n-stat"><b>42</b>精读笔记</div>
+              <div class="n-stat"><b>19</b>批判判断</div>
+              <div class="n-stat"><b>1</b>篇创作</div>
+            </div>
+            <div class="n-book__meta">
+              进度：引言 + 第 1-6 章 + 结语 + 附录 全部读完<br>
+              收口：2026-09-21 · 创作《斗争中的共和》
+            </div>
+            <span class="n-enter">进入全书笔记 →</span>
+          </div>
+        </a>
 
-  <section id="shelf">
-    <div class="sec-head"><h2>书架</h2><span class="tag">已读 / 在读</span></div>
-    <div class="grid cols">
-
-      <a class="card book" href="singularity-nearer.html">
-        <div>
-          <span class="state">已读完</span><span class="state">42 条笔记 · 19 条判断</span>
+        <div class="n-next">
+          <h3>下一本</h3>
+          <p>书架待补。读完一本，收一本。</p>
+          <p class="note">收录标准：一手读完、判断成条、能连到手上的事。</p>
         </div>
-        <div class="title">《奇点更近》</div>
-        <div class="by">[美] 雷·库兹韦尔 · 2024 · 中文版</div>
-        <div class="quote">
-          算力是尺子，不是答案。
-          <span class="qsrc">——读完本书后的第一句判断</span>
-        </div>
-        <div class="stats">
-          <div class="stat"><b>42</b>精读笔记</div>
-          <div class="stat"><b>19</b>批判判断</div>
-          <div class="stat"><b>1</b>篇创作</div>
-        </div>
-        <div class="meta">
-          进度：引言 + 第 1-6 章 + 结语 + 附录 全部读完<br>
-          收口：2026-09-21 · 创作《斗争中的共和》
-        </div>
-        <span class="enter">进入全书笔记 →</span>
-      </a>
-
-      <div class="card">
-        <div class="num">NEXT</div>
-        <h3>下一本</h3>
-        <p>书架待补。读完一本，收一本。</p>
-        <div class="note">收录标准：一手读完、判断成条、能连到手上的事。</div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
+    <section class="n-sec" id="method">
+      <div class="n-head"><h2 class="n-h2">四步读法</h2><p class="n-sub">不是书评 · 是长出来的判断</p></div>
+      <div class="n-steps">
+        <div class="n-step">
+          <div class="num">第一步</div>
+          <h3>啃一手</h3>
+          <p>只读原书，不读二手解读。引文标页码、留出处；版本和获取时间记清楚。</p>
+        </div>
+        <div class="n-step">
+          <div class="num">第二步</div>
+          <h3>抓定律</h3>
+          <p>把作者的核心机制抽出来，写成一句话。抽不出来的，说明还没读懂。</p>
+        </div>
+        <div class="n-step">
+          <div class="num">第三步</div>
+          <h3>连工作</h3>
+          <p>每读一章问一句：这条和我手上的事有什么关系？连不上就先挂着。</p>
+        </div>
+        <div class="n-step">
+          <div class="num">第四步</div>
+          <h3>出判断</h3>
+          <p>同意什么、反对什么，写成自己的判断条目——书是引子，判断才是产出。</p>
+        </div>
+      </div>
+    </section>
+  </div>
 </main>
 
-<footer>
+<footer class="n-footer">
   读书笔记专栏 · 判断与引文分离标注 · 引文标原书页码<br>
-  <a href="/learn.html">学习</a> · <a href="/">德王府</a>
+  <a href="/learn.html">学习</a> · <a href="https://wangdw.xyz/">德王府</a>
 </footer>
-
 </body>
 </html>
