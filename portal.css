@@ -296,3 +296,44 @@ a:focus-visible { outline: 3px solid rgba(0,113,227,.45); outline-offset: 3px; b
   .item--feature .item__body { flex-direction: column; align-items: stretch; }
   .item--feature .item__go { align-self: stretch; text-align: center; }
 }
+
+
+/* Grouped list block (e.g. 诗经 under 生活) */
+.list-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(255,255,255,.55);
+  border-radius: var(--portal-radius-sm);
+  padding: 14px 14px 14px;
+  border: 1px solid rgba(0,0,0,.04);
+}
+.list-group__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 10px 6px;
+}
+.list-group__title {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  color: var(--portal-fg);
+}
+.list-group__title:hover { text-decoration: underline; }
+.list-group__more {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--life);
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+}
+.list-group__more:hover { text-decoration: underline; }
+.list-group .item {
+  box-shadow: 0 1px 4px rgba(0,0,0,.03);
+  min-height: 76px;
+}
+.cat-learn .list-group__more { color: var(--learn); }
+.cat-work .list-group__more { color: var(--work); }

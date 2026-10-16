@@ -1,0 +1,350 @@
+:root{
+    --paper:#f7f1e3;
+    --paper-dark:#efe6d2;
+    --ink:#2b2b2b;
+    --cinnabar:#8c2f2f;
+    --cinnabar-light:#a8543f;
+    --gold:#9a7b3f;
+    --line:#d8cbb0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body.sj{
+    font-family:"Songti SC","STSong","SimSun","Noto Serif SC",serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.9;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px 80px;}
+  .sj-hero{
+    text-align:center;
+    padding:72px 20px 48px;
+    background:linear-gradient(180deg,var(--paper-dark),var(--paper));
+    border-bottom:3px double var(--line);
+  }
+  .sj-hero h1{
+    font-size:2.2rem;
+    letter-spacing:.35em;
+    text-indent:.35em;
+    color:var(--cinnabar);
+    font-weight:700;
+  }
+  .sj-hero .sub{
+    margin-top:14px;
+    color:#6b5f4d;
+    font-size:1rem;
+    letter-spacing:.15em;
+  }
+  .sj-hero .home-link{margin-bottom:18px;}
+  .sj-hero .home-link a{
+    color:var(--cinnabar);
+    text-decoration:none;
+    font-size:.9rem;
+    letter-spacing:.12em;
+    border-bottom:1px solid transparent;
+  }
+  .sj-hero .home-link a:hover{border-bottom-color:var(--cinnabar);}
+  .sj-hero .seal{
+    display:inline-block;
+    margin-top:22px;
+    padding:6px 14px;
+    border:2px solid var(--cinnabar);
+    color:var(--cinnabar);
+    font-size:.85rem;
+    letter-spacing:.2em;
+    border-radius:4px;
+    background:#fff8ec;
+  }
+  section{margin-top:56px;}
+  h2.section-title{
+    font-size:1.35rem;
+    color:var(--cinnabar);
+    letter-spacing:.2em;
+    padding-left:14px;
+    border-left:5px solid var(--cinnabar);
+    margin-bottom:20px;
+  }
+  .lead{
+    background:var(--paper-dark);
+    border-left:4px solid var(--gold);
+    padding:16px 20px;
+    border-radius:0 8px 8px 0;
+    font-size:1.02rem;
+    color:#4a4234;
+  }
+  /* 三层通道 */
+  .channels{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px;}
+  .channel{
+    background:#fffaf0;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:20px 18px;
+    box-shadow:0 2px 6px rgba(0,0,0,.04);
+  }
+  .channel .tag{font-size:.8rem;letter-spacing:.3em;color:var(--gold);}
+  .channel h3{font-size:1.2rem;color:var(--cinnabar);margin:6px 0 10px;}
+  .channel p{font-size:.92rem;color:#5a5242;}
+  @media(max-width:640px){.channels{grid-template-columns:1fr;}}
+  /* 诗卡片 */
+  .poem-card{
+    background:#fffaf0;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:28px 30px;
+    margin-top:28px;
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+  }
+  .poem-card .head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
+  .poem-card .no{font-size:1.5rem;color:var(--cinnabar);font-weight:700;}
+  .poem-card .name{font-size:1.35rem;color:var(--ink);}
+  .poem-card .guo{
+    font-size:.8rem;
+    color:var(--cinnabar);
+    border:1px solid var(--cinnabar);
+    padding:2px 10px;
+    border-radius:20px;
+    letter-spacing:.15em;
+  }
+  .meta{margin-top:14px;display:grid;gap:6px;font-size:.95rem;}
+  .meta .row{display:flex;gap:8px;}
+  .meta .label{
+    flex-shrink:0;
+    background:var(--paper-dark);
+    color:var(--cinnabar);
+    padding:1px 10px;
+    border-radius:4px;
+    font-size:.82rem;
+    letter-spacing:.1em;
+    align-self:flex-start;
+    margin-top:5px;
+  }
+  .meta .txt{color:#4a4234;}
+  .poem{
+    margin-top:20px;
+    background:#fdf8ec;
+    border:1px dashed var(--line);
+    border-radius:8px;
+    padding:20px 22px;
+    font-size:1.05rem;
+    letter-spacing:.06em;
+  }
+  .poem .stanza{margin-bottom:12px;}
+  .poem .stanza:last-child{margin-bottom:0;}
+  .poem ruby{font-style:normal;}
+  .poem rt{font-size:.55em;letter-spacing:0;color:var(--cinnabar-light);}
+  .trans{
+    margin-top:16px;
+    background:#f0f5ea;
+    border-left:4px solid #7a9a6a;
+    border-radius:0 8px 8px 0;
+    padding:16px 18px;
+    font-size:.97rem;
+    color:#3e4a36;
+    line-height:1.95;
+  }
+  .trans .t-label{display:block;font-size:.8rem;color:#7a9a6a;letter-spacing:.25em;margin-bottom:10px;}
+  .trans .t-line{margin-bottom:10px;}
+  .trans .t-line:last-child{margin-bottom:0;}
+  .exp{
+    margin-top:16px;
+    font-size:.95rem;
+    color:#5a5242;
+    border-top:1px solid var(--line);
+    padding-top:14px;
+  }
+  .exp b{color:var(--cinnabar);}
+  /* 地图与建议 */
+  .note{
+    background:var(--paper-dark);
+    border-radius:10px;
+    padding:22px 24px;
+    margin-top:24px;
+  }
+  .note h3{color:var(--cinnabar);margin-bottom:10px;letter-spacing:.1em;}
+  .note p,.note li{font-size:.97rem;color:#4a4234;}
+  .note ul{padding-left:22px;}
+
+  /* 季节导航 */
+  .season-nav{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
+    margin-top:20px;
+  }
+  .season-nav a{
+    display:block;text-align:center;text-decoration:none;
+    padding:14px 10px;border-radius:10px;
+    border:1px solid var(--line);background:#fffaf0;
+    color:var(--cinnabar);letter-spacing:.2em;font-size:.95rem;
+    transition:background .2s,transform .2s;
+  }
+  .season-nav a:hover{background:var(--paper-dark);transform:translateY(-2px);}
+  .season-nav .sn{display:block;font-size:.75rem;color:var(--gold);letter-spacing:.15em;margin-top:4px;}
+  @media(max-width:640px){.season-nav{grid-template-columns:1fr 1fr;}}
+  .season-banner{
+    margin-top:40px;padding:18px 22px;border-radius:10px;
+    border-left:5px solid var(--cinnabar);
+    background:linear-gradient(90deg,var(--paper-dark),#fffaf0);
+  }
+  .season-banner h3{
+    color:var(--cinnabar);letter-spacing:.25em;font-size:1.15rem;margin-bottom:6px;
+  }
+  .season-banner p{color:#5a5242;font-size:.95rem;}
+  .poem-card .season-tag{
+    font-size:.75rem;letter-spacing:.12em;
+    background:rgba(140,47,47,.08);color:var(--cinnabar);
+    padding:2px 10px;border-radius:4px;
+  }
+  .story{
+    margin-top:14px;padding:14px 16px;
+    background:#faf6ec;border:1px solid var(--line);border-radius:8px;
+    font-size:.93rem;color:#4a4234;line-height:1.9;
+  }
+  .story .s-label{
+    display:block;font-size:.78rem;color:var(--gold);
+    letter-spacing:.22em;margin-bottom:8px;
+  }
+  .toc-mini{
+    margin-top:16px;display:flex;flex-wrap:wrap;gap:8px 14px;
+    font-size:.9rem;
+  }
+  .toc-mini a{color:var(--cinnabar);text-decoration:none;border-bottom:1px dotted var(--line);}
+  .toc-mini a:hover{border-bottom-color:var(--cinnabar);}
+
+  .sj-footer{
+    margin-top:70px;
+    text-align:center;
+    color:#8a7f6a;
+    font-size:.85rem;
+    border-top:1px solid var(--line);
+    padding-top:24px;
+    letter-spacing:.1em;
+  }
+
+  /* portal topbar on paper pages */
+  body.sj .topbar {
+    background: rgba(247,241,227,.82);
+    border-bottom: 1px solid var(--line);
+  }
+  body.sj .topbar .brand__dot {
+    background: linear-gradient(135deg, var(--cinnabar), var(--gold));
+  }
+  body.sj .nav-links a.is-active {
+    color: var(--cinnabar);
+    background: rgba(140,47,47,.08);
+  }
+  body.sj a:focus-visible {
+    outline-color: rgba(140,47,47,.45);
+  }
+
+  .sj-hero { margin-top: 0; }
+  .sj-hero .home-link a { font-family: "Noto Sans SC", "PingFang SC", sans-serif; }
+
+  /* hub entry cards */
+  .hub-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 28px;
+  }
+  @media (max-width: 640px) {
+    .hub-cards { grid-template-columns: 1fr; }
+  }
+  .hub-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #fffaf0;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px 22px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.05);
+    transition: transform .2s, box-shadow .2s, border-color .2s;
+  }
+  .hub-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    border-color: var(--cinnabar);
+  }
+  .hub-card .hub-kicker {
+    font-size: .78rem;
+    letter-spacing: .28em;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .hub-card h3 {
+    font-size: 1.25rem;
+    color: var(--cinnabar);
+    letter-spacing: .12em;
+    margin-bottom: 10px;
+  }
+  .hub-card p {
+    font-size: .92rem;
+    color: #5a5242;
+    margin-bottom: 14px;
+  }
+  .hub-card .hub-go {
+    font-size: .9rem;
+    color: var(--cinnabar);
+    letter-spacing: .15em;
+    font-family: "Noto Sans SC", "PingFang SC", sans-serif;
+  }
+
+  /* sticky TOC for 十首 */
+  .sj-toc {
+    position: sticky;
+    top: 58px;
+    z-index: 20;
+    margin: 20px 0 8px;
+    padding: 12px 14px;
+    background: rgba(247,241,227,.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    font-size: .88rem;
+    font-family: "Noto Sans SC", "PingFang SC", sans-serif;
+  }
+  .sj-toc a {
+    color: var(--cinnabar);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--line);
+    padding: 2px 0;
+  }
+  .sj-toc a:hover { border-bottom-color: var(--cinnabar); }
+  .sj-toc .toc-label {
+    width: 100%;
+    font-size: .75rem;
+    letter-spacing: .2em;
+    color: var(--gold);
+    margin-bottom: 2px;
+  }
+
+  /* season nav as pills on mobile */
+  .season-nav a {
+    font-family: "Noto Sans SC", "PingFang SC", sans-serif;
+  }
+  @media (max-width: 640px) {
+    .poem-card { padding: 20px 16px; }
+    .poem { padding: 16px 14px; font-size: 1rem; }
+    .sj-hero h1 { font-size: 1.7rem; letter-spacing: .28em; }
+    .sj-toc { top: 52px; }
+  }
+
+  .sj-footer a {
+    color: var(--cinnabar);
+    text-decoration: none;
+  }
+  .sj-footer a:hover { text-decoration: underline; }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 120px; }
+
+  .season-nav {
+    position: sticky;
+    top: 58px;
+    z-index: 20;
+    background: rgba(247,241,227,.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 0;
+  }
