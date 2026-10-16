@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>wangdw.xyz · 个人门户</title>
+<title>德王府</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 <style>
 .hero {
   max-width: 1080px; margin: 0 auto;
-  padding: clamp(48px, 10vw, 96px) 22px clamp(40px, 6vw, 64px);
+  padding: clamp(48px, 10vw, 96px) 22px clamp(36px, 5vw, 56px);
   text-align: center;
 }
 .hero__eyebrow {
@@ -20,14 +20,8 @@
   text-transform: uppercase; color: var(--learn); margin-bottom: 16px;
 }
 .hero__title {
-  font-size: clamp(40px, 8vw, 64px);
-  font-weight: 700; letter-spacing: -.035em; line-height: 1.05;
-  margin-bottom: 18px;
-}
-.hero__lead {
-  font-size: clamp(17px, 2.4vw, 21px);
-  color: var(--portal-muted); max-width: 28em; margin: 0 auto;
-  font-weight: 400; letter-spacing: -.01em;
+  font-size: clamp(44px, 9vw, 72px);
+  font-weight: 700; letter-spacing: -.04em; line-height: 1.05;
 }
 .tiles {
   max-width: 1080px; margin: 0 auto;
@@ -42,51 +36,64 @@
 .tile {
   position: relative; overflow: hidden;
   border-radius: var(--portal-radius);
-  min-height: clamp(220px, 28vw, 300px);
+  min-height: clamp(240px, 32vw, 320px);
   padding: clamp(28px, 4vw, 40px);
   display: flex; flex-direction: column; justify-content: flex-end;
-  background: var(--portal-card);
-  box-shadow: 0 2px 8px rgba(0,0,0,.04), 0 12px 40px rgba(0,0,0,.06);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06), 0 16px 48px rgba(0,0,0,.1);
   transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s;
   -webkit-tap-highlight-color: transparent;
 }
 .tile:hover, .tile:focus-visible {
   transform: scale(1.015);
-  box-shadow: 0 4px 16px rgba(0,0,0,.06), 0 20px 56px rgba(0,0,0,.1);
+  box-shadow: 0 4px 16px rgba(0,0,0,.08), 0 24px 64px rgba(0,0,0,.14);
 }
 .tile:active { transform: scale(.995); }
-.tile__glow {
+.tile__media {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  transform: scale(1.02);
+  transition: transform .6s cubic-bezier(.22,1,.36,1);
+}
+.tile:hover .tile__media { transform: scale(1.06); }
+.tile__shade {
   position: absolute; inset: 0; pointer-events: none;
   background:
-    radial-gradient(120% 80% at 100% 0%, var(--glow) 0%, transparent 55%),
-    linear-gradient(180deg, transparent 30%, rgba(255,255,255,.55) 100%);
-  opacity: .9;
+    linear-gradient(180deg, rgba(0,0,0,.12) 0%, rgba(0,0,0,.28) 42%, rgba(0,0,0,.72) 100%),
+    radial-gradient(120% 80% at 100% 0%, var(--glow) 0%, transparent 55%);
 }
-.tile--learn { --glow: rgba(0,113,227,.18); --accent: var(--learn); }
-.tile--life { --glow: rgba(0,168,107,.18); --accent: var(--life); }
-.tile--work { --glow: rgba(191,72,0,.16); --accent: var(--work); }
-.tile--flywheel { --glow: rgba(110,110,115,.2); --accent: #1d1d1f; }
+.tile--learn { --glow: rgba(0,113,227,.35); --accent: #7eb6ff; }
+.tile--life { --glow: rgba(0,168,107,.32); --accent: #7dffc0; }
+.tile--work { --glow: rgba(56,140,220,.35); --accent: #9ecfff; }
+.tile--flywheel { --glow: rgba(140,100,255,.3); --accent: #d0c0ff; }
+.tile--learn .tile__media { background-image: url('/assets/portal/learn.jpg'); }
+.tile--life .tile__media { background-image: url('/assets/portal/life.jpg'); }
+.tile--work .tile__media { background-image: url('/assets/portal/work.jpg'); }
+.tile--flywheel .tile__media { background-image: url('/assets/portal/flywheel.jpg'); }
 .tile__label {
   position: relative; z-index: 1;
-  font-size: 13px; font-weight: 600; letter-spacing: .04em;
+  font-size: 13px; font-weight: 600; letter-spacing: .06em;
   text-transform: uppercase; color: var(--accent); margin-bottom: 10px;
+  text-shadow: 0 1px 8px rgba(0,0,0,.35);
 }
 .tile__title {
   position: relative; z-index: 1;
-  font-size: clamp(28px, 4.5vw, 36px);
+  font-size: clamp(30px, 5vw, 40px);
   font-weight: 700; letter-spacing: -.03em; line-height: 1.1;
   margin-bottom: 10px;
+  text-shadow: 0 2px 16px rgba(0,0,0,.4);
 }
 .tile__desc {
   position: relative; z-index: 1;
   font-size: clamp(15px, 2vw, 17px);
-  color: var(--portal-muted); max-width: 18em; letter-spacing: -.01em;
+  color: rgba(255,255,255,.88); max-width: 18em; letter-spacing: -.01em;
+  text-shadow: 0 1px 10px rgba(0,0,0,.35);
 }
 .tile__cta {
   position: relative; z-index: 1;
   margin-top: 22px;
   display: inline-flex; align-items: center; gap: 6px;
-  font-size: 15px; font-weight: 600; color: var(--accent);
+  font-size: 15px; font-weight: 600; color: #fff;
   min-height: 44px;
 }
 .tile__cta::after { content: "→"; transition: transform .2s; }
@@ -98,7 +105,7 @@
   <div class="topbar__inner">
     <a class="brand" href="https://wangdw.xyz/">
       <span class="brand__dot" aria-hidden="true"></span>
-      wangdw.xyz
+      德王府
     </a>
     <nav class="nav-links" aria-label="栏目">
       <a href="/learn.html">学习</a>
@@ -113,34 +120,37 @@
 <main>
   <section class="hero">
     <p class="hero__eyebrow">Personal Portal</p>
-    <h1 class="hero__title">德文 · 个人门户</h1>
-    <p class="hero__lead">先选栏目，再进内容。学习、生活、工作与 AI 飞轮，各归其位。</p>
+    <h1 class="hero__title">德王府</h1>
   </section>
 
   <section class="tiles" aria-label="四大栏目">
     <a class="tile tile--learn" href="/learn.html">
-      <span class="tile__glow" aria-hidden="true"></span>
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
       <span class="tile__label">Learn</span>
       <h2 class="tile__title">学习</h2>
       <p class="tile__desc">IESO、词汇、数学卡片与闯关练习</p>
       <span class="tile__cta">进入学习</span>
     </a>
     <a class="tile tile--life" href="/life.html">
-      <span class="tile__glow" aria-hidden="true"></span>
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
       <span class="tile__label">Life</span>
       <h2 class="tile__title">生活</h2>
       <p class="tile__desc">文学、城市人文与日常工具</p>
       <span class="tile__cta">进入生活</span>
     </a>
     <a class="tile tile--work" href="/work.html">
-      <span class="tile__glow" aria-hidden="true"></span>
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
       <span class="tile__label">Work</span>
       <h2 class="tile__title">工作</h2>
       <p class="tile__desc">海洋监测 · 三盘一底座与专业工具</p>
       <span class="tile__cta">进入工作</span>
     </a>
     <a class="tile tile--flywheel" href="/flywheel.html">
-      <span class="tile__glow" aria-hidden="true"></span>
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
       <span class="tile__label">AI Flywheel</span>
       <h2 class="tile__title">飞轮</h2>
       <p class="tile__desc">智学工坊、知识库与写作工具链</p>

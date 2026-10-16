@@ -228,6 +228,26 @@ a:focus-visible { outline: 3px solid rgba(0,113,227,.45); outline-offset: 3px; b
 .archive .archive-body { padding: 0 14px 18px; display: flex; flex-direction: column; gap: 10px; }
 .archive .item { box-shadow: none; border: 1px solid rgba(0,0,0,.06); min-height: 72px; }
 
+
+/* Category hero banner imagery */
+.cat-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 var(--portal-radius) var(--portal-radius);
+  margin-bottom: 8px;
+}
+.cat-hero__banner {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  opacity: .28;
+  pointer-events: none;
+}
+.cat-learn .cat-hero__banner { background-image: url('/assets/portal/learn.jpg'); }
+.cat-life .cat-hero__banner { background-image: url('/assets/portal/life.jpg'); }
+.cat-work .cat-hero__banner { background-image: url('/assets/portal/work.jpg'); }
+.cat-flywheel .cat-hero__banner { background-image: url('/assets/portal/flywheel.jpg'); }
+.cat-hero > * { position: relative; z-index: 1; }
+
 .footer {
   text-align: center;
   padding: 32px 22px calc(40px + var(--safe-b));
