@@ -281,3 +281,21 @@ a:focus-visible {
   body { background: #fff; }
   .reader { max-width: none; }
 }
+
+/* subtle chapter eyebrow / preface */
+.chapter__eyebrow {
+  font-family: "Noto Sans SC", -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-align: center;
+  margin: -0.25rem 0 1.25rem;
+}
+.chapter--preface .chapter__title {
+  font-size: 1.15rem;
+}
+.chapter--preface p {
+  color: var(--muted);
+  font-size: 0.95em;
+}
