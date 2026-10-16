@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="theme-color" content="#0f1312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《奇点更近》读书笔记 · 42 条笔记与 19 条判断</title>
+<meta name="description" content="《奇点更近》全书精读笔记：六条主线、19 条批判性判断、42 条带页码的原书摘录，以及 500 字创作《斗争中的共和》。">
+<style>
+  :root{
+  color-scheme:dark;
+    --bg:#0f1312; --card:#161b1a; --card-edge:#252d2b;
+    --green:#5fd0a0; --green-dim:#2b6b52;
+    --orange:#e3a15c; --red:#e07a7a; --blue:#77b3e0;
+    --text:#e6ebe9; --muted:#9aa5a1;
+    --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.7;
+    -webkit-font-smoothing:antialiased; overflow-x:hidden}
+  body::after{content:""; position:fixed; inset:0; pointer-events:none; z-index:9999;
+    background:repeating-linear-gradient(0deg,rgba(95,208,160,0.012) 0 1px,transparent 1px 3px);
+    mix-blend-mode:screen; opacity:.25}
+  a{color:inherit;text-decoration:none}
+
+  nav{position:sticky; top:0; z-index:100; background:rgba(10,10,10,.92); backdrop-filter:blur(8px);
+    border-bottom:2px solid var(--green-dim); display:flex; align-items:center; gap:18px;
+    padding:12px 22px; flex-wrap:wrap}
+  .logo{font-family:var(--mono); font-weight:700; color:var(--green); font-size:.95rem; letter-spacing:.5px;
+    text-shadow:0 0 10px rgba(95,208,160,0.16); white-space:nowrap}
+  .navlinks{display:flex; gap:14px; font-family:var(--mono); font-size:.76rem; flex-wrap:wrap; margin-left:auto}
+  .navlinks a{color:var(--muted); transition:color .15s; white-space:nowrap; flex:0 0 auto}
+  .navlinks a:hover{color:var(--green)}
+
+  header.hero{padding:56px 22px 40px; border-bottom:2px solid var(--card-edge); position:relative; overflow:hidden}
+  .hexbg{position:absolute; inset:0; opacity:.5;
+    background-image:
+      repeating-linear-gradient(60deg, rgba(95,208,160,0.031) 0 1px, transparent 1px 44px),
+      repeating-linear-gradient(-60deg, rgba(95,208,160,0.031) 0 1px, transparent 1px 44px),
+      repeating-linear-gradient(0deg, rgba(95,208,160,0.025) 0 1px, transparent 1px 38px);
+    -webkit-mask-image:radial-gradient(ellipse 70% 90% at 30% 30%, #000 0%, transparent 75%);
+    mask-image:radial-gradient(ellipse 70% 90% at 30% 30%, #000 0%, transparent 75%)}
+  .hero-inner{position:relative; max-width:1000px; margin:0 auto}
+  .eyebrow{font-family:var(--mono); color:var(--green); font-size:.72rem; letter-spacing:3px; margin-bottom:14px}
+  h1{font-family:var(--mono); font-weight:800; font-size:clamp(1.5rem,4.6vw,2.4rem); color:#fff; line-height:1.25;
+    text-shadow:0 0 18px rgba(95,208,160,0.10)}
+  .byline{font-family:var(--mono); font-size:.76rem; color:var(--muted); margin-top:14px; line-height:1.9}
+  .byline b{color:var(--green); font-weight:600}
+
+  main{max-width:1000px; margin:0 auto; padding:0 22px 70px}
+  section{padding-top:48px; scroll-margin-top:60px}
+  .sec-head{display:flex; align-items:baseline; gap:14px; margin-bottom:22px; border-left:4px solid var(--green);
+    padding-left:14px; flex-wrap:wrap}
+  .sec-head h2{font-family:var(--mono); font-size:1.22rem; color:#fff; font-weight:700}
+  .sec-head .tag{font-family:var(--mono); font-size:.7rem; color:var(--muted); letter-spacing:1.5px}
+
+  p{font-size:.92rem; margin-bottom:10px; color:#cfcfcf}
+  ol,ul{padding-left:22px; font-size:.92rem}
+  li{margin-bottom:8px; color:#cfcfcf}
+
+  .callout{border:1px solid var(--card-edge); border-left:3px solid var(--green); background:var(--card);
+    padding:16px 18px; margin:16px 0; font-size:.92rem; color:#dcdcdc}
+  .callout b{display:block; font-family:var(--mono); color:var(--green); font-size:.72rem;
+    letter-spacing:2px; margin-bottom:8px}
+
+  .tablewrap{overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--card-edge); background:#0f0f0f}
+  table{width:100%; border-collapse:collapse; font-size:.84rem; min-width:560px}
+  th{background:#000; color:var(--green); font-family:var(--mono); font-weight:600; text-align:left;
+    padding:10px 12px; border-bottom:1px solid var(--card-edge); font-size:.74rem; letter-spacing:.5px; white-space:nowrap}
+  td{padding:10px 12px; border-bottom:1px solid #171717; vertical-align:top; color:#c9c9c9; line-height:1.6}
+  tr:last-child td{border-bottom:none}
+  tr:nth-child(even) td{background:#121212}
+  td.src{color:var(--muted); font-style:italic}
+  td.note b{color:#fff}
+  td.pg{font-family:var(--mono); color:var(--green-dim); white-space:nowrap; font-size:.78rem}
+  td.judge{color:#e6e6e6}
+  td.judge b{color:var(--green); font-weight:600}
+  .tablescroll-hint{font-family:var(--mono); font-size:.68rem; color:#5c5c5c; margin-top:8px}
+
+  .piece{border:1px solid var(--card-edge); border-top:3px solid var(--green); background:#0f0f0f;
+    padding:26px 26px 18px; margin:18px 0 8px}
+  .piece h3{font-family:var(--mono); font-size:1.15rem; color:#fff; text-align:center; margin-bottom:4px}
+  .piece .sub{text-align:center; font-family:var(--mono); font-size:.72rem; color:var(--muted); margin-bottom:20px}
+  .piece p{font-size:.95rem; line-height:2; color:#d8d8d8; margin-bottom:14px}
+  .piece p b{color:var(--green); font-weight:600}
+
+  .progress{list-style:none; padding:0; font-family:var(--mono); font-size:.82rem}
+  .progress li{padding:7px 0; border-bottom:1px dashed #1d1d1d; display:flex; justify-content:space-between; gap:12px; color:#c9c9c9}
+  .progress li:last-child{border-bottom:none}
+  .progress .ok{color:var(--green)}
+  .progress span.k{color:var(--muted)}
+
+  footer{border-top:1px solid var(--card-edge); padding:26px 22px 44px; text-align:center;
+    font-family:var(--mono); font-size:.72rem; color:var(--muted); line-height:1.9}
+  footer a{color:var(--green)}
+  @media(max-width:640px){
+    header.hero{padding:40px 18px 32px}
+    main{padding:0 18px 60px}
+    .piece{padding:20px 16px 12px}
+    .piece p{font-size:.92rem; line-height:1.95}
+    .navlinks{margin-left:0; width:100%}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">READING NOTES<span style="color:var(--green-dim)">_</span> 奇点更近</div>
+  <div class="navlinks">
+    <a href="#mainline">六条主线</a>
+    <a href="#judgments">19 条判断</a>
+    <a href="#notes">42 条笔记</a>
+    <a href="#piece">创作</a>
+    <a href="./">← 书架</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hexbg"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">SINGULARITY IS NEARER // 精读归档</div>
+    <h1>库兹韦尔赌 2045，我赌斗争</h1>
+    <div class="byline">
+      [美] 雷·库兹韦尔（Ray Kurzweil）· 2024 · 中文版 EPUB<br>
+      引文标原书页码 · <b>42 条笔记</b> · <b>19 条判断</b> · 收口 2026-09-21
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="verdict">
+    <div class="sec-head"><h2>一句话判断</h2><span class="tag">ACCEPT / REJECT</span></div>
+    <div class="callout">
+      <b>VERDICT</b>
+      全书读完：42 条笔记、19 条判断。和库兹韦尔在三处分道扬镳——<strong>算力≠智能、复制≠进化、快照≠过程</strong>。
+      他写的是和平的融合，我看到的是斗争中的共和。
+    </div>
+    <h3 style="font-family:var(--mono); font-size:.95rem; color:#fff; margin:26px 0 12px">全书进度</h3>
+    <ul class="progress">
+      <li><span>引言 · 千年征程步入冲刺阶段</span><span class="ok">读完</span></li>
+      <li><span>第 1 章 · 我们在六个阶段中的哪个位置</span><span class="ok">读完</span></li>
+      <li><span>第 2 章 · 重塑智能意味着什么</span><span class="ok">读完</span></li>
+      <li><span>第 3 章 · 我是谁：成为特殊的人意味着什么</span><span class="ok">读完</span></li>
+      <li><span>第 4 章 · 生活正在指数级变得更好</span><span class="ok">读完</span></li>
+      <li><span>第 5 章 · 工作的未来：是好还是坏</span><span class="ok">读完</span></li>
+      <li><span>第 6 章 · 未来 30 年的健康和幸福</span><span class="ok">读完</span></li>
+      <li><span>结语 · 四个巨大危机</span><span class="ok">读完</span></li>
+      <li><span>附录一 · 卡珊德拉对话 ／ 附录二 · 价格-计算性能</span><span class="ok">读完</span></li>
+      <li><span class="k">下一阶段 · 创作收口</span><span class="ok">已完成</span></li>
+    </ul>
+  </section>
+
+  <section id="mainline">
+    <div class="sec-head"><h2>六条主线</h2><span class="tag">19 条判断收成六条</span></div>
+    <div class="tablewrap">
+      <table>
+        <tr><th style="width:20%">主线</th><th>一句话判断</th><th style="width:16%">支撑页码</th></tr>
+        <tr><td class="judge"><b>基质论</b></td><td>碳基创造硅基是<b>嫁接不是平权</b>；可复制的是结构快照，不可复制的是动态过程</td><td class="pg">223 / 340</td></tr>
+        <tr><td class="judge"><b>算力≠智能</b></td><td>10¹⁴ 是三个粗参数相乘的估算，不是测量；把“每秒操作数”当“智能总量”是偷换，算力超越不推出智能超越</td><td class="pg">640 / 753 / 824</td></tr>
+        <tr><td class="judge"><b>复制≠进化</b></td><td>进化＝复制＋变异＋<b>选择</b>；没有淘汰机制的复制是信息守恒的复印机，描述带是外部给的</td><td class="pg">660</td></tr>
+        <tr><td class="judge"><b>AI 无心，但是放大器</b></td><td>AI 无意识，被谁用取决于人；个体有情感、整体可能没有——AI 放大的是集体非理性，不是它自己的意志</td><td class="pg">747 / 382</td></tr>
+        <tr><td class="judge"><b>分配决定论</b></td><td>信息与资源的问题最后都是分配问题；AI 不解决分配，只替掌握分配权的一方加倍</td><td class="pg">341 / 350</td></tr>
+        <tr><td class="judge"><b>方向可控论</b></td><td>主从关系未定、斗争进行中；不预测终点，只控制方向——<b>定义权才是那一票</b></td><td class="pg">264</td></tr>
+      </table>
+    </div>
+    <div class="callout" style="margin-top:14px">
+      <b>这六条怎么来的</b>
+      前三条是从原书的技术论证里拆出来的（算力估算的口径、自复制机的信息守恒、备份与迁移）；后三条是对“AI 救世主”叙事的直接反驳（无心、分配、群体非理性）。全部是读者本人的判断，不是书评。
+    </div>
+  </section>
+
+  <section id="judgments">
+    <div class="sec-head"><h2>19 条批判性判断</h2><span class="tag">按阅读顺序</span></div>
+    <ol>
+      <li><b>美欧数据适用性质疑</b>（第 5 章）：低速增长社会不适用。</li>
+      <li><b>混杂社会冲突论</b>：最先进与最原始混杂 → 冲突。</li>
+      <li><b>渗透式进入论</b>：AI 进入各领域是渗透式、循序渐进、某方面先行。</li>
+      <li><b>碳基&gt;硅基论</b>（第 2 章）：碳基智慧随机且高级复杂，硅基理性计算；碳基创造硅基＝嫁接关系。</li>
+      <li><b>生化不可复制论</b>（第 3 章）：主观体验无法通过信息迁移保留——动态生化过程不可复制。</li>
+      <li><b>矛盾论批判</b>（第 2 章）：AI 能强大也必虚弱，正反馈乐观论忽略两面性。</li>
+      <li><b>数据决定论批判</b>（第 2 章）：训练数据来自“玉米地还是高粱地”决定结果——AI 不知道什么是正确的。</li>
+      <li><b>算力≠智能论</b>（第 6 章）：把“每秒操作数”等同于“智能总量”是偷换——10¹⁴ 是三个粗参数（10¹¹ 神经元 × 10³ 突触 × 放电率）相乘的估算，不是测量。整个论证的地基就在这里。</li>
+      <li><b>复制不产生进化论</b>（第 6 章）：进化＝复制＋变异＋<b>选择</b>；自复制机的描述带是外部给定的，纯复制系统信息守恒——复制一万亿次也长不出新台阶。门槛不在复制次数，在有没有选择机制。</li>
+      <li><b>衰老程序论质疑</b>（第 6 章）：损伤堆积是<b>结果</b>不是原因；“汽车磨损”模型解释不了“配码基因”的存在——需在程序性衰老／表观遗传时钟层面找答案。</li>
+      <li><b>生物基质论（蛋白质 AI 论）</b>（第 6 章，原创度最高）：要根本解决，必须换基质——碳基的优势在生化基质本身，生物计算（类器官 wetware／DNA 计算）比纳米机器人更接近答案。</li>
+      <li><b>工具无辜论＋内因决定论</b>（结语）：AI 无意识，被谁用取决于使用者；能摧毁人但无法对整个人类强干预。破坏人类体系的源头在内部。</li>
+      <li><b>造物非造物主论</b>（结语／附录）：AI 是人类造出的外挂，用来走出人类自己的星辰大海——不是竞争者，是工具。</li>
+      <li><b>效率≠进步论</b>（第 4 章）：技术加速的是效率与成本，不是进步的阶梯；方向仍由人定。</li>
+      <li><b>不适驱动论</b>（第 4 章，需求拉动的哲学底座）：痛苦与不适是进步的动力源——解决不适 → 变舒服 → 生出新的不适 → 再解决。需求起源于不适，创新消除不适。</li>
+      <li><b>备份≠生成论</b>（第 4 章）：数字备份只是换载体（如印刷术），不产生新东西——快照能存、过程不能迁。</li>
+      <li><b>分配决定论</b>（第 4 章）：所谓“免费信息”是某些人想让你知道的；隔离源于分配，稀缺一旦落在 AI 上就成为新的区隔环节——最后解决问题的还是人，不是 AI。</li>
+      <li><b>个体情感≠集体情感</b>（第 4 章）：个体有同理心，整体可能没有，甚至走向把个体推倒的集体非理性；这种危险会因 AI 而放大。</li>
+      <li><b>集中化本质论</b>（第 4 章）：去中心化只是信息时代的必然，不是人类活动的必然——人类活动一定集聚（交换成本最低、最安全）。</li>
+    </ol>
+    <div class="callout" style="margin-top:14px">
+      <b>共和斗争论（延伸判断）</b>
+      人与 AI 的“共和关系”不是和平共处，是<b>斗争的</b>；激烈斗争之后结论自然出现——过程中双方各自进化、各自淘汰。因此现在说不清主从关系与主权移交，无法假设、无法准确预测；<b>但可以控制方向</b>——不预测结果，引导过程。这是对“线性乐观融合论”的辩证替代。
+    </div>
+  </section>
+
+  <section id="notes">
+    <div class="sec-head"><h2>42 条精读笔记</h2><span class="tag">原文摘录 × 读者批注 × 页码</span></div>
+    <div class="tablewrap">
+      <table>
+        <tr><th style="width:5%">#</th><th style="width:38%">原文摘录</th><th>读者笔记</th><th style="width:10%">页码</th></tr>
+        <tr><td>9</td><td class="src">在更强大的数字基底上重建自然智能并与之融合，宇宙从第四时代迈入第五时代</td><td class="note"><b>AI 是碳基与硅基智慧之间的过渡；碳基智慧是随机的、硅基是理性计算型的；碳基更高级复杂，碳基创造硅基＝嫁接关系</b></td><td class="pg">30</td></tr>
+        <tr><td>10</td><td class="src">如果评判员在一段时间后仍不能区分（图灵测试）</td><td class="note">但如果裁判员智慧和水平不一样，没有统一标准吧</td><td class="pg">32</td></tr>
+        <tr><td>11</td><td class="src">神经网络训练中调整突触强度是关键设计决策</td><td class="note">这是系统性问题：资源要足够多，类似大脑结构，突触节点反应要够快</td><td class="pg">59</td></tr>
+        <tr><td>12</td><td class="src">即使训练试验答案不全是正确的，神经网络训练也有效</td><td class="note"><b>悖论：谁来决定正确与否？有些东西无法计算，例如情感和体验</b></td><td class="pg">60</td></tr>
+        <tr><td>13</td><td class="src">脑中负责特定动作的机制会延续到改进种群胜过它</td><td class="note">物竞天择，适者生存</td><td class="pg">79</td></tr>
+        <tr><td>14</td><td class="src">摩尔定律：晶体管数约每两年翻一番</td><td class="note">现在这速度已经提高了</td><td class="pg">96</td></tr>
+        <tr><td>15</td><td class="src">零样本学习是类比思维和智能的核心</td><td class="note"><b>概念来自玉米地还是高粱地，结果就不一样；你给它什么它得出什么，它知不知道什么是正确的——这是问题</b></td><td class="pg">121</td></tr>
+        <tr><td>16</td><td class="src">计算量对提供智能答案极为关键</td><td class="note">机器的终极计算量是什么</td><td class="pg">132</td></tr>
+        <tr><td>17</td><td class="src">自我增强编程技能的 AI 在正反馈循环中愈发强大</td><td class="note"><b>过于乐观：事物有两面性，能强大也必虚弱；强大与虚弱并存——矛盾论</b></td><td class="pg">148</td></tr>
+        <tr><td>18</td><td class="src">逐步把大脑信息迁移到非生物介质，主观体验被保留</td><td class="note"><b>物理上可保留，但生化过程无法复制（随机＋动态）；复制的是前一秒的你，和下一秒的你什么关系？</b></td><td class="pg">223</td></tr>
+        <tr><td>19</td><td class="src">与超智能 AI 融合是极有价值的成就，但仅是手段</td><td class="note">认为最终会达到一种<b>共和关系</b></td><td class="pg">264</td></tr>
+        <tr><td>20</td><td class="src">人脑的大小决定了其总处理能力的上限，即每秒 10¹⁴ 次操作</td><td class="note">怎么推断出的？人脑不光是计算能力问题，计算也许只是其所有能力中的一种；还有情感和想象，这些无法用计算来认识</td><td class="pg">640</td></tr>
+        <tr><td>21</td><td class="src">纳米机器人按指示自我复制、迭代创建级联副本，很快造出数万亿个装配机</td><td class="note">无限循环的复制与创新的关系如何——若只有复制、没有迭代创新，AI 始终迈不上进化的台阶</td><td class="pg">660</td></tr>
+        <tr><td>22</td><td class="src">衰老像发动机磨损：细胞代谢＋细胞复制累积损坏，堆积速度超过修复速度</td><td class="note">比喻牵强——若只是“臃肿”，换一批新零件就清爽了？<b>一定另有“配码的基因”在发挥作用</b>，不能简单归结为细胞复制出错</td><td class="pg">674</td></tr>
+        <tr><td>23</td><td class="src">到 2053 年，1000 美元算力可执行 700 万倍于未增强人脑的计算量</td><td class="note">这仍只是物理／化学层面对人体的改造，不能根本解决；若造出<b>生物计算机／蛋白质人工智能</b>，效果可能远好于纳米机器人</td><td class="pg">699</td></tr>
+        <tr><td>24</td><td class="src">AI 技术本质具有双重用途：同一架无人机既可送药也可投弹</td><td class="note">这正证明<b>AI 作为客观存在的物没有意识</b>，被谁用取决于使用者；其用途前提是被固化的、是物质的不是精神的</td><td class="pg">747</td></tr>
+        <tr><td>25</td><td class="src">通用人工智能将由人类创造，以解决真正的人类问题</td><td class="note">我们用 AI 解决的是脑力计算问题；它不是生物，是物质的非生物存在——不可能有自我反思的意识</td><td class="pg">753</td></tr>
+        <tr><td>26</td><td class="src">AI 是至关重要的技术，使我们能应对疾病、贫困、环境退化等紧迫挑战</td><td class="note">AI 是<b>算力革命</b>，如同解放双手；力气再大的机器也替代不了人——可摧毁人，但没法对整个人类强干预。破坏人类体系的：外部来自人类本身，内部来自人类结构体系里暗藏的密码</td><td class="pg">758</td></tr>
+        <tr><td>27</td><td class="src">（附录）计算能力与生存能力之别</td><td class="note">我们片面夸大了计算能力与生存能力的区别；<b>AI 总体算力超过人类 ≠ 比人类聪明</b>——只是人类造出了一个算力超越总体的物质</td><td class="pg">824</td></tr>
+        <tr><td>28</td><td class="src">加速回报定律在信息技术领域体现得非常明显</td><td class="note">技术迭代速度再次证明人类推进文明越来越快，且能借助更高级的工具再加速——<b>AI 的出现就是来帮助人类推进自身文明的</b></td><td class="pg">279</td></tr>
+        <tr><td>29</td><td class="src">引发强烈情绪反应的威胁性信息是获取关注的最佳方式</td><td class="note">因为<b>痛苦和不舒服本身就是推动人类进步的方式之一</b></td><td class="pg">295</td></tr>
+        <tr><td>30</td><td class="src">技术创新创造有利条件，帮助更多人发挥潜力，反过来催生更多创新</td><td class="note">为解决困难、克服不适而去创新，变舒服后又出现新的不适——这就是迭代进步（优胜劣汰、自然净化）</td><td class="pg">303</td></tr>
+        <tr><td>31</td><td class="src">改变生活方式、饮食、补充剂可降低风险，这是延长寿命的“第一座桥梁”</td><td class="note">生活方式真是细胞运转的底层逻辑，还是人获取能量的方法？说健康取决于生活方式和饮食，我觉得比较牵强</td><td class="pg">335</td></tr>
+        <tr><td>32</td><td class="src">第四座桥梁：以数字化方式备份我们的思维文件</td><td class="note">这种备份和印刷术有什么区别？只是换了个载体——印出来的数字能产生新东西吗？不要太乐观：<b>有备份不等于有进步</b></td><td class="pg">340</td></tr>
+        <tr><td>33</td><td class="src">贫困人口持续减少</td><td class="note">贫困减少是进步，但战争又在制造新的贫困人口——一边减少一边制造。这是 AI 能解决的吗？我看不是，还得人自己解决</td><td class="pg">341</td></tr>
+        <tr><td>34</td><td class="src">互联网上可免费获得大量信息和服务，今天穷人的生活条件好得多</td><td class="note">这些信息是某些人<b>想让我们知道</b>的；隔离源于<b>分配</b>——稀缺资源一旦落到 AI 上，就成为人与人区隔的关键环节。最后解决问题的还是人，不是 AI</td><td class="pg">350</td></tr>
+        <tr><td>35</td><td class="src">它利用人类天生的同理心，把道德关怀扩展到整个人类</td><td class="note">个体之间有共鸣与情感协调，落到群体上就变味——<b>个体有情感，整体可能没有</b>，甚至陷入把个体推倒的境地；借助 AI 会更危险</td><td class="pg">382</td></tr>
+        <tr><td>36</td><td class="src">知识与技术的传递助推民主的扩散</td><td class="note">什么是最好的民主？AI 能给出答案吗？最好的民主是最合适的，是共同体选择出来的结果，<b>不是 AI 计算出来的</b></td><td class="pg">391</td></tr>
+        <tr><td>37</td><td class="src">更充分地实现民主和个人权利的理想</td><td class="note">这是乐观态度，实际不一定做得到——<b>群体方向一致与人的自私基因相悖</b></td><td class="pg">404</td></tr>
+        <tr><td>38</td><td class="src">21 世纪 30 年代跨越到纳米技术，可在原子精度上创建物体</td><td class="note">某种程度上只是降低了成本、降低了计算成本，<b>并没有提高人类进步的阶梯和进度</b></td><td class="pg">416</td></tr>
+        <tr><td>39</td><td class="src">城市的出现就是为了让我们能够一起工作和娱乐</td><td class="note">城市的出现是因为需要交换和资源分配；没这种需要就不需要城市——人越聚越多，因为这里获取和交换资源的成本最低、也最安全</td><td class="pg">423</td></tr>
+        <tr><td>40</td><td class="src">2032 年仅利用太阳能就能满足所有能源需求</td><td class="note">迈向极点最关键的要素就是太阳能——太阳是人类存在的本质；石油、氢能、化学能归根到底都是太阳能</td><td class="pg">435</td></tr>
+        <tr><td>41</td><td class="src">去中心化技术将在许多领域定义 21 世纪 20 年代（太阳能、垂直农业、3D 打印）</td><td class="note">去中心化只是<b>信息时代</b>的必然，不是人类活动的必然——<b>人类活动一定是集中的</b></td><td class="pg">445</td></tr>
+        <tr><td>42</td><td class="src">2030 年左右，最勤奋最有见识的人将达到“长寿逃逸速度”</td><td class="note">这只是一个理想时间段，有很多不可控因素——<b>文明无法穷举，AI 也没有办法</b></td><td class="pg">485</td></tr>
+      </table>
+    </div>
+    <div class="tablescroll-hint">← 表格可横向滑动，移动端建议横屏阅读 · 本表逐条收录编号 9–42 共 34 条；编号 1–8（引言与第 1 章）未含在笔记归档文件中</div>
+  </section>
+
+  <section id="concepts">
+    <div class="sec-head"><h2>概念库</h2><span class="tag">原书机制 · 六条</span></div>
+    <ol>
+      <li><b>加速回归定律</b>：技术指数级增长；摩尔定律的速度已加快。</li>
+      <li><b>技术奇点（2045）</b>：宇宙从第四时代（碳基智能）迈入第五时代（硅基＋碳基融合）。</li>
+      <li><b>六个阶段</b>：人类进化六阶段，当前处于第五阶段。</li>
+      <li><b>人机融合／脑机接口</b>：逐步将大脑信息迁移到非生物介质，主观体验被保留——<em>读者反驳：物理上可保留，但生化过程随机且动态，无法复制（p223）</em>。</li>
+      <li><b>AI 与就业（第 5 章）</b>：AI 不剥夺工作而是创造新机会；美欧数据适用性存疑。</li>
+      <li><b>重塑智能（第 2 章）</b>：在更强大数字基底上重建自然智能并融合＝第五时代——<em>读者判断：二者是嫁接关系，不是平权（p30）</em>。</li>
+    </ol>
+  </section>
+
+  <section id="piece">
+    <div class="sec-head"><h2>创作 ·《斗争中的共和》</h2><span class="tag">443 字 · 六段</span></div>
+    <div class="piece">
+      <h3>斗争中的共和</h3>
+      <div class="sub">——一个中国工程师眼中的奇点</div>
+      <p>库兹韦尔把 2045 年写成一道算术题：人脑每秒一百万亿次操作，超算已经十万亿次——只要算力够，智能就到了。读完整本书，我最不能同意的地方就在这里。<b>算力是尺子，不是答案。</b></p>
+      <p>他漏掉两件事。第一，计算也许只是大脑能力里的一种。情感和想象是正在发生的过程，不是可以拷走的数据——你能复制一张瀑布的照片，复制不了瀑布在流。第二，进化不是复制。冯·诺伊曼的自复制机复印一万亿次，描述带还是那条描述带，长不出新台阶。真正让物种上台阶的，是复制之后的变异与淘汰，也就是斗争。</p>
+      <p>于是分歧清楚了：他写的是和平的融合，我看到的是斗争中的共和。</p>
+      <p>碳基创造了硅基，这是嫁接，不是平权。AI 自己不知道自己要什么，也没有方向——同一架无人机，雨季可以送药，也可以投弹，错的从来不是无人机。所以人和机器的问题，说到底还是人和人的问题：谁定义、谁分配、谁拿那杆秤。信息从不免费，只是有人想让你知道。</p>
+      <p>我不预测主从关系哪年定局，也不去假设。但我能控制方向。</p>
+      <p>这大概就是我们这一代工程师的位置：不算命，只造路。让别人去预测 2045 年，我去定义广州的 2027 年——把一个矿坑做成深水试验场，把一套监测做成行业标准，把散落各处的判断攒成资产。共和还没到，斗争已经开始；方向是一寸一寸争出来的。</p>
+    </div>
+
+    <h3 style="font-family:var(--mono); font-size:.95rem; color:#fff; margin:26px 0 12px">骨架与出处</h3>
+    <div class="tablewrap">
+      <table>
+        <tr><th style="width:12%">段落</th><th>用到的判断</th><th style="width:18%">出处</th></tr>
+        <tr><td>第 1 段</td><td>算力≠智能：10¹⁴ 是估算，操作数不是智能总量</td><td class="pg">p640 / p753</td></tr>
+        <tr><td>第 2 段</td><td>快照≠过程（瀑布比喻）＋复制≠进化（自复制机信息守恒）</td><td class="pg">p223 / p660</td></tr>
+        <tr><td>第 3 段</td><td>共和斗争论：斗争即选择，选择才进化</td><td class="pg">p264</td></tr>
+        <tr><td>第 4 段</td><td>嫁接论＋AI 无心（无人机双重用途）＋分配决定论</td><td class="pg">p747 / p350</td></tr>
+        <tr><td>第 5-6 段</td><td>方向可控论：不预测终点，只控制方向</td><td class="pg">p264 / p485</td></tr>
+      </table>
+    </div>
+
+    <div class="callout" style="margin-top:20px">
+      <b>收口</b>
+      这本书的价值不在库兹韦尔预测对了几年，而在于它逼出了 19 条自己的判断——书是引子，长出来的是自己的东西。
+    </div>
+  </section>
+
+  <section id="sources">
+    <div class="sec-head"><h2>来源与可信度</h2><span class="tag">引文与判断分离</span></div>
+    <ul>
+      <li><b>原书引文</b>——《奇点更近》中文版 EPUB，页码为阅读器标注，<em>A 级 · 一手</em>。</li>
+      <li><b>19 条判断与 42 条笔记</b>——读者本人读书笔记，AI 仅做归纳整理，<em>原创</em>。</li>
+      <li><b>生物计算佐证</b>（p699 相关）——FinalSpark Neuroplatform（2024，瑞士，人脑类器官在线平台）、国内 DNA 存储系统公开报道（2025），<em>B 级 · 公开报道</em>。</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  读书笔记 · 《奇点更近》全书归档 · 收口 2026-09-21<br>
+  <a href="./">← 返回书架</a> · <a href="/learn.html">学习</a> · <a href="/">德王府</a>
+</footer>
+
+</body>
+</html>
