@@ -16,6 +16,7 @@
 |---|---|---|
 | IESO 地球科学奥林匹克学习平台 | | [ieso-learning-site](https://wangdw.xyz/ieso-learning-site/) |
 | IESO 英语词汇学习 | | [ieso-vocab](https://wangdw.xyz/ieso-vocab/) |
+| 读书笔记 · MuskPedia | muskpedia 精读子页（主库仍在飞轮） | [reading-notes](https://wangdw.xyz/muskpedia/reading-notes.html) |
 | 高中数学知识卡片 | | [gaozhong-shuxue-card](https://wangdw.xyz/gaozhong-shuxue-card/) |
 | 数学答题 RPG | | [math-rpg](https://wangdw.xyz/math-rpg/) |
 | 成绩打怪 · 进阶版 | | [gaokao.github.io](https://wangdw.xyz/gaokao.github.io/) |
