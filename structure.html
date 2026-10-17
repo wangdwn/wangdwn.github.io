@@ -70,12 +70,16 @@ async function main(){
     </div>
     <p style="font-size:12px;margin-top:8px"><a href="${d.经营盘.drilldown_bidding}">招标雷达</a> · <a href="${d.经营盘.drilldown_funding}">专项资金只读</a></p>
   </section>
-  <section><h2>质量盘</h2><p style="font-size:12px;color:var(--muted)">${d.质量盘.drift_note}</p>${cards(d.质量盘.metrics)}</section>
+  <section><h2>质量盘</h2><p style="font-size:12px;color:var(--muted)">${d.质量盘.drift_note||''}</p>${cards(d.质量盘.metrics||[])}
+    <p style="font-size:12px;margin-top:8px">${d.质量盘.drilldown?`<a href="${d.质量盘.drilldown}">质量盘下钻 →</a>`:''}</p></section>
+  ${d.游艇盘?`<section><h2>游艇盘</h2><p style="font-size:12px;color:var(--muted)">${d.游艇盘.note||''}</p>${cards(d.游艇盘.metrics||[])}
+    <p style="font-size:12px;margin-top:8px">${d.游艇盘.drilldown?`<a href="${d.游艇盘.drilldown}">周报游艇专题 →</a>`:''}</p></section>`:''}
   <section><h2>口径底座</h2>
     <div class="card">
       <p>快照日 <code>${d.底座.source_snapshot_at||'〔待核〕'}</code> · 刷新 <code>${d.底座.content_refreshed_at||'〔待核〕'}</code> · 规则 <code>${d.底座.tag_rules_version||'〔待核〕'}</code></p>
-      <p style="margin-top:8px">${d.底座.vs_ghh}</p>
-      <ul>${(d.底座.pending_checklist||[]).map(i=>`<li>${i.label}<div class="src">${i.source}</div></li>`).join('')}</ul>
+      <p style="margin-top:8px">${d.底座.vs_ghh||''}</p>
+      ${d.底座.weekly_latest?`<p style="margin-top:8px">周报最新：<a href="${d.底座.weekly_latest.url||'https://wangdw.xyz/marine-weekly/'}">${d.底座.weekly_latest.title||'海洋周报'}</a></p>`:''}
+      <ul>${(d.底座.pending_checklist||[]).map(i=>`<li>${i.label}<div class="src">${i.source||''}</div></li>`).join('')}</ul>
     </div>
   </section>`;
 }
