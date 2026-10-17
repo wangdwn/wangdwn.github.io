@@ -76,7 +76,7 @@
 
 - **结构判断台** `data/structure_judgment.json` 与 `marine-monitor/app/public/data/structure_judgment.json` 对齐（含游艇盘）。
 - **涉海创新节点地图** 已切到广海汇名录 roster 模式（672 节点）；政采 discovery 仍可用 scraper 另行刷新。
-- **质量盘** 信号灯仍为演示算法，页面已标明；产业树样例保留。
+- **质量盘** 已接库内证据包（专项资金/政策/招标/名录 sector/NOAA 海温）；格子=有迹/无迹，非景气随机灯。港口吞吐量·AIS·灾害预警仍未接入。产业树代表企业仍为结构样例。
 - **`/funding/`、`/map/`** 快捷入口改为站内相对跳转至 `marine-monitor`。
 
 ### 专业工具
