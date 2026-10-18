@@ -35,16 +35,16 @@
 
 ## 2. 生活（life.html）
 
-生活栏为分栏门户：六个卡片（小说 / 日记 / 随笔 / 诗歌 / 阅读 / 城市与日常）+ 实验归档。入口优先用扁平页 `/life/<cat>.html`（目录 `/life/<cat>/` 保留并 meta-refresh 到扁平页）。内容文件仍在 `novels/` 与 `life/shijing/`，旧文章 URL 不变。
+生活栏为分栏门户：六个卡片（小说 / 日记 / 随笔 / 诗歌 / 阅读 / 城市与日常）+ 实验归档。因 GitHub Pages 上 `life.html` 与 `life/` 目录撞名，分栏入口放在仓库根目录：`/life-novels.html` 等；`life/` 下旧路径保留为 meta-refresh。诗经迁至根目录 `/shijing/`。正文仍在 `novels/`，旧文章 URL 不变。
 
 | 分栏 | 入口 | 收录 |
 |---|---|---|
-| 小说 | [/life/novels.html](https://wangdw.xyz/life/novels.html) | 《木棉泣血》→ [/novels/mucian-qixue.html](https://wangdw.xyz/novels/mucian-qixue.html) |
-| 日记 | [/life/diary.html](https://wangdw.xyz/life/diary.html) | 《小子日记》→ [/novels/diary.html](https://wangdw.xyz/novels/diary.html) |
-| 随笔 | [/life/essays.html](https://wangdw.xyz/life/essays.html) | 生活记（青春列车、探亲、上班、媒霉）+ 随笔 20 篇 + 杂文 6 篇（`novels/essays/` · `novels/zawen/`） |
-| 诗歌 | [/life/poetry.html](https://wangdw.xyz/life/poetry.html) | 南粤天、摘西瓜；自作 51 篇（`novels/poems/`）；诗经（`/life/shijing/`） |
-| 阅读 | [/life/reading.html](https://wangdw.xyz/life/reading.html) | 《闲书》书评；读书笔记仍在学习栏 |
-| 城市与日常 | [/life/city.html](https://wangdw.xyz/life/city.html) | 城脉千年 · 装机优化工具 |
+| 小说 | [/life-novels.html](https://wangdw.xyz/life-novels.html) | 《木棉泣血》→ [/novels/mucian-qixue.html](https://wangdw.xyz/novels/mucian-qixue.html) |
+| 日记 | [/life-diary.html](https://wangdw.xyz/life-diary.html) | 《小子日记》→ [/novels/diary.html](https://wangdw.xyz/novels/diary.html) |
+| 随笔 | [/life-essays.html](https://wangdw.xyz/life-essays.html) | 生活记（青春列车、探亲、上班、媒霉）+ 随笔 20 篇 + 杂文 6 篇（`novels/essays/` · `novels/zawen/`） |
+| 诗歌 | [/life-poetry.html](https://wangdw.xyz/life-poetry.html) | 南粤天、摘西瓜；自作 51 篇（`novels/poems/`）；诗经（[`/shijing/`](https://wangdw.xyz/shijing/)） |
+| 阅读 | [/life-reading.html](https://wangdw.xyz/life-reading.html) | 《闲书》书评；读书笔记仍在学习栏 |
+| 城市与日常 | [/life-city.html](https://wangdw.xyz/life-city.html) | 城脉千年 · 装机优化工具 |
 
 ### 城市与日常（分栏内）
 

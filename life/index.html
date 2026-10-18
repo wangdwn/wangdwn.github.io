@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>生活 · 德王府</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/design-system/tokens.css">
+<link rel="stylesheet" href="/portal.css">
+<style>
+.tiles {
+  max-width: 1080px; margin: 0 auto;
+  padding: 0 22px clamp(36px, 5vw, 56px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media (max-width: 720px) {
+  .tiles { grid-template-columns: 1fr; gap: 14px; }
+}
+.tile {
+  position: relative; overflow: hidden;
+  border-radius: var(--portal-radius);
+  min-height: clamp(220px, 28vw, 280px);
+  padding: clamp(24px, 3.5vw, 36px);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06), 0 16px 48px rgba(0,0,0,.1);
+  transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s;
+  -webkit-tap-highlight-color: transparent;
+}
+.tile:hover, .tile:focus-visible {
+  transform: scale(1.015);
+  box-shadow: 0 4px 16px rgba(0,0,0,.08), 0 24px 64px rgba(0,0,0,.14);
+}
+.tile:active { transform: scale(.995); }
+.tile__media {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  transform: scale(1.02);
+  transition: transform .6s cubic-bezier(.22,1,.36,1);
+}
+.tile:hover .tile__media { transform: scale(1.06); }
+.tile__shade {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.14) 0%, rgba(0,0,0,.32) 42%, rgba(0,0,0,.74) 100%),
+    radial-gradient(120% 80% at 100% 0%, var(--glow) 0%, transparent 55%);
+}
+.tile--novel { --glow: rgba(0,120,100,.38); --accent: #7dffc0; }
+.tile--diary { --glow: rgba(0,150,90,.34); --accent: #9ef0c8; }
+.tile--essay { --glow: rgba(70,130,60,.36); --accent: #b8e89a; }
+.tile--poetry { --glow: rgba(0,140,130,.34); --accent: #8ef0e0; }
+.tile--reading { --glow: rgba(20,100,70,.40); --accent: #8ad4a8; }
+.tile--city { --glow: rgba(40,110,180,.40); --accent: #9ecfff; }
+.tile--novel .tile__media { background-image: url('/assets/portal/life-novel.jpg?v=3'); }
+.tile--diary .tile__media { background-image: url('/assets/portal/life-diary.jpg?v=3'); }
+.tile--essay .tile__media { background-image: url('/assets/portal/life-essay.jpg?v=3'); }
+.tile--poetry .tile__media { background-image: url('/assets/portal/life-poetry.jpg?v=3'); }
+.tile--reading .tile__media { background-image: url('/assets/portal/life-reading.jpg?v=3'); }
+.tile--city .tile__media { background-image: url('/assets/portal/life-city.jpg?v=3'); }
+.tile__label {
+  position: relative; z-index: 1;
+  font-size: 13px; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+  text-shadow: 0 1px 8px rgba(0,0,0,.35);
+}
+.tile__title {
+  position: relative; z-index: 1;
+  font-size: clamp(26px, 4.5vw, 34px);
+  font-weight: 700; letter-spacing: -.03em; line-height: 1.1;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 16px rgba(0,0,0,.4);
+}
+.tile__desc {
+  position: relative; z-index: 1;
+  font-size: clamp(14px, 2vw, 16px);
+  color: rgba(255,255,255,.88); max-width: 18em; letter-spacing: -.01em;
+  text-shadow: 0 1px 10px rgba(0,0,0,.35);
+}
+.tile__cta {
+  position: relative; z-index: 1;
+  margin-top: 18px;
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 15px; font-weight: 600; color: #fff;
+  min-height: 40px;
+}
+.tile__cta::after { content: "→"; transition: transform .2s; }
+.tile:hover .tile__cta::after { transform: translateX(4px); }
+.section-label {
+  max-width: 1080px; margin: 0 auto;
+  padding: 8px 22px 12px;
+  font-size: 13px; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--life);
+}
+</style>
+</head>
+<body class="cat-life">
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="https://wangdw.xyz/"><span class="brand__dot" aria-hidden="true"></span>德王府</a>
+    <nav class="nav-links" aria-label="栏目">
+      <a href="/learn.html">学习</a>
+      <a class="is-active" href="/life.html">生活</a>
+      <a href="/work.html">工作</a>
+      <a href="/flywheel.html">飞轮</a>
+    </nav>
+    <a class="topbar__ds" href="/design-system/">设计系统</a>
+  </div>
+</header>
+<main>
+  <header class="cat-hero">
+    <span class="cat-hero__banner" aria-hidden="true"></span>
+    <a class="cat-hero__back" href="https://wangdw.xyz/">← 德王府</a>
+    <p class="cat-hero__eyebrow">Life</p>
+    <h1 class="cat-hero__title">生活</h1>
+    <p class="cat-hero__lead">小说、日记、随笔、诗歌、阅读，以及城市与日常 —— 一栏一门，点进去再看。</p>
+  </header>
+
+  <p class="section-label">文学</p>
+  <section class="tiles" aria-label="文学分栏">
+    <a class="tile tile--novel" href="/life-novels.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Novel</span>
+      <h2 class="tile__title">小说</h2>
+      <p class="tile__desc">中篇与虚构叙事</p>
+      <span class="tile__cta">进入小说</span>
+    </a>
+    <a class="tile tile--diary" href="/life-diary.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Diary</span>
+      <h2 class="tile__title">日记</h2>
+      <p class="tile__desc">成长记录与日常</p>
+      <span class="tile__cta">进入日记</span>
+    </a>
+    <a class="tile tile--essay" href="/life-essays.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Essay</span>
+      <h2 class="tile__title">随笔</h2>
+      <p class="tile__desc">散文 · 杂文 · 生活记</p>
+      <span class="tile__cta">进入随笔</span>
+    </a>
+    <a class="tile tile--poetry" href="/life-poetry.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Poetry</span>
+      <h2 class="tile__title">诗歌</h2>
+      <p class="tile__desc">自作诗词 · 诗经选读</p>
+      <span class="tile__cta">进入诗歌</span>
+    </a>
+    <a class="tile tile--reading" href="/life-reading.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Reading</span>
+      <h2 class="tile__title">阅读</h2>
+      <p class="tile__desc">书评与闲读札记</p>
+      <span class="tile__cta">进入阅读</span>
+    </a>
+    <a class="tile tile--city" href="/life-city.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">City &amp; Daily</span>
+      <h2 class="tile__title">城市与日常</h2>
+      <p class="tile__desc">城脉千年 · 装机工具</p>
+      <span class="tile__cta">进入城市与日常</span>
+    </a>
+  </section>
+
+  <div class="archive">
+    <details>
+      <summary>
+        <span>实验与归档</span>
+        <span class="meta">时钟 / 游戏 / 节日卡</span>
+      </summary>
+      <div class="archive-body">
+        <a class="item" href="https://wangdw.xyz/ipad.clock.github.io/">
+          <div class="item__text">
+            <div class="item__name">Pro Split-Flap Clock</div>
+            <div class="item__desc">翻牌时钟 · 平板版</div>
+          </div>
+          <span class="item__go">打开</span>
+        </a>
+        <a class="item" href="https://wangdw.xyz/ipad.iclock.github.io/">
+          <div class="item__text">
+            <div class="item__name">Pro Split-Flap Clock (iclock)</div>
+            <div class="item__desc">翻牌时钟 · 变体版</div>
+          </div>
+          <span class="item__go">打开</span>
+        </a>
+        <a class="item" href="https://wangdw.xyz/clock.ipad2.github.io/">
+          <div class="item__text">
+            <div class="item__name">Tech-Noir Clock iPad2</div>
+            <div class="item__desc">翻牌时钟 · iPad2 版</div>
+          </div>
+          <span class="item__go">打开</span>
+        </a>
+        <a class="item" href="https://wangdw.xyz/iclock-ipad-github.io/">
+          <div class="item__text">
+            <div class="item__name">Pro Split-Flap Clock (ipad)</div>
+            <div class="item__desc">翻牌时钟 · 变体版</div>
+          </div>
+          <span class="item__go">打开</span>
+        </a>
+        <a class="item" href="https://wangdw.xyz/web.game.github.io/">
+          <div class="item__text">
+            <div class="item__name">蔚蓝之城：珠江口传奇</div>
+            <div class="item__desc">海洋主题互动 · 珠江口故事</div>
+          </div>
+          <span class="item__go">打开</span>
+        </a>
+        <a class="item" href="https://wangdw.xyz/zhongqiu-card/">
+          <div class="item__text">
+            <div class="item__name">中秋音乐卡</div>
+            <div class="item__desc">一次性节日页 · 转发显示微信卡片</div>
+          </div>
+          <span class="item__go">打开</span>
+        </a>
+      </div>
+    </details>
+  </div>
+</main>
+<footer class="footer">
+  <a href="https://wangdw.xyz/">德王府</a> · <a href="https://github.com/wangdwn/wangdwn.github.io/blob/main/SITES.md">SITES.md</a>
+</footer>
+</body>
+</html>
