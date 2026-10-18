@@ -1,0 +1,101 @@
+/* 心理学馆 · 安静阅读（叠加 portal.css） */
+:root{
+  --paper:#f5f2eb;
+  --paper-2:#faf7f1;
+  --sheet:#fffdf8;
+  --ink:#2a2622;
+  --ink-2:#4a433c;
+  --ink-muted:#857a6e;
+  --rule:#e4dccd;
+  --rule-soft:#efe7d9;
+  --accent:#5b6b8c;          /* 静蓝灰，区别于读书笔记朱砂 */
+  --accent-soft:rgba(91,107,140,.10);
+  --warm:#9a3b2e;
+  --warm-soft:rgba(154,59,46,.08);
+  --gold:#a07a3c;
+  --serif:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;
+  --sans:"Noto Sans SC","PingFang SC","Microsoft YaHei",-apple-system,sans-serif;
+  --measure:40em;
+}
+html{background:var(--paper)}
+body.psy{background:var(--paper); color:var(--ink); font-family:var(--sans); line-height:1.75}
+body.psy .topbar{background:rgba(245,242,235,.82); border-bottom-color:var(--rule)}
+body.psy .brand__dot{background:linear-gradient(135deg,var(--accent),var(--gold))}
+body.psy a:focus-visible{outline-color:rgba(91,107,140,.45)}
+
+.p-hero{max-width:1000px; margin:0 auto; padding:clamp(40px,8vw,80px) 22px clamp(24px,4vw,40px)}
+.p-back{display:inline-flex; align-items:center; min-height:44px; font-size:15px; font-weight:500; color:var(--accent); margin-bottom:clamp(14px,3vw,24px)}
+.p-back:hover{text-decoration:underline}
+.p-kicker{font-family:var(--serif); font-size:15px; color:var(--accent); letter-spacing:.18em; margin-bottom:12px}
+.p-title{font-family:var(--serif); font-weight:700; font-size:clamp(30px,5.8vw,48px); line-height:1.22; letter-spacing:.01em}
+.p-lead{margin-top:16px; font-family:var(--serif); font-size:clamp(16px,2.1vw,19px); color:var(--ink-2); line-height:1.85; max-width:36em}
+.p-disclaimer{margin-top:14px; font-size:13px; color:var(--ink-muted); line-height:1.7; max-width:36em}
+.p-meta{margin-top:18px; display:flex; flex-wrap:wrap; gap:8px}
+.p-chip{font-size:12.5px; padding:4px 12px; border-radius:980px; color:var(--accent); background:var(--accent-soft); border:1px solid transparent}
+
+.p-main{max-width:1000px; margin:0 auto; padding:0 22px clamp(56px,8vw,96px)}
+.p-sec{padding-top:clamp(36px,6vw,56px); scroll-margin-top:72px}
+.p-head{margin-bottom:20px; padding-bottom:14px; border-bottom:1px solid var(--rule); position:relative}
+.p-head::after{content:""; position:absolute; left:0; bottom:-1px; width:40px; height:2px; background:var(--accent)}
+.p-h2{font-family:var(--serif); font-size:clamp(22px,3vw,26px); font-weight:700; color:var(--ink)}
+.p-sub{margin-top:6px; font-size:14px; color:var(--ink-muted)}
+
+/* 今日一则 */
+.p-today{background:var(--sheet); border:1px solid var(--rule-soft); border-radius:18px; padding:clamp(18px,3vw,26px) clamp(18px,3vw,28px);
+  box-shadow:0 1px 2px rgba(40,50,70,.04), 0 10px 28px rgba(40,50,70,.05)}
+.p-today__label{font-size:12px; font-weight:600; letter-spacing:.14em; color:var(--warm); margin-bottom:8px}
+.p-today__text{font-family:var(--serif); font-size:17px; line-height:1.9; color:var(--ink)}
+.p-today__foot{margin-top:12px; font-size:13px; color:var(--ink-muted)}
+.p-today__foot a{color:var(--accent); font-weight:500}
+
+/* 卡片架 */
+.p-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px}
+.p-card{display:flex; flex-direction:column; gap:10px; background:var(--sheet); border:1px solid var(--rule-soft); border-radius:18px;
+  padding:20px 20px 18px; text-decoration:none; color:inherit; transition:transform .28s cubic-bezier(.22,1,.36,1), box-shadow .28s;
+  -webkit-tap-highlight-color:transparent; min-height:160px}
+a.p-card:hover{transform:translateY(-2px); box-shadow:0 2px 8px rgba(40,50,70,.06), 0 16px 36px rgba(40,50,70,.08)}
+.p-card__tags{display:flex; flex-wrap:wrap; gap:6px}
+.p-tag{font-size:12px; padding:3px 10px; border-radius:980px; color:var(--accent); background:var(--accent-soft)}
+.p-tag--life{color:var(--warm); background:var(--warm-soft)}
+.p-tag--study{color:#3d6b4f; background:rgba(61,107,79,.10)}
+.p-tag--research{color:#5b6b8c; background:var(--accent-soft)}
+.p-card__title{font-family:var(--serif); font-size:19px; font-weight:700; line-height:1.4; color:var(--ink)}
+.p-card__desc{font-size:14.5px; line-height:1.75; color:var(--ink-2); flex:1}
+.p-card__go{font-size:14px; font-weight:600; color:var(--accent); margin-top:4px}
+
+.p-note{margin-top:18px; font-size:14px; color:var(--ink-muted); line-height:1.75}
+.p-note a{color:var(--accent)}
+
+/* 文章页 */
+.p-article-hero{max-width:var(--measure); margin:0 auto; padding:clamp(36px,7vw,72px) 22px clamp(20px,3vw,32px)}
+.p-article-meta{margin-top:14px; font-size:14px; color:var(--ink-muted); line-height:1.85}
+.p-article-meta b{color:var(--accent); font-weight:600}
+.p-body{max-width:var(--measure); margin:0 auto; padding:0 22px clamp(48px,7vw,80px)}
+.p-body .prose{font-family:var(--serif); font-size:17.5px; line-height:1.95; color:var(--ink)}
+.p-body .prose p{margin-bottom:1.05em; text-indent:0}
+.p-body .prose p.lead-p{font-size:18.5px; color:var(--ink-2)}
+.p-body .prose h2{font-family:var(--serif); font-size:21px; font-weight:700; margin:1.6em 0 .7em; color:var(--ink)}
+.p-body .prose strong{font-weight:700; background:linear-gradient(transparent 62%, rgba(91,107,140,.16) 62%)}
+.p-pull{margin:22px 0; padding:18px 22px; background:var(--sheet); border-left:3px solid var(--accent); border-radius:0 14px 14px 0;
+  font-family:var(--serif); font-size:17px; line-height:1.9; color:var(--ink-2)}
+.p-pull .label{display:block; font-family:var(--sans); font-size:12px; font-weight:600; letter-spacing:.12em; color:var(--accent); margin-bottom:6px}
+.p-takeaway{margin-top:28px; padding:20px 22px; background:var(--sheet); border:1px solid var(--rule-soft); border-radius:16px}
+.p-takeaway h3{font-family:var(--serif); font-size:16px; color:var(--accent); margin-bottom:8px; letter-spacing:.06em}
+.p-takeaway p{font-family:var(--serif); font-size:16px; line-height:1.85; color:var(--ink-2); margin:0}
+.p-nav{display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; margin-top:36px; padding-top:20px; border-top:1px solid var(--rule)}
+.p-nav a{font-size:14px; font-weight:500; color:var(--accent)}
+.p-nav a:hover{text-decoration:underline}
+
+.p-footer{max-width:1000px; margin:0 auto; padding:28px 22px calc(44px + env(safe-area-inset-bottom,0px)); border-top:1px solid var(--rule);
+  text-align:center; font-size:13px; color:var(--ink-muted); line-height:2}
+.p-footer a{color:var(--accent); font-weight:500}
+.p-footer a:hover{text-decoration:underline}
+
+@media (prefers-color-scheme:dark){
+  :root{--paper:#1b1a18; --paper-2:#22201c; --sheet:#26231f; --ink:#ece4d6; --ink-2:#d2c8b8; --ink-muted:#9c9183;
+    --rule:#3a342d; --rule-soft:#302b25; --accent:#8fa0c0; --accent-soft:rgba(143,160,192,.14); --warm:#d9826f; --warm-soft:rgba(217,130,111,.12); --gold:#c9a46a}
+  body.psy .topbar{background:rgba(27,26,24,.85)}
+  body.psy .brand, body.psy .nav-links a.is-active{color:var(--ink)}
+  body.psy .nav-links a{color:var(--ink-muted)}
+  body.psy .nav-links a.is-active{background:rgba(255,255,255,.08)}
+}

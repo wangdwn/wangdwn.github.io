@@ -28,6 +28,7 @@
 | └ 高中数学知识卡片 | 人教 A 版必修一二 | [gaozhong-shuxue-card](https://wangdw.xyz/gaozhong-shuxue-card/) |
 | └ 数学答题 RPG | 副本闯关 + 卡片联动 | [math-rpg](https://wangdw.xyz/math-rpg/) |
 | └ 成绩打怪 · 进阶版 | 分数战报 · 本机存储 | [gaokao.github.io](https://wangdw.xyz/gaokao.github.io/) |
+| 心理学馆 | 成人自修科普；生活／学习／研究速览；与高考馆分开 | [psychology](https://wangdw.xyz/learn/psychology/) |
 | 读书笔记 | 托管于本仓库学习栏 | [reading-notes](https://wangdw.xyz/learn/reading-notes/) |
 
 ---

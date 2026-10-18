@@ -1,0 +1,48 @@
+{
+  "updated": "2026-10-18",
+  "title": "心理学馆",
+  "today": {
+    "date": "2026-10-18",
+    "text": "想改习惯，先改「触发」：同一时间、同一地点，比靠意志力更省力。",
+    "href": "piece-01-habit.html",
+    "source": "《两分钟启动》"
+  },
+  "pieces": [
+    {
+      "id": "piece-01-habit",
+      "file": "piece-01-habit.html",
+      "title": "两分钟启动",
+      "section": "生活里的心理",
+      "tags": ["习惯", "动机"],
+      "desc": "凌晨写计划很燃，早上却动不了——问题多半不在意志力，而在触发与起步门槛。",
+      "mins": 6
+    },
+    {
+      "id": "piece-02-attention",
+      "file": "piece-02-attention.html",
+      "title": "口袋里的注意力税",
+      "section": "生活里的心理",
+      "tags": ["注意", "手机"],
+      "desc": "手机黑着屏放在桌上，也会分走一部分认知带宽。不是「自制力差」，是环境在加税。",
+      "mins": 6
+    },
+    {
+      "id": "piece-03-growth",
+      "file": "piece-03-growth.html",
+      "title": "错题本上的成长型",
+      "section": "学习与动机",
+      "tags": ["学习", "心态"],
+      "desc": "「我不是学这科的料」一出口，练习就停了。能力观怎么说，行动就怎么跟。",
+      "mins": 7
+    },
+    {
+      "id": "piece-04-loneliness",
+      "file": "piece-04-loneliness.html",
+      "title": "连接很多，为何仍空",
+      "section": "研究速览",
+      "tags": ["孤独", "数字生活"],
+      "desc": "公开讨论里，「孤独」早已不只是个人心情，也关系到健康与社会设计——从「有人」到「被看见」。",
+      "mins": 7
+    }
+  ]
+}
