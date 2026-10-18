@@ -99,3 +99,53 @@ a.p-card:hover{transform:translateY(-2px); box-shadow:0 2px 8px rgba(40,50,70,.0
   body.psy .nav-links a{color:var(--ink-muted)}
   body.psy .nav-links a.is-active{background:rgba(255,255,255,.08)}
 }
+
+/* 理论模板块：小故事后的锚点 / 史 / 当代 */
+.p-theory{
+  margin:28px 0 8px;
+  padding:0;
+  border:1px solid var(--rule-soft);
+  border-radius:16px;
+  background:var(--paper-2);
+  overflow:hidden;
+}
+.p-theory__block{
+  padding:18px 20px 16px;
+  border-bottom:1px solid var(--rule-soft);
+}
+.p-theory__block:last-child{border-bottom:none}
+.p-theory__label{
+  display:flex; align-items:center; gap:8px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  letter-spacing:.14em; color:var(--accent); margin-bottom:8px;
+}
+.p-theory__label::before{
+  content:""; width:6px; height:6px; border-radius:50%;
+  background:var(--accent); flex-shrink:0;
+}
+.p-theory__block h3{
+  font-family:var(--serif); font-size:17px; font-weight:700;
+  color:var(--ink); margin:0 0 8px; letter-spacing:.02em;
+}
+.p-theory__block p{
+  font-family:var(--serif); font-size:16px; line-height:1.9;
+  color:var(--ink-2); margin:0 0 .85em;
+}
+.p-theory__block p:last-child{margin-bottom:0}
+.p-theory__who{
+  font-family:var(--sans); font-size:13px; color:var(--ink-muted);
+  margin-top:6px; line-height:1.7;
+}
+.p-theory__who b{color:var(--accent); font-weight:600}
+.p-figures{
+  display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;
+}
+.p-fig{
+  font-family:var(--sans); font-size:12.5px; padding:4px 11px;
+  border-radius:980px; background:var(--accent-soft); color:var(--accent);
+  border:1px solid transparent;
+}
+.p-card__theory{
+  font-size:12.5px; color:var(--ink-muted); line-height:1.55; margin-top:2px;
+}
+.p-card__theory b{color:var(--accent); font-weight:600}
