@@ -40,6 +40,8 @@
 | 站点 | 备注 | Pages |
 |---|---|---|
 | 木棉泣血 | 中篇小说《木棉泣血——1938年广州沦陷纪略》· 德文 · 只读阅读页 `novels/mucian-qixue.html` | [mucian-qixue](https://wangdw.xyz/novels/mucian-qixue.html) |
+| 小子日记 | 2010–2011 成长日记 · 139 篇 · 只读页 `novels/diary.html` | [diary](https://wangdw.xyz/novels/diary.html) |
+| 随笔 | 散文杂记 · 只读页 `novels/essay.html` | [essay](https://wangdw.xyz/novels/essay.html) |
 | 诗经（总览） | 仅生活栏 `/life/shijing/`；IESO 首页已去掉入口，旧 `ieso-learning-site/shijing.html` 保留跳转 | [shijing](https://wangdw.xyz/life/shijing/) |
 | └ 十首代表作 · 穿越手册 | 风七·雅二·颂一 · 番外《将仲子》 | [shishou](https://wangdw.xyz/life/shijing/shishou.html) |
 | └ 四季十二首 | 春夏秋冬各三首 | [siji](https://wangdw.xyz/life/shijing/siji.html) |
