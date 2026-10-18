@@ -15,14 +15,15 @@
 | 站点 | 备注 | Pages |
 |---|---|---|
 | IESO 地球科学奥林匹克学习平台 | | [ieso-learning-site](https://wangdw.xyz/ieso-learning-site/) |
-| 高考学科馆 | 英语（词根馆 + 碎片精读）合一入口；物理/化学/地理占位 | [gaokao](https://wangdw.xyz/learn/gaokao/) |
+| 高考学科馆 | 英语 · 数学已上线；物理/化学/地理占位 | [gaokao](https://wangdw.xyz/learn/gaokao/) |
 | └ 英语子页 | 词根馆深链 + 碎片精读书架 | [english](https://wangdw.xyz/learn/gaokao/english.html) |
-| └ 词根馆（ieso-vocab） | 88 根 · 3523 词 · 情景短读 | [ieso-vocab](https://wangdw.xyz/ieso-vocab/) |
-| └ 碎片精读 | 5–8 分钟原创 STEM 向短篇 · 记词轻题 | [english-bite](https://wangdw.xyz/learn/english-bite/) |
+| └ 词根馆（ieso-vocab） | 88 根 · 约 3500 词 · 只练根 | [ieso-vocab](https://wangdw.xyz/ieso-vocab/) |
+| └ 碎片精读 | 5–8 分钟原创 STEM 向短篇 · 星级难度 | [english-bite](https://wangdw.xyz/learn/english-bite/) |
+| └ 数学子页 | 知识卡片 · RPG · 成绩打怪（学习栏不再各挂一张） | [math](https://wangdw.xyz/learn/gaokao/math.html) |
+| └ 高中数学知识卡片 | 人教 A 版必修一二 | [gaozhong-shuxue-card](https://wangdw.xyz/gaozhong-shuxue-card/) |
+| └ 数学答题 RPG | 副本闯关 + 卡片联动 | [math-rpg](https://wangdw.xyz/math-rpg/) |
+| └ 成绩打怪 · 进阶版 | 分数战报 · 本机存储 | [gaokao.github.io](https://wangdw.xyz/gaokao.github.io/) |
 | 读书笔记 | 托管于本仓库学习栏 | [reading-notes](https://wangdw.xyz/learn/reading-notes/) |
-| 高中数学知识卡片 | | [gaozhong-shuxue-card](https://wangdw.xyz/gaozhong-shuxue-card/) |
-| 数学答题 RPG | | [math-rpg](https://wangdw.xyz/math-rpg/) |
-| 成绩打怪 · 进阶版 | | [gaokao.github.io](https://wangdw.xyz/gaokao.github.io/) |
 
 ---
 
