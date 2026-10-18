@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
+<title>Debug Like a Lab Report · 英语碎片精读</title>
+<meta name="description" content="调试像写实验报告">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/design-system/tokens.css">
+<link rel="stylesheet" href="/portal.css">
+<link rel="stylesheet" href="/learn/english-bite/bite.css">
+</head>
+<body class="cat-learn bite">
+<div class="bite-progress" aria-hidden="true"><i id="prog"></i></div>
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="https://wangdw.xyz/"><span class="brand__dot" aria-hidden="true"></span>德王府</a>
+    <nav class="nav-links" aria-label="栏目">
+      <a class="is-active" href="/learn.html">学习</a>
+      <a href="/life.html">生活</a>
+      <a href="/work.html">工作</a>
+      <a href="/flywheel.html">飞轮</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <header class="b-hero">
+    <a class="b-back" href="/learn/gaokao/english.html">← 英语馆</a>
+    <p class="b-kicker">Session 04 · 编程思维 · B1–B2</p>
+    <h1 class="b-title">Debug Like a Lab Report</h1>
+    <p class="b-lead">程序「不听话」时，别骂电脑——像写实验报告一样找出那一个变量。</p>
+    <div class="b-meta">
+      <span class="b-chip"><b>~278</b> 词</span>
+      <span class="b-chip"><b>~6</b> 分钟</span>
+      <span class="b-chip"><b>9</b> 点词</span>
+      <span class="b-chip"><b>朱砂</b> 高考常考</span>
+    </div>
+  </header>
+  <div class="b-howto">
+    <details>
+      <summary>本篇怎么读</summary>
+      <ol>
+        <li>先通读英文抓大意；卡壳再点蓝色/朱砂词。</li>
+        <li>释义里若出现「词根馆」链接，可跳去巩固同一词根。</li>
+        <li>读完做配对、填空、用法、限时回忆（约两分钟）。</li>
+      </ol>
+    </details>
+  </div>
+  <div class="b-main">
+    <article class="b-article" id="article"><div class="b-en">
+        <p>Your code looked perfect. Then it printed the wrong answer—or printed nothing at all. Welcome to the <span class="gw" data-w="bug">bug</span>: a small mistake with a loud effect.</p>
+        <p>Beginners often <span class="gw gaokao" data-w="assume">assume</span> the computer is “being mean.” It is not. It is following instructions exactly, including the broken ones. The skill is to <span class="gw gaokao" data-w="isolate">isolate</span> the problem the way you would in a lab.</p>
+        <p>First, make a <span class="gw gaokao" data-w="hypothesis">hypothesis</span>. Maybe the loop never stops. Maybe a variable keeps the old value. Write the guess down. Then change only one thing and test again. If the result shifts, you <span class="gw gaokao" data-w="confirm">confirm</span> part of the story. If nothing changes, throw that guess away without drama.</p>
+        <p>Debugging can <span class="gw" data-w="frustrate">frustrate</span> anyone. The feeling is real. What helps is a short <span class="gw" data-w="ritual">ritual</span>: breathe, read the error message slowly, and ask what the program did right before it failed. <span class="gw gaokao" data-w="patience">Patience</span> is not waiting forever; it is refusing to random-click until something “magically” works.</p>
+        <p>Science-track students already know this pattern. In chemistry you do not mix five reagents at once and hope. In physics you do not change every dial together. Coding is the same experiment, only faster—and with undo.</p>
+        <p>Keep a tiny bug diary if you like: date, guess, change, result. Patterns turn panic into a checklist. When you finally find the missing bracket, celebrate briefly. Then <span class="gw" data-w="apply">apply</span> the lesson: name variables clearly, test early, keep notes. Bugs are not proof you are bad at STEM. They are proof you are practicing how scientists think.</p>
+     <p>Two weeks of notes will show patterns—off-by-one errors, wrong units, copied names. Patterns shrink panic. A clean habit today saves a midnight hunt tomorrow.</p>
+        <p>Scientists think in checklists too.</p>
+</div></article>
+    <section class="b-words" aria-labelledby="words-h">
+      <h2 id="words-h">本篇词汇 · 点一下再看</h2>
+      <div class="b-wordgrid" id="wordgrid"></div>
+    </section>
+    <section class="b-check" aria-labelledby="check-h">
+      <h2 id="check-h">记词 · 读懂</h2>
+      <p class="sub">围绕记忆与理解；对错立刻反馈，不排名。</p>
+      <div id="quiz"></div>
+      <div class="b-done" id="done">
+        <h3>本篇收工</h3>
+        <p id="done-msg"></p>
+        <div class="acts">
+          <a class="b-btn b-btn--primary" href="/learn/gaokao/english.html">回英语馆</a>
+          <a class="b-btn b-btn--ghost" href="/learn/english-bite/">书架</a>
+          <button type="button" class="b-btn b-btn--ghost" id="retry">重做练习</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="b-footer">原创短文 · 属<a href="/learn/gaokao/english.html">高考英语馆</a> · 与<a href="https://wangdw.xyz/ieso-vocab/">词根馆</a>互补</footer>
+<div class="gloss" id="gloss" role="dialog" aria-live="polite" aria-hidden="true">
+  <button type="button" class="gloss__close" id="gloss-close" aria-label="关闭">×</button>
+  <div><span class="gloss__word" id="g-word"></span><span class="gloss__ph" id="g-ph"></span><span class="gloss__badge" id="g-badge" hidden>高考常考</span></div>
+  <div class="gloss__cn" id="g-cn"></div>
+  <div class="gloss__ex" id="g-ex"></div>
+  <div class="gloss__root" id="g-root" hidden></div>
+</div>
+<script src="/learn/english-bite/bite-session.js"></script>
+<script>
+window.BITE_DATA = {"id": "s04", "gloss": {"bug": {"ph": "/bʌɡ/", "cn": "程序缺陷；漏洞", "ex": "A tiny bug can break the whole output.", "gaokao": false}, "assume": {"ph": "/əˈsjuːm/", "cn": "假定；想当然地认为", "ex": "Do not assume the computer is wrong.", "gaokao": true}, "isolate": {"ph": "/ˈaɪsəleɪt/", "cn": "隔离；单独找出", "ex": "Isolate one cause at a time.", "gaokao": true}, "hypothesis": {"ph": "/haɪˈpɒθəsɪs/", "cn": "假设", "ex": "Write a hypothesis before you change the code.", "gaokao": true}, "confirm": {"ph": "/kənˈfɜːm/", "cn": "确认；证实", "ex": "A clear test can confirm your guess.", "gaokao": true}, "frustrate": {"ph": "/frʌˈstreɪt/", "cn": "使沮丧；挫败", "ex": "Errors frustrate beginners—and experts.", "gaokao": false}, "patience": {"ph": "/ˈpeɪʃns/", "cn": "耐心", "ex": "Patience means testing with a plan.", "gaokao": true}, "apply": {"ph": "/əˈplaɪ/", "cn": "应用；运用", "ex": "Apply the same method in the lab.", "gaokao": false, "root": "ply", "rootMeaning": "折叠、使用"}, "ritual": {"ph": "/ˈrɪtʃuəl/", "cn": "惯常做法；仪式感流程", "ex": "A short ritual calms debugging panic.", "gaokao": false}}, "activities": [{"type": "match", "q": "调试相关词配对。", "pairs": [{"cn": "假定", "en": "assume"}, {"cn": "隔离/单独找出", "en": "isolate"}, {"cn": "假设", "en": "hypothesis"}, {"cn": "证实", "en": "confirm"}]}, {"type": "cloze", "q": "选词填空。", "text": "Do not {{0}} the machine is broken. {{1}} one cause, test it, and {{2}} what you learn.", "bank": ["assume", "isolate", "confirm", "bug"], "answers": ["assume", "isolate", "confirm"], "why": "别瞎假定 → 隔离 → 证实。"}, {"type": "usage", "q": "哪句 hypothesis 用法正确？", "sents": ["My hypothesis is that the loop never ends.", "I hypothesis the answer is 42.", "Hypothesis the bug away."], "ans": 0, "why": "hypothesis 是名词。"}, {"type": "recall", "q": "限时想词。", "cn": "耐心", "ans": "patience", "choices": ["patience", "frustrate", "apply", "bug"], "seconds": 30, "why": "Patience is refusing to random-click。"}, {"type": "mcq", "q": "作者认为调试最像什么？", "opts": ["Shouting at the screen", "A lab experiment: guess, change one thing, test", "Deleting the whole project first", "Waiting for magic"], "ans": 1, "why": "假设—单变量—验证。"}, {"type": "reflect", "q": "", "prompt": "最近一次找 bug 或找错因花了多久？下一步改什么习惯？（可不填）"}]};
+BiteSession.init(window.BITE_DATA);
+</script>
+</body>
+</html>

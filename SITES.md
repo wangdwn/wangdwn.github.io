@@ -15,8 +15,10 @@
 | 站点 | 备注 | Pages |
 |---|---|---|
 | IESO 地球科学奥林匹克学习平台 | | [ieso-learning-site](https://wangdw.xyz/ieso-learning-site/) |
-| IESO 英语词汇学习 | | [ieso-vocab](https://wangdw.xyz/ieso-vocab/) |
-| 英语碎片精读 | 托管于本仓库学习栏 · 手机碎片沉浸精读 | [english-bite](https://wangdw.xyz/learn/english-bite/) |
+| 高考学科馆 | 英语（词根馆 + 碎片精读）合一入口；物理/化学/地理占位 | [gaokao](https://wangdw.xyz/learn/gaokao/) |
+| └ 英语子页 | 词根馆深链 + 碎片精读书架 | [english](https://wangdw.xyz/learn/gaokao/english.html) |
+| └ 词根馆（ieso-vocab） | 88 根 · 3523 词 · 情景短读 | [ieso-vocab](https://wangdw.xyz/ieso-vocab/) |
+| └ 碎片精读 | 5–8 分钟原创 STEM 向短篇 · 记词轻题 | [english-bite](https://wangdw.xyz/learn/english-bite/) |
 | 读书笔记 | 托管于本仓库学习栏 | [reading-notes](https://wangdw.xyz/learn/reading-notes/) |
 | 高中数学知识卡片 | | [gaozhong-shuxue-card](https://wangdw.xyz/gaozhong-shuxue-card/) |
 | 数学答题 RPG | | [math-rpg](https://wangdw.xyz/math-rpg/) |
