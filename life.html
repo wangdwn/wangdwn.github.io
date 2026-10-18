@@ -54,11 +54,13 @@
 .tile--essay { --glow: rgba(70,130,60,.36); --accent: #b8e89a; }
 .tile--poetry { --glow: rgba(0,140,130,.34); --accent: #8ef0e0; }
 .tile--reading { --glow: rgba(20,100,70,.40); --accent: #8ad4a8; }
-.tile--novel .tile__media { background-image: url('/assets/portal/life-novel.jpg'); }
-.tile--diary .tile__media { background-image: url('/assets/portal/life-diary.jpg'); }
-.tile--essay .tile__media { background-image: url('/assets/portal/life-essay.jpg'); }
-.tile--poetry .tile__media { background-image: url('/assets/portal/life-poetry.jpg'); }
-.tile--reading .tile__media { background-image: url('/assets/portal/life-reading.jpg'); }
+.tile--city { --glow: rgba(40,110,180,.40); --accent: #9ecfff; }
+.tile--novel .tile__media { background-image: url('/assets/portal/life-novel.jpg?v=2'); }
+.tile--diary .tile__media { background-image: url('/assets/portal/life-diary.jpg?v=2'); }
+.tile--essay .tile__media { background-image: url('/assets/portal/life-essay.jpg?v=2'); }
+.tile--poetry .tile__media { background-image: url('/assets/portal/life-poetry.jpg?v=2'); }
+.tile--reading .tile__media { background-image: url('/assets/portal/life-reading.jpg?v=2'); }
+.tile--city .tile__media { background-image: url('/assets/portal/life-city.jpg?v=2'); }
 .tile__label {
   position: relative; z-index: 1;
   font-size: 13px; font-weight: 600; letter-spacing: .06em;
@@ -93,10 +95,6 @@
   font-size: 13px; font-weight: 600; letter-spacing: .06em;
   text-transform: uppercase; color: var(--life);
 }
-.secondary-list {
-  max-width: 1080px; margin: 0 auto;
-  padding: 0 22px clamp(24px, 4vw, 40px);
-}
 </style>
 </head>
 <body class="cat-life">
@@ -118,12 +116,12 @@
     <a class="cat-hero__back" href="https://wangdw.xyz/">← 德王府</a>
     <p class="cat-hero__eyebrow">Life</p>
     <h1 class="cat-hero__title">生活</h1>
-    <p class="cat-hero__lead">小说、日记、随笔、诗歌、阅读 —— 一栏一门，点进去再看。</p>
+    <p class="cat-hero__lead">小说、日记、随笔、诗歌、阅读，以及城市与日常 —— 一栏一门，点进去再看。</p>
   </header>
 
   <p class="section-label">文学</p>
   <section class="tiles" aria-label="文学分栏">
-    <a class="tile tile--novel" href="/life/novels/">
+    <a class="tile tile--novel" href="/life/novels.html">
       <span class="tile__media" aria-hidden="true"></span>
       <span class="tile__shade" aria-hidden="true"></span>
       <span class="tile__label">Novel</span>
@@ -131,7 +129,7 @@
       <p class="tile__desc">中篇与虚构叙事</p>
       <span class="tile__cta">进入小说</span>
     </a>
-    <a class="tile tile--diary" href="/life/diary/">
+    <a class="tile tile--diary" href="/life/diary.html">
       <span class="tile__media" aria-hidden="true"></span>
       <span class="tile__shade" aria-hidden="true"></span>
       <span class="tile__label">Diary</span>
@@ -139,7 +137,7 @@
       <p class="tile__desc">成长记录与日常</p>
       <span class="tile__cta">进入日记</span>
     </a>
-    <a class="tile tile--essay" href="/life/essays/">
+    <a class="tile tile--essay" href="/life/essays.html">
       <span class="tile__media" aria-hidden="true"></span>
       <span class="tile__shade" aria-hidden="true"></span>
       <span class="tile__label">Essay</span>
@@ -147,7 +145,7 @@
       <p class="tile__desc">散文 · 杂文 · 生活记</p>
       <span class="tile__cta">进入随笔</span>
     </a>
-    <a class="tile tile--poetry" href="/life/poetry/">
+    <a class="tile tile--poetry" href="/life/poetry.html">
       <span class="tile__media" aria-hidden="true"></span>
       <span class="tile__shade" aria-hidden="true"></span>
       <span class="tile__label">Poetry</span>
@@ -155,7 +153,7 @@
       <p class="tile__desc">自作诗词 · 诗经选读</p>
       <span class="tile__cta">进入诗歌</span>
     </a>
-    <a class="tile tile--reading" href="/life/reading/">
+    <a class="tile tile--reading" href="/life/reading.html">
       <span class="tile__media" aria-hidden="true"></span>
       <span class="tile__shade" aria-hidden="true"></span>
       <span class="tile__label">Reading</span>
@@ -163,25 +161,15 @@
       <p class="tile__desc">书评与闲读札记</p>
       <span class="tile__cta">进入阅读</span>
     </a>
+    <a class="tile tile--city" href="/life/city.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">City &amp; Daily</span>
+      <h2 class="tile__title">城市与日常</h2>
+      <p class="tile__desc">城脉千年 · 装机工具</p>
+      <span class="tile__cta">进入城市与日常</span>
+    </a>
   </section>
-
-  <p class="section-label">城市与日常</p>
-  <div class="list secondary-list">
-    <a class="item" href="https://wangdw.xyz/chengmai-qiannian/">
-      <div class="item__text">
-        <div class="item__name">数字广州 · 城脉千年</div>
-        <div class="item__desc">历代城图与城市考古 · 古地图细读 · 数据考据档案</div>
-      </div>
-      <span class="item__go">打开</span>
-    </a>
-    <a class="item" href="https://wangdw.xyz/pc-setup-tool/">
-      <div class="item__text">
-        <div class="item__name">装机优化工具</div>
-        <div class="item__desc">Win11 游戏优化 · 微星 BIOS 指南 · 常用工具导航</div>
-      </div>
-      <span class="item__go">打开</span>
-    </a>
-  </div>
 
   <div class="archive">
     <details>
