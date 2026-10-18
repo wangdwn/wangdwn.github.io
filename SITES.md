@@ -16,6 +16,7 @@
 |---|---|---|
 | IESO 地球科学奥林匹克学习平台 | | [ieso-learning-site](https://wangdw.xyz/ieso-learning-site/) |
 | IESO 英语词汇学习 | | [ieso-vocab](https://wangdw.xyz/ieso-vocab/) |
+| 英语碎片精读 | 托管于本仓库学习栏 · 手机碎片沉浸精读 | [english-bite](https://wangdw.xyz/learn/english-bite/) |
 | 读书笔记 | 托管于本仓库学习栏 | [reading-notes](https://wangdw.xyz/learn/reading-notes/) |
 | 高中数学知识卡片 | | [gaozhong-shuxue-card](https://wangdw.xyz/gaozhong-shuxue-card/) |
 | 数学答题 RPG | | [math-rpg](https://wangdw.xyz/math-rpg/) |
