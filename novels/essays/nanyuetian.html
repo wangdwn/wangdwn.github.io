@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>南粤天 · 德王府</title>
+<style>
+:root { --paper:#f7f1e6; --ink:#3b3428; --line:#d8cdb8; --accent:#8a6d3b; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:var(--paper); color:var(--ink);
+  font-family:"Songti SC","STSong","SimSun",serif; line-height:2;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+}
+.container { max-width:640px; margin:0 auto; padding:56px 24px 80px; }
+header { text-align:center; margin-bottom:44px; }
+.back { display:inline-block; font-size:13px; color:#9a8a6e; text-decoration:none; margin-bottom:24px; letter-spacing:1px; }
+h1 { font-size:26px; font-weight:normal; letter-spacing:6px; }
+.subtitle { margin-top:10px; font-size:13px; color:#9a8a6e; letter-spacing:2px; }
+.body { font-size:17px; }
+.body p { text-indent:2em; margin-bottom:12px; text-align:justify; }
+.body .poem { text-align:center; text-indent:0; margin-bottom:8px; }
+.notice { text-align:center; margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:12px; color:#a08d6a; letter-spacing:2px; }
+img { -webkit-user-drag:none; pointer-events:none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a class="back" href="https://wangdw.xyz/life.html">← 生活</a>
+    <h1>南粤天</h1>
+    <p class="subtitle">五言绝句</p>
+  </header>
+  <div class="body">
+<p class="poem">才见北风起，</p>
+<p class="poem">己觉深秋寒。</p>
+<p class="poem">光芒出万丈，</p>
+<p class="poem">极目现蓝天。</p>
+
+  </div>
+  <p class="notice">仅供阅读，请勿转载 · 禁止复制</p>
+</div>
+<script>
+(function(){
+  var k=['contextmenu','copy','cut','dragstart','selectstart'];
+  k.forEach(function(t){ document.addEventListener(t, function(e){ e.preventDefault(); }); });
+  document.addEventListener('keydown', function(e){
+    if((e.ctrlKey||e.metaKey) && ['c','x','s','p','a'].includes(e.key.toLowerCase())) e.preventDefault();
+  });
+})();
+</script>
+</body>
+</html>
