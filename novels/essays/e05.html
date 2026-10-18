@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="copyright" content="© 王胜（wangdw）· 版权所有｜仅供阅读，禁止复制、转载、摘编">
+<title>德 标 · 德王府</title>
+<style>
+:root { --paper:#f7f1e6; --ink:#3b3428; --line:#d8cdb8; --accent:#8a6d3b; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:var(--paper); color:var(--ink);
+  font-family:"Songti SC","STSong","SimSun",serif; line-height:2;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+  -webkit-touch-callout:none;
+}
+.container { max-width:640px; margin:0 auto; padding:56px 24px 80px; }
+header { text-align:center; margin-bottom:44px; }
+.back { display:inline-block; font-size:13px; color:#9a8a6e; text-decoration:none; margin-bottom:24px; letter-spacing:1px; }
+h1 { font-size:26px; font-weight:normal; letter-spacing:6px; }
+.subtitle { margin-top:10px; font-size:13px; color:#9a8a6e; letter-spacing:2px; }
+.body { font-size:17px; }
+.body p { text-indent:2em; margin-bottom:12px; text-align:justify; }
+.body .poem { text-align:center; text-indent:0; margin-bottom:8px; }
+.notice { text-align:center; margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:12px; color:#a08d6a; letter-spacing:2px; line-height:1.9; }
+.toast { position:fixed; left:50%; bottom:28px; transform:translateX(-50%) translateY(20px); background:#3b3428; color:#f7f1e6; font-size:13px; letter-spacing:1px; padding:10px 18px; border-radius:4px; opacity:0; pointer-events:none; transition:.25s; }
+.toast.show { opacity:.94; transform:translateX(-50%) translateY(0); }
+img { -webkit-user-drag:none; pointer-events:none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a class="back" href="/novels/essays/">← 随笔</a>
+    <h1>德 标</h1>
+    <p class="subtitle">随笔 · 约 476 字</p>
+  </header>
+  <div class="body">
+<p>——李贼俊夫案有感</p>
+<p>新枢立穗近半百，</p>
+<p>旧人履职方三载。</p>
+<p>朗朗乾坤四风起，</p>
+<p>凄凄囹圄呜咽溢。</p>
+<p>劲风不与李郎便，</p>
+<p>假作夫俊自枉然。</p>
+<p>牛皮功绩上干云，</p>
+<p>落地瓦砾现原形。</p>
+<p>形式主义骗上级，</p>
+<p>强取豪夺盗功名。</p>
+<p>口舌便宜戏同志，</p>
+<p>赶紧干事谋钱是。</p>
+<p>利欲熏心不顾身，</p>
+<p>裙钗圈里辨雌雄。</p>
+<p>红尘一绝同僚笑，</p>
+<p>半是苦涩半是惊。</p>
+<p>同是官场宦游人，</p>
+<p>德才兼备此良训。</p>
+<p>注:德者，道德标准挂嘴边，标者，贪腐标本身体力行，可谓知行合一，认真践行，却原来，混混乐道，误入歧途。李贪俊夫，前广州市国土房管局局长，学止博士后，不可谓不努力；汶川援建英雄，不可谓不荣誉；官居要职，不可谓不受宠。本当自重、自警、自敬，而受人推崇，前程似锦。其实不然，任职后，极尽形式主义，欺上级，讨口舌便宜，辱同僚、戏下属，飞扬跋扈；拉帮结派，中饱私囊，奋不顾身；权倾而欲熏，饥不择食，滥交异性如狗刍，仍不择手段往上爬，却自倔坟墓不自知。乃至东窗事发，一片哗然，有云：知其者谓其咎由自取，不知其者谓其毁人三观。有道是：种瓜得瓜，种豆得豆。如李贪所为，表面上道貌岸然，私底下男盗女娼。便是公德、私德皆失之典范。借古之诗体，发今之感叹！此为记。</p>
+  </div>
+  <p class="notice">© 王胜（wangdw）· 版权所有｜仅供阅读，禁止复制、转载、摘编<br>未经作者书面许可，不得以任何形式复制、转载、摘编或用于商业用途。</p>
+</div>
+<div class="toast" id="toast">版权所有，仅供阅读</div>
+<script>
+(function(){
+  var t=document.getElementById('toast');
+  function warn(){ if(!t) return; t.classList.add('show'); setTimeout(function(){ t.classList.remove('show'); }, 1600); }
+  ['contextmenu','copy','cut','dragstart','selectstart'].forEach(function(k){
+    document.addEventListener(k, function(e){ e.preventDefault(); if(k==='copy') warn(); });
+  });
+  document.addEventListener('keydown', function(e){
+    if((e.ctrlKey||e.metaKey) && ['c','x','s','p','a','u'].indexOf(e.key.toLowerCase())>=0){ e.preventDefault(); warn(); }
+  });
+})();
+</script>
+</body>
+</html>

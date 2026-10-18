@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="copyright" content="© 王胜（wangdw）· 版权所有｜仅供阅读，禁止复制、转载、摘编">
+<title>春 · 德王府</title>
+<style>
+:root { --paper:#f7f1e6; --ink:#3b3428; --line:#d8cdb8; --accent:#8a6d3b; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:var(--paper); color:var(--ink);
+  font-family:"Songti SC","STSong","SimSun",serif; line-height:2;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+  -webkit-touch-callout:none;
+}
+.container { max-width:640px; margin:0 auto; padding:56px 24px 80px; }
+header { text-align:center; margin-bottom:44px; }
+.back { display:inline-block; font-size:13px; color:#9a8a6e; text-decoration:none; margin-bottom:24px; letter-spacing:1px; }
+h1 { font-size:26px; font-weight:normal; letter-spacing:6px; }
+.subtitle { margin-top:10px; font-size:13px; color:#9a8a6e; letter-spacing:2px; }
+.body { font-size:17px; }
+.body p { text-indent:2em; margin-bottom:12px; text-align:justify; }
+.body .poem { text-align:center; text-indent:0; margin-bottom:8px; }
+.notice { text-align:center; margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:12px; color:#a08d6a; letter-spacing:2px; line-height:1.9; }
+.toast { position:fixed; left:50%; bottom:28px; transform:translateX(-50%) translateY(20px); background:#3b3428; color:#f7f1e6; font-size:13px; letter-spacing:1px; padding:10px 18px; border-radius:4px; opacity:0; pointer-events:none; transition:.25s; }
+.toast.show { opacity:.94; transform:translateX(-50%) translateY(0); }
+img { -webkit-user-drag:none; pointer-events:none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a class="back" href="/novels/poems/">← 诗歌</a>
+    <h1>春</h1>
+    <p class="subtitle">诗 · 七言</p>
+  </header>
+  <div class="body">
+<p class="poem">绿树发了新芽，</p>
+<p class="poem">岁月又长了一轮年华，</p>
+<p class="poem">鸟儿的羽毛丰满了，</p>
+<p class="poem">可以振翅高飞，</p>
+<p class="poem">去找妈妈。</p>
+<p class="poem">这才是春的脚步，</p>
+<p class="poem">带着太平洋季风的温暖和湿润，</p>
+<p class="poem">虫儿被惊蛰后醒来，</p>
+<p class="poem">你在屏幕上看你，</p>
+<p class="poem">自己的模样，</p>
+<p class="poem">可曾找到一丝岁月的痕迹，</p>
+<p class="poem">还是在苍白的光里，</p>
+<p class="poem">你发现的不是你，</p>
+<p class="poem">只是一个被数字化的虚拟体，</p>
+<p class="poem">和一堆打发时间用的，</p>
+<p class="poem">刷出存在感的信息。</p>
+<p class="poem">花开花落的时候，</p>
+<p class="poem">临水池塘，</p>
+<p class="poem">一群游鱼嘻嘻，</p>
+<p class="poem">花瓣落下时的涟漪，</p>
+<p class="poem">惊动，</p>
+<p class="poem">鱼翔浅底，</p>
+<p class="poem">鸟儿游戏晴空，</p>
+<p class="poem">饱满的风，</p>
+<p class="poem">吹来了，</p>
+<p class="poem">开花的信息。</p>
+  </div>
+  <p class="notice">© 王胜（wangdw）· 版权所有｜仅供阅读，禁止复制、转载、摘编<br>未经作者书面许可，不得以任何形式复制、转载、摘编或用于商业用途。</p>
+</div>
+<div class="toast" id="toast">版权所有，仅供阅读</div>
+<script>
+(function(){
+  var t=document.getElementById('toast');
+  function warn(){ if(!t) return; t.classList.add('show'); setTimeout(function(){ t.classList.remove('show'); }, 1600); }
+  ['contextmenu','copy','cut','dragstart','selectstart'].forEach(function(k){
+    document.addEventListener(k, function(e){ e.preventDefault(); if(k==='copy') warn(); });
+  });
+  document.addEventListener('keydown', function(e){
+    if((e.ctrlKey||e.metaKey) && ['c','x','s','p','a','u'].indexOf(e.key.toLowerCase())>=0){ e.preventDefault(); warn(); }
+  });
+})();
+</script>
+</body>
+</html>

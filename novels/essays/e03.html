@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="copyright" content="© 王胜（wangdw）· 版权所有｜仅供阅读，禁止复制、转载、摘编">
+<title>境 界 · 德王府</title>
+<style>
+:root { --paper:#f7f1e6; --ink:#3b3428; --line:#d8cdb8; --accent:#8a6d3b; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:var(--paper); color:var(--ink);
+  font-family:"Songti SC","STSong","SimSun",serif; line-height:2;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+  -webkit-touch-callout:none;
+}
+.container { max-width:640px; margin:0 auto; padding:56px 24px 80px; }
+header { text-align:center; margin-bottom:44px; }
+.back { display:inline-block; font-size:13px; color:#9a8a6e; text-decoration:none; margin-bottom:24px; letter-spacing:1px; }
+h1 { font-size:26px; font-weight:normal; letter-spacing:6px; }
+.subtitle { margin-top:10px; font-size:13px; color:#9a8a6e; letter-spacing:2px; }
+.body { font-size:17px; }
+.body p { text-indent:2em; margin-bottom:12px; text-align:justify; }
+.body .poem { text-align:center; text-indent:0; margin-bottom:8px; }
+.notice { text-align:center; margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:12px; color:#a08d6a; letter-spacing:2px; line-height:1.9; }
+.toast { position:fixed; left:50%; bottom:28px; transform:translateX(-50%) translateY(20px); background:#3b3428; color:#f7f1e6; font-size:13px; letter-spacing:1px; padding:10px 18px; border-radius:4px; opacity:0; pointer-events:none; transition:.25s; }
+.toast.show { opacity:.94; transform:translateX(-50%) translateY(0); }
+img { -webkit-user-drag:none; pointer-events:none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a class="back" href="/novels/essays/">← 随笔</a>
+    <h1>境 界</h1>
+    <p class="subtitle">随笔 · 约 860 字</p>
+  </header>
+  <div class="body">
+<p>曾记得，哲学家冯友兰说过：人有三种境界，一种是俗人生活在功利境界，二种是凡人生活在道德境界，三种是圣人、贤者生活在天地境界。日有一悟道，彼圣贤也，会有入俗的一面，若是有鲜活这的一日，边还须有鲜活着的生活，饮食起居，日常交往，都脱不得俗。吃喝拉撒，如何表现在天地境界？想必不会食风餐露，拉野屎野尿吧？！还需要在功利的层面上来解决问题，在高大上，人际交往也有些功利的意味，之所以要有圣贤般的天地境界，应当是在思想层面，对人、对事、对物的态度层面上来理解，或许，才能接近冯友兰的概念。</p>
+<p>境界，在每一个人的生活中，是互换的，持天地之境界来对人、对事、对物，树立人生观、价值观和世界观。持道德境界来交往日常生活，鲜活之人脱不得俗，若一味以天地境界来对任何人事物，怕是有些不近人情、孤芳自赏的味道，不被人看成顽冥不化、神经兮兮，便也是好的。在处理每一件事情上，人情练达也是一门学问，红楼梦也这样说：人情练达皆学问，世事洞明做文章。持道德境界，不行伤天害理，不违心处事，便也是不易。成圣贤者，必也是大苦大难人，内心的煎熬又与何人说的，反而持道德境界，便少些这种煎熬。持功利境界对待自己的事情也无可非厚，有些事情，不去争取，便被人视为迂腐。整天介仁义道德说教，且身体力行，怕也是难以生存下来吧。想便是冯友兰本人，也要争取些功利，才能生活下去。“视金钱如粪土”是一种极端的境界，生活中脱不得干系，虽然，有些时候难能可贵。“视金钱为圭皋”又是另外一种极端，成为了整个的功利境界的奴隶。金钱可有可无，尊重之、德取之、善用之。便是平常心，生活心，接近天地境界。</p>
+<p>由此可见，凡是哲理需要随时感悟，联系实际来看，每一个人其实在生活的三味中，时时刻刻，也在不停的体会这三种境界，三种境界也在时时刻刻，变现在每一个人的生活中，有些时候变现为功利境界，有些时候变现为道德境界，有些时候变现为天地境界，才是完整的生活境界，人生状态，不同的时候，变现的量的多少而已，随着量的积累，才会有质的提升。功利者也有天地境界的时候，天地者也有功利境界的时候，是为知也！</p>
+  </div>
+  <p class="notice">© 王胜（wangdw）· 版权所有｜仅供阅读，禁止复制、转载、摘编<br>未经作者书面许可，不得以任何形式复制、转载、摘编或用于商业用途。</p>
+</div>
+<div class="toast" id="toast">版权所有，仅供阅读</div>
+<script>
+(function(){
+  var t=document.getElementById('toast');
+  function warn(){ if(!t) return; t.classList.add('show'); setTimeout(function(){ t.classList.remove('show'); }, 1600); }
+  ['contextmenu','copy','cut','dragstart','selectstart'].forEach(function(k){
+    document.addEventListener(k, function(e){ e.preventDefault(); if(k==='copy') warn(); });
+  });
+  document.addEventListener('keydown', function(e){
+    if((e.ctrlKey||e.metaKey) && ['c','x','s','p','a','u'].indexOf(e.key.toLowerCase())>=0){ e.preventDefault(); warn(); }
+  });
+})();
+</script>
+</body>
+</html>

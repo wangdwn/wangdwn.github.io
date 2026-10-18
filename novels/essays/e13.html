@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="copyright" content="© 王胜（wangdw）· 版权所有｜仅供阅读，禁止复制、转载、摘编">
+<title>梦 境 · 德王府</title>
+<style>
+:root { --paper:#f7f1e6; --ink:#3b3428; --line:#d8cdb8; --accent:#8a6d3b; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:var(--paper); color:var(--ink);
+  font-family:"Songti SC","STSong","SimSun",serif; line-height:2;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+  -webkit-touch-callout:none;
+}
+.container { max-width:640px; margin:0 auto; padding:56px 24px 80px; }
+header { text-align:center; margin-bottom:44px; }
+.back { display:inline-block; font-size:13px; color:#9a8a6e; text-decoration:none; margin-bottom:24px; letter-spacing:1px; }
+h1 { font-size:26px; font-weight:normal; letter-spacing:6px; }
+.subtitle { margin-top:10px; font-size:13px; color:#9a8a6e; letter-spacing:2px; }
+.body { font-size:17px; }
+.body p { text-indent:2em; margin-bottom:12px; text-align:justify; }
+.body .poem { text-align:center; text-indent:0; margin-bottom:8px; }
+.notice { text-align:center; margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:12px; color:#a08d6a; letter-spacing:2px; line-height:1.9; }
+.toast { position:fixed; left:50%; bottom:28px; transform:translateX(-50%) translateY(20px); background:#3b3428; color:#f7f1e6; font-size:13px; letter-spacing:1px; padding:10px 18px; border-radius:4px; opacity:0; pointer-events:none; transition:.25s; }
+.toast.show { opacity:.94; transform:translateX(-50%) translateY(0); }
+img { -webkit-user-drag:none; pointer-events:none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a class="back" href="/novels/essays/">← 随笔</a>
+    <h1>梦 境</h1>
+    <p class="subtitle">随笔 · 约 695 字</p>
+  </header>
+  <div class="body">
+<p>久不做梦，未曾想昨夜小酌酣睡，一梦之长，好像情景剧一般，是忆是记：</p>
+<p>是日，北方一处古迹，何处未知，随团到此，应是上午时分，时间不详。进入一处大殿，仿佛一间小庭院，正殿所供何方神灵暗处不见真容，右侧门入，游客寥寥，赫然看见当今圣上，在进门靠墙处大香炉，手持一柱大香，正在插入香炉之中，周围并无警备森严，如一普通游客，却不失威严大方。待想再观端详，又好是重新进入大殿时刻，见人群熙熙攘攘，已然知道当今在此，排队要求一见，有人举着相机在不断拍摄，俺已知内里，便不急于探个究竟。场景已经切换到再入内，能看到一些较大的场面了，里面原是有一假山或者一些植被，山后好像有另外一处大殿，当今已经离去，往何处去未可知。倒是俺又不知道从哪里拿了一样黑色大纸，在院内烧了，有同伴劝诫，此行为不当，恐冒犯神灵，俺才急切醒悟，匆匆到殿门入口处求得一柱大香来供，点燃香火之后欲往炉内插放，却又无法放的稳当，一放再放后才想到用手在炉灰里刨了一个坑，才放的安稳，稍稍放下心来。</p>
+<p>场景转入夜晚时分，在某处火车站广场等车彷徨，时已华灯初上，在车站旁道路上，忽然看见一红衣幻象，趴伏在一路人身后随行，俺好奇心切，用手机去拍摄，未料到开了闪光灯，闪光灯一闪，什么也没有照到，反而惊了幻象，直到俺跟前，问俺要换百元人民币，幻象递到俺左手的兑换之物，却是几片连着的135摄影胶片，俺不答应，声称钱包内没有百元之多，幻象便不高兴，口口声声俺要死，俺惊惧中从钱包中翻出2张50元新版人民币给了，幻象递到俺右手的兑换之物，连着的胶片已成被折的断片，还有2、3块好是小一号口香糖形状的透明物件，又好像是冰块一般。</p>
+<p>疑惑间，便醒了！一片茫茫枕楞。</p>
+  </div>
+  <p class="notice">© 王胜（wangdw）· 版权所有｜仅供阅读，禁止复制、转载、摘编<br>未经作者书面许可，不得以任何形式复制、转载、摘编或用于商业用途。</p>
+</div>
+<div class="toast" id="toast">版权所有，仅供阅读</div>
+<script>
+(function(){
+  var t=document.getElementById('toast');
+  function warn(){ if(!t) return; t.classList.add('show'); setTimeout(function(){ t.classList.remove('show'); }, 1600); }
+  ['contextmenu','copy','cut','dragstart','selectstart'].forEach(function(k){
+    document.addEventListener(k, function(e){ e.preventDefault(); if(k==='copy') warn(); });
+  });
+  document.addEventListener('keydown', function(e){
+    if((e.ctrlKey||e.metaKey) && ['c','x','s','p','a','u'].indexOf(e.key.toLowerCase())>=0){ e.preventDefault(); warn(); }
+  });
+})();
+</script>
+</body>
+</html>

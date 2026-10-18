@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="copyright" content="© 王胜（wangdw）· 版权所有｜仅供阅读，禁止复制、转载、摘编">
+<title>增城何屋村揽胜 · 德王府</title>
+<style>
+:root { --paper:#f7f1e6; --ink:#3b3428; --line:#d8cdb8; --accent:#8a6d3b; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:var(--paper); color:var(--ink);
+  font-family:"Songti SC","STSong","SimSun",serif; line-height:2;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+  -webkit-touch-callout:none;
+}
+.container { max-width:640px; margin:0 auto; padding:56px 24px 80px; }
+header { text-align:center; margin-bottom:44px; }
+.back { display:inline-block; font-size:13px; color:#9a8a6e; text-decoration:none; margin-bottom:24px; letter-spacing:1px; }
+h1 { font-size:26px; font-weight:normal; letter-spacing:6px; }
+.subtitle { margin-top:10px; font-size:13px; color:#9a8a6e; letter-spacing:2px; }
+.body { font-size:17px; }
+.body p { text-indent:2em; margin-bottom:12px; text-align:justify; }
+.body .poem { text-align:center; text-indent:0; margin-bottom:8px; }
+.notice { text-align:center; margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:12px; color:#a08d6a; letter-spacing:2px; line-height:1.9; }
+.toast { position:fixed; left:50%; bottom:28px; transform:translateX(-50%) translateY(20px); background:#3b3428; color:#f7f1e6; font-size:13px; letter-spacing:1px; padding:10px 18px; border-radius:4px; opacity:0; pointer-events:none; transition:.25s; }
+.toast.show { opacity:.94; transform:translateX(-50%) translateY(0); }
+img { -webkit-user-drag:none; pointer-events:none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a class="back" href="/novels/poems/">← 诗歌</a>
+    <h1>增城何屋村揽胜</h1>
+    <p class="subtitle">诗 · 七言</p>
+  </header>
+  <div class="body">
+<p class="poem">其一</p>
+<p class="poem">千年仁缅同乌榄，增水琵琶荟萃滩。</p>
+<p class="poem">临水仙姑龙潭埔，东洋鬼哭空兴叹。</p>
+<p class="poem">其二</p>
+<p class="poem">万竿葱翠百年榄，万舍山庄空自闲。</p>
+<p class="poem">阡陌纵横如绿舫，增江河上聚良田。</p>
+<p class="poem">其三</p>
+<p class="poem">千山隔阻原万重，正果轻车靠广河。</p>
+<p class="poem">蝴蝶飞迎山间路，老牛啮草卧半坡。</p>
+<p class="poem">其四</p>
+<p class="poem">此间自有青山和，养老颐年且定酌。</p>
+<p class="poem">两益农商山更绿，务本堂上谱新歌。</p>
+  </div>
+  <p class="notice">© 王胜（wangdw）· 版权所有｜仅供阅读，禁止复制、转载、摘编<br>未经作者书面许可，不得以任何形式复制、转载、摘编或用于商业用途。</p>
+</div>
+<div class="toast" id="toast">版权所有，仅供阅读</div>
+<script>
+(function(){
+  var t=document.getElementById('toast');
+  function warn(){ if(!t) return; t.classList.add('show'); setTimeout(function(){ t.classList.remove('show'); }, 1600); }
+  ['contextmenu','copy','cut','dragstart','selectstart'].forEach(function(k){
+    document.addEventListener(k, function(e){ e.preventDefault(); if(k==='copy') warn(); });
+  });
+  document.addEventListener('keydown', function(e){
+    if((e.ctrlKey||e.metaKey) && ['c','x','s','p','a','u'].indexOf(e.key.toLowerCase())>=0){ e.preventDefault(); warn(); }
+  });
+})();
+</script>
+</body>
+</html>
