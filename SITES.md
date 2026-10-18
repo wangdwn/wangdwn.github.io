@@ -15,11 +15,16 @@
 | 站点 | 备注 | Pages |
 |---|---|---|
 | IESO 地球科学奥林匹克学习平台 | | [ieso-learning-site](https://wangdw.xyz/ieso-learning-site/) |
-| 高考学科馆 | 英语 · 数学已上线；物理/化学/地理占位 | [gaokao](https://wangdw.xyz/learn/gaokao/) |
+| 高考学科馆 | 英数物化地统一入口；暑假卡／母题已分类 | [gaokao](https://wangdw.xyz/learn/gaokao/) |
 | └ 英语子页 | 词根馆深链 + 碎片精读书架 | [english](https://wangdw.xyz/learn/gaokao/english.html) |
 | └ 词根馆（ieso-vocab） | 88 根 · 约 3500 词 · 只练根 | [ieso-vocab](https://wangdw.xyz/ieso-vocab/) |
 | └ 碎片精读 | 5–8 分钟原创 STEM 向短篇 · 星级难度 | [english-bite](https://wangdw.xyz/learn/english-bite/) |
-| └ 数学子页 | 知识卡片 · RPG · 成绩打怪（学习栏不再各挂一张） | [math](https://wangdw.xyz/learn/gaokao/math.html) |
+| └ 数学子页 | 知识卡片 · RPG · 成绩打怪 · 暑假卡／母题 | [math](https://wangdw.xyz/learn/gaokao/math.html) |
+| └ 物理子页 | 暑假卡 8 张 · 母题地图／卷 | [physics](https://wangdw.xyz/learn/gaokao/physics.html) |
+| └ 化学子页 | 母题地图 + 22 题母题卷（暑假卡待补） | [chemistry](https://wangdw.xyz/learn/gaokao/chemistry.html) |
+| └ 地理子页 | 暑假卡 15 张 · IESO 衔接 | [geography](https://wangdw.xyz/learn/gaokao/geography.html) |
+| └ 钰霖暑假学习卡 | 数物地 + 学习法 · 支持 ?cat= 分科 | [summer-cards](https://wangdw.xyz/gaozhong-shuxue-card/summer-cards.html) |
+| └ 母题地图 · 母题卷 | 数学／物理／化学 · 高一–高二 | [muti](https://wangdw.xyz/gaozhong-shuxue-card/muti.html) |
 | └ 高中数学知识卡片 | 人教 A 版必修一二 | [gaozhong-shuxue-card](https://wangdw.xyz/gaozhong-shuxue-card/) |
 | └ 数学答题 RPG | 副本闯关 + 卡片联动 | [math-rpg](https://wangdw.xyz/math-rpg/) |
 | └ 成绩打怪 · 进阶版 | 分数战报 · 本机存储 | [gaokao.github.io](https://wangdw.xyz/gaokao.github.io/) |
