@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>随笔 · 德王府</title>
+<style>
+:root { --paper:#f7f1e6; --ink:#3b3428; --line:#d8cdb8; --accent:#8a6d3b; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:var(--paper); color:var(--ink);
+  font-family:"Songti SC","STSong","SimSun",serif; line-height:1.9;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+}
+.container { max-width:560px; margin:0 auto; padding:48px 22px 70px; }
+header { text-align:center; margin-bottom:34px; }
+.back { display:inline-block; font-size:13px; color:#9a8a6e; text-decoration:none; margin-bottom:22px; letter-spacing:1px; }
+h1 { font-size:26px; font-weight:normal; letter-spacing:6px; }
+.subtitle { margin-top:9px; font-size:13px; color:#9a8a6e; letter-spacing:2px; }
+.essay {
+  display:flex; align-items:baseline; gap:10px; padding:13px 16px;
+  text-decoration:none; color:var(--ink); border-bottom:1px solid var(--line);
+}
+.essay:hover { background:rgba(255,255,255,.4); }
+.essay__name { font-size:17px; color:var(--ink); white-space:nowrap; }
+.essay__desc { font-size:13px; color:#9a8a6e; flex:1; }
+.essay__go { font-size:13px; color:var(--accent); white-space:nowrap; }
+.notice { text-align:center; margin-top:40px; padding-top:18px; border-top:1px solid var(--line); font-size:12px; color:#a08d6a; letter-spacing:2px; }
+img { -webkit-user-drag:none; pointer-events:none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a class="back" href="https://wangdw.xyz/life.html">← 生活</a>
+    <h1>随笔</h1>
+    <p class="subtitle">共 9 篇 · 点击阅读</p>
+  </header>
+<a class="essay" href="/novels/essays/nanyuetian.html">
+  <span class="essay__name">南粤天</span>
+  <span class="essay__desc">五言绝句</span>
+  <span class="essay__go">阅读 →</span>
+</a>
+<a class="essay" href="/novels/essays/qingchun-lieche.html">
+  <span class="essay__name">青春列车</span>
+  <span class="essay__desc">携子返乡随笔</span>
+  <span class="essay__go">阅读 →</span>
+</a>
+<a class="essay" href="/novels/essays/tanqin-1.html">
+  <span class="essay__name">探亲（一）</span>
+  <span class="essay__desc">携子探亲 · 说走就走</span>
+  <span class="essay__go">阅读 →</span>
+</a>
+<a class="essay" href="/novels/essays/tanqin-2.html">
+  <span class="essay__name">探亲（二）</span>
+  <span class="essay__desc">小镇夜市 · 稻收时节</span>
+  <span class="essay__go">阅读 →</span>
+</a>
+<a class="essay" href="/novels/essays/tanqin-3.html">
+  <span class="essay__name">探亲（三）</span>
+  <span class="essay__desc">汉江河岸 · 小座驾</span>
+  <span class="essay__go">阅读 →</span>
+</a>
+<a class="essay" href="/novels/essays/zhai-xigua.html">
+  <span class="essay__name">摘西瓜</span>
+  <span class="essay__desc">童谣</span>
+  <span class="essay__go">阅读 →</span>
+</a>
+<a class="essay" href="/novels/essays/shangban.html">
+  <span class="essay__name">上班</span>
+  <span class="essay__desc">新单位一周记</span>
+  <span class="essay__go">阅读 →</span>
+</a>
+<a class="essay" href="/novels/essays/meimei.html">
+  <span class="essay__name">媒霉</span>
+  <span class="essay__desc">时评 · 郭美美与红会</span>
+  <span class="essay__go">阅读 →</span>
+</a>
+<a class="essay" href="/novels/essays/xianshu.html">
+  <span class="essay__name">闲书</span>
+  <span class="essay__desc">中山图书馆书评</span>
+  <span class="essay__go">阅读 →</span>
+</a>
+
+  <p class="notice">仅供阅读，请勿转载 · 禁止复制</p>
+</div>
+<script>
+(function(){
+  var k=['contextmenu','copy','cut','dragstart','selectstart'];
+  k.forEach(function(t){ document.addEventListener(t, function(e){ e.preventDefault(); }); });
+  document.addEventListener('keydown', function(e){
+    if((e.ctrlKey||e.metaKey) && ['c','x','s','p','a'].includes(e.key.toLowerCase())) e.preventDefault();
+  });
+})();
+</script>
+</body>
+</html>
