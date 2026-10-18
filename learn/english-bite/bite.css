@@ -187,6 +187,18 @@ body.bite .brand__dot{background:linear-gradient(135deg,var(--learn),#34c759)}
 .b-btn--primary{background:var(--learn); color:#fff}
 .b-btn--ghost{background:transparent; color:var(--learn); border:1px solid rgba(0,113,227,.35)}
 
+/* 书架目录抬头 */
+.b-shelf-section{margin-top:8px}
+.b-shelf-heading{
+  font-family:var(--serif); font-size:22px; font-weight:700;
+  letter-spacing:-.01em; color:var(--ink); margin:0 0 6px;
+}
+.b-shelf-hint{margin:0 0 14px; font-size:14px; color:var(--ink-muted); line-height:1.55}
+.b-sep{
+  border:0; border-top:1px solid var(--rule);
+  margin:40px 0 8px;
+}
+
 /* 书架卡片 */
 .b-shelf{display:flex; flex-direction:column; gap:12px; margin-top:8px}
 .b-card{
