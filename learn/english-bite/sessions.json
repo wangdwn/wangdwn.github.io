@@ -1,0 +1,154 @@
+{
+  "updated": "2026-10-18",
+  "note": "原创短文，贴近高考阅读篇幅与词汇密度，非真题原文。更新时按 高一试读→高二→高考冲刺 阶梯投放。",
+  "scale": {
+    "depth": "内容深度 1–5（概念链条、学科跨度）",
+    "difficulty": "词汇与推断难度 1–5"
+  },
+  "sessions": [
+    {
+      "id": "s01",
+      "file": "session-01.html",
+      "title": "The Quiet Superpower of Walking",
+      "topic": "习惯·脑科学",
+      "level": "高一试读",
+      "depth": 2,
+      "difficulty": 2,
+      "depthStars": "★★☆☆☆",
+      "diffStars": "★★☆☆☆",
+      "wordCount": 313,
+      "mins": 6,
+      "lead": "放学路上的十分钟，为什么往往比刷短视频更「值钱」？",
+      "tags": [
+        "习惯",
+        "脑科学"
+      ]
+    },
+    {
+      "id": "s02",
+      "file": "session-02.html",
+      "title": "Why Your Phone Feels Like a Tiny Stove",
+      "topic": "科技·物理",
+      "level": "高二",
+      "depth": 3,
+      "difficulty": 3,
+      "depthStars": "★★★☆☆",
+      "diffStars": "★★★☆☆",
+      "wordCount": 343,
+      "mins": 7,
+      "lead": "打完一局手机烫手？那是芯片在「加班」，也是一堂迷你物理课。",
+      "tags": [
+        "科技",
+        "物理"
+      ]
+    },
+    {
+      "id": "s03",
+      "file": "session-03.html",
+      "title": "Earth's Quiet Tough Guys",
+      "topic": "生物",
+      "level": "高二",
+      "depth": 3,
+      "difficulty": 3,
+      "depthStars": "★★★☆☆",
+      "diffStars": "★★★☆☆",
+      "wordCount": 328,
+      "mins": 7,
+      "lead": "缓步动物：微观却极端耐造——真空、干涸、辐射都难轻易「劝退」。",
+      "tags": [
+        "生物",
+        "STEM"
+      ]
+    },
+    {
+      "id": "s04",
+      "file": "session-04.html",
+      "title": "Debug Like a Lab Report",
+      "topic": "编程思维",
+      "level": "高二",
+      "depth": 3,
+      "difficulty": 3,
+      "depthStars": "★★★☆☆",
+      "diffStars": "★★★☆☆",
+      "wordCount": 308,
+      "mins": 7,
+      "lead": "调试像做实验：假设、单变量、再验证——理科生天然会。",
+      "tags": [
+        "编程",
+        "方法"
+      ]
+    },
+    {
+      "id": "s05",
+      "file": "session-05.html",
+      "title": "When Color Leaves the Reef",
+      "topic": "气候·海洋",
+      "level": "高二",
+      "depth": 4,
+      "difficulty": 3,
+      "depthStars": "★★★★☆",
+      "diffStars": "★★★☆☆",
+      "wordCount": 335,
+      "mins": 7,
+      "lead": "珊瑚白化：高温拆散共生藻——颜色走了，生态压力来了。",
+      "tags": [
+        "气候",
+        "海洋"
+      ]
+    },
+    {
+      "id": "s06",
+      "file": "session-06.html",
+      "title": "Why Lithium Rules the Pocket",
+      "topic": "化学·能源",
+      "level": "高二",
+      "depth": 4,
+      "difficulty": 4,
+      "depthStars": "★★★★☆",
+      "diffStars": "★★★★☆",
+      "wordCount": 336,
+      "mins": 8,
+      "lead": "充电宝和电动车背后的同一位「化学主角」：锂为何轻、为何忙、又为何让人操心回收？",
+      "tags": [
+        "化学",
+        "能源"
+      ]
+    },
+    {
+      "id": "s07",
+      "file": "session-07.html",
+      "title": "Clocks That Need Einstein",
+      "topic": "物理·导航",
+      "level": "高考冲刺",
+      "depth": 4,
+      "difficulty": 4,
+      "depthStars": "★★★★☆",
+      "diffStars": "★★★★☆",
+      "wordCount": 308,
+      "mins": 8,
+      "lead": "手机地图为什么准？原子钟 + 相对论修正——导航里的「高考物理彩蛋」。",
+      "tags": [
+        "物理",
+        "导航"
+      ]
+    },
+    {
+      "id": "s08",
+      "file": "session-08.html",
+      "title": "The Invisible Dust We Drink",
+      "topic": "环境·化学",
+      "level": "高二",
+      "depth": 3,
+      "difficulty": 3,
+      "depthStars": "★★★☆☆",
+      "diffStars": "★★★☆☆",
+      "wordCount": 328,
+      "mins": 7,
+      "lead": "微塑料：小到看不见，却能进食物链——理科阅读里的「身边议题」。",
+      "tags": [
+        "环境",
+        "化学"
+      ]
+    }
+  ]
+}
