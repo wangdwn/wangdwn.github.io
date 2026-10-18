@@ -336,4 +336,5 @@ a:focus-visible { outline: 3px solid rgba(0,113,227,.45); outline-offset: 3px; b
   min-height: 76px;
 }
 .cat-learn .list-group__more { color: var(--learn); }
+.cat-life .list-group__more { color: var(--life); }
 .cat-work .list-group__more { color: var(--work); }

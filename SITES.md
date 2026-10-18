@@ -35,19 +35,20 @@
 
 ## 2. 生活（life.html）
 
-文学创作并入本栏。
+生活栏为分栏门户：五个文学卡片（小说 / 日记 / 随笔 / 诗歌 / 阅读）+ 城市与日常 + 实验归档。内容文件仍在 `novels/` 与 `life/shijing/`，旧 URL 不变。
+
+| 分栏 | 入口 | 收录 |
+|---|---|---|
+| 小说 | [/life/novels/](https://wangdw.xyz/life/novels/) | 《木棉泣血》→ [/novels/mucian-qixue.html](https://wangdw.xyz/novels/mucian-qixue.html) |
+| 日记 | [/life/diary/](https://wangdw.xyz/life/diary/) | 《小子日记》→ [/novels/diary.html](https://wangdw.xyz/novels/diary.html) |
+| 随笔 | [/life/essays/](https://wangdw.xyz/life/essays/) | 生活记（青春列车、探亲、上班、媒霉）+ 随笔 20 篇 + 杂文 6 篇（`novels/essays/` · `novels/zawen/`） |
+| 诗歌 | [/life/poetry/](https://wangdw.xyz/life/poetry/) | 南粤天、摘西瓜；自作 51 篇（`novels/poems/`）；诗经（`/life/shijing/`） |
+| 阅读 | [/life/reading/](https://wangdw.xyz/life/reading/) | 《闲书》书评；读书笔记仍在学习栏 |
+
+### 城市与日常 / 实验归档
 
 | 站点 | 备注 | Pages |
 |---|---|---|
-| 木棉泣血 | 中篇小说《木棉泣血——1938年广州沦陷纪略》· 德文 · 只读阅读页 `novels/mucian-qixue.html` | [mucian-qixue](https://wangdw.xyz/novels/mucian-qixue.html) |
-| 小子日记 | 2010–2011 成长日记 · 139 篇 · 只读页 `novels/diary.html` | [diary](https://wangdw.xyz/novels/diary.html) |
-| 随笔（9 篇） | 散文杂记 · 每篇独立只读页 `novels/essays/` | [nanyuetian](https://wangdw.xyz/novels/essays/nanyuetian.html) |
-| └ 南粤天 · 青春列车 | 五言绝句 · 携子返乡随笔 | [qingchun-lieche](https://wangdw.xyz/novels/essays/qingchun-lieche.html) |
-| └ 探亲（一/二/三） | 携子探亲三篇 | [tanqin-1](https://wangdw.xyz/novels/essays/tanqin-1.html) |
-| └ 摘西瓜 · 上班 · 媒霉 · 闲书 | 童谣 · 一周记 · 时评 · 书评 | [shangban](https://wangdw.xyz/novels/essays/shangban.html) |
-| 诗经（总览） | 仅生活栏 `/life/shijing/`；IESO 首页已去掉入口，旧 `ieso-learning-site/shijing.html` 保留跳转 | [shijing](https://wangdw.xyz/life/shijing/) |
-| └ 十首代表作 · 穿越手册 | 风七·雅二·颂一 · 番外《将仲子》 | [shishou](https://wangdw.xyz/life/shijing/shishou.html) |
-| └ 四季十二首 | 春夏秋冬各三首 | [siji](https://wangdw.xyz/life/shijing/siji.html) |
 | 数字广州 · 城脉千年 | 历代城图与城市考古 | [chengmai-qiannian](https://wangdw.xyz/chengmai-qiannian/) |
 | 装机优化工具 | | [pc-setup-tool](https://wangdw.xyz/pc-setup-tool/) |
 
@@ -62,7 +63,6 @@
 | 蔚蓝之城：珠江口传奇 | 游戏 | [web.game.github.io](https://wangdw.xyz/web.game.github.io/) |
 | 中秋音乐卡 | 一次性节日页 | [zhongqiu-card](https://wangdw.xyz/zhongqiu-card/) |
 
----
 
 ## 3. 工作（work.html）
 

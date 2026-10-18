@@ -9,6 +9,95 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/design-system/tokens.css">
 <link rel="stylesheet" href="/portal.css">
+<style>
+.tiles {
+  max-width: 1080px; margin: 0 auto;
+  padding: 0 22px clamp(36px, 5vw, 56px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media (max-width: 720px) {
+  .tiles { grid-template-columns: 1fr; gap: 14px; }
+}
+.tile {
+  position: relative; overflow: hidden;
+  border-radius: var(--portal-radius);
+  min-height: clamp(220px, 28vw, 280px);
+  padding: clamp(24px, 3.5vw, 36px);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06), 0 16px 48px rgba(0,0,0,.1);
+  transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s;
+  -webkit-tap-highlight-color: transparent;
+}
+.tile:hover, .tile:focus-visible {
+  transform: scale(1.015);
+  box-shadow: 0 4px 16px rgba(0,0,0,.08), 0 24px 64px rgba(0,0,0,.14);
+}
+.tile:active { transform: scale(.995); }
+.tile__media {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  transform: scale(1.02);
+  transition: transform .6s cubic-bezier(.22,1,.36,1);
+}
+.tile:hover .tile__media { transform: scale(1.06); }
+.tile__shade {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.14) 0%, rgba(0,0,0,.32) 42%, rgba(0,0,0,.74) 100%),
+    radial-gradient(120% 80% at 100% 0%, var(--glow) 0%, transparent 55%);
+}
+.tile--novel { --glow: rgba(0,120,100,.38); --accent: #7dffc0; }
+.tile--diary { --glow: rgba(0,150,90,.34); --accent: #9ef0c8; }
+.tile--essay { --glow: rgba(70,130,60,.36); --accent: #b8e89a; }
+.tile--poetry { --glow: rgba(0,140,130,.34); --accent: #8ef0e0; }
+.tile--reading { --glow: rgba(20,100,70,.40); --accent: #8ad4a8; }
+.tile--novel .tile__media { background-image: url('/assets/portal/life-novel.jpg'); }
+.tile--diary .tile__media { background-image: url('/assets/portal/life-diary.jpg'); }
+.tile--essay .tile__media { background-image: url('/assets/portal/life-essay.jpg'); }
+.tile--poetry .tile__media { background-image: url('/assets/portal/life-poetry.jpg'); }
+.tile--reading .tile__media { background-image: url('/assets/portal/life-reading.jpg'); }
+.tile__label {
+  position: relative; z-index: 1;
+  font-size: 13px; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+  text-shadow: 0 1px 8px rgba(0,0,0,.35);
+}
+.tile__title {
+  position: relative; z-index: 1;
+  font-size: clamp(26px, 4.5vw, 34px);
+  font-weight: 700; letter-spacing: -.03em; line-height: 1.1;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 16px rgba(0,0,0,.4);
+}
+.tile__desc {
+  position: relative; z-index: 1;
+  font-size: clamp(14px, 2vw, 16px);
+  color: rgba(255,255,255,.88); max-width: 18em; letter-spacing: -.01em;
+  text-shadow: 0 1px 10px rgba(0,0,0,.35);
+}
+.tile__cta {
+  position: relative; z-index: 1;
+  margin-top: 18px;
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 15px; font-weight: 600; color: #fff;
+  min-height: 40px;
+}
+.tile__cta::after { content: "→"; transition: transform .2s; }
+.tile:hover .tile__cta::after { transform: translateX(4px); }
+.section-label {
+  max-width: 1080px; margin: 0 auto;
+  padding: 8px 22px 12px;
+  font-size: 13px; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--life);
+}
+.secondary-list {
+  max-width: 1080px; margin: 0 auto;
+  padding: 0 22px clamp(24px, 4vw, 40px);
+}
+</style>
 </head>
 <body class="cat-life">
 <header class="topbar">
@@ -29,115 +118,55 @@
     <a class="cat-hero__back" href="https://wangdw.xyz/">← 德王府</a>
     <p class="cat-hero__eyebrow">Life</p>
     <h1 class="cat-hero__title">生活</h1>
-    <p class="cat-hero__lead">文学创作、城市人文与日常工具；实验项目默认收起。</p>
+    <p class="cat-hero__lead">小说、日记、随笔、诗歌、阅读 —— 一栏一门，点进去再看。</p>
   </header>
-  <div class="list">
-    <a class="item item--feature" href="/novels/mucian-qixue.html">
-      <span class="item__banner" aria-hidden="true"></span>
-      <div class="item__body">
-        <div class="item__text">
-          <div class="item__badge">文学创作 · 中篇小说</div>
-          <div class="item__name">木棉泣血</div>
-          <div class="item__desc">1938 年广州沦陷纪略 · 德文 · 仅供阅读</div>
-        </div>
-        <span class="item__go">阅读</span>
-      </div>
+
+  <p class="section-label">文学</p>
+  <section class="tiles" aria-label="文学分栏">
+    <a class="tile tile--novel" href="/life/novels/">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Novel</span>
+      <h2 class="tile__title">小说</h2>
+      <p class="tile__desc">中篇与虚构叙事</p>
+      <span class="tile__cta">进入小说</span>
     </a>
-    <a class="item" href="/novels/diary.html">
-      <div class="item__text">
-        <div class="item__name">小子日记</div>
-        <div class="item__desc">2010–2011 成长日记 · 139 篇 · 仅供阅读</div>
-      </div>
-      <span class="item__go">阅读</span>
+    <a class="tile tile--diary" href="/life/diary/">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Diary</span>
+      <h2 class="tile__title">日记</h2>
+      <p class="tile__desc">成长记录与日常</p>
+      <span class="tile__cta">进入日记</span>
     </a>
-    <div class="list-group">
-      <div class="list-group__head">
-        <a class="list-group__title" href="/novels/essay.html">随笔</a>
-      </div>
-      <a class="item" href="/novels/essays/nanyuetian.html">
-        <div class="item__text">
-          <div class="item__name">南粤天</div>
-          <div class="item__desc">五言绝句 · 仅供阅读</div>
-        </div>
-        <span class="item__go">阅读</span>
-      </a>
-      <a class="item" href="/novels/essays/qingchun-lieche.html">
-        <div class="item__text">
-          <div class="item__name">青春列车</div>
-          <div class="item__desc">携子返乡随笔 · 仅供阅读</div>
-        </div>
-        <span class="item__go">阅读</span>
-      </a>
-      <a class="item" href="/novels/essays/tanqin-1.html">
-        <div class="item__text">
-          <div class="item__name">探亲（一）</div>
-          <div class="item__desc">携子探亲 · 说走就走 · 仅供阅读</div>
-        </div>
-        <span class="item__go">阅读</span>
-      </a>
-      <a class="item" href="/novels/essays/tanqin-2.html">
-        <div class="item__text">
-          <div class="item__name">探亲（二）</div>
-          <div class="item__desc">小镇夜市 · 稻收时节 · 仅供阅读</div>
-        </div>
-        <span class="item__go">阅读</span>
-      </a>
-      <a class="item" href="/novels/essays/tanqin-3.html">
-        <div class="item__text">
-          <div class="item__name">探亲（三）</div>
-          <div class="item__desc">汉江河岸 · 小座驾 · 仅供阅读</div>
-        </div>
-        <span class="item__go">阅读</span>
-      </a>
-      <a class="item" href="/novels/essays/zhai-xigua.html">
-        <div class="item__text">
-          <div class="item__name">摘西瓜</div>
-          <div class="item__desc">童谣 · 仅供阅读</div>
-        </div>
-        <span class="item__go">阅读</span>
-      </a>
-      <a class="item" href="/novels/essays/shangban.html">
-        <div class="item__text">
-          <div class="item__name">上班</div>
-          <div class="item__desc">新单位一周记 · 仅供阅读</div>
-        </div>
-        <span class="item__go">阅读</span>
-      </a>
-      <a class="item" href="/novels/essays/meimei.html">
-        <div class="item__text">
-          <div class="item__name">媒霉</div>
-          <div class="item__desc">时评 · 郭美美与红会 · 仅供阅读</div>
-        </div>
-        <span class="item__go">阅读</span>
-      </a>
-      <a class="item" href="/novels/essays/xianshu.html">
-        <div class="item__text">
-          <div class="item__name">闲书</div>
-          <div class="item__desc">中山图书馆书评 · 仅供阅读</div>
-        </div>
-        <span class="item__go">阅读</span>
-      </a>
-    </div>
-    <div class="list-group">
-      <div class="list-group__head">
-        <a class="list-group__title" href="/life/shijing/">诗经</a>
-        <a class="list-group__more" href="/life/shijing/">总览</a>
-      </div>
-      <a class="item" href="/life/shijing/shishou.html">
-        <div class="item__text">
-          <div class="item__name">十首代表作 · 穿越手册</div>
-          <div class="item__desc">风七 · 雅二 · 颂一 · 附番外《将仲子》</div>
-        </div>
-        <span class="item__go">打开</span>
-      </a>
-      <a class="item" href="/life/shijing/siji.html">
-        <div class="item__text">
-          <div class="item__name">四季十二首</div>
-          <div class="item__desc">春夏秋冬各三首 · 按物候分读</div>
-        </div>
-        <span class="item__go">打开</span>
-      </a>
-    </div>
+    <a class="tile tile--essay" href="/life/essays/">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Essay</span>
+      <h2 class="tile__title">随笔</h2>
+      <p class="tile__desc">散文 · 杂文 · 生活记</p>
+      <span class="tile__cta">进入随笔</span>
+    </a>
+    <a class="tile tile--poetry" href="/life/poetry/">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Poetry</span>
+      <h2 class="tile__title">诗歌</h2>
+      <p class="tile__desc">自作诗词 · 诗经选读</p>
+      <span class="tile__cta">进入诗歌</span>
+    </a>
+    <a class="tile tile--reading" href="/life/reading/">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Reading</span>
+      <h2 class="tile__title">阅读</h2>
+      <p class="tile__desc">书评与闲读札记</p>
+      <span class="tile__cta">进入阅读</span>
+    </a>
+  </section>
+
+  <p class="section-label">城市与日常</p>
+  <div class="list secondary-list">
     <a class="item" href="https://wangdw.xyz/chengmai-qiannian/">
       <div class="item__text">
         <div class="item__name">数字广州 · 城脉千年</div>
