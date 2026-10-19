@@ -1,12 +1,17 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "title": "心理学馆",
-  "template": ["小故事", "理论锚点", "一点史", "当代回响"],
+  "template": [
+    "小故事",
+    "理论锚点",
+    "一点史",
+    "当代回响"
+  ],
   "today": {
-    "date": "2026-10-18",
-    "text": "想改习惯，先写一条 if–then：同一触发、同一步动作，比靠意志力更省力。—— William James 的习惯观 × Gollwitzer 执行意图",
-    "href": "piece-01-habit.html",
-    "source": "《两分钟启动》"
+    "date": "2026-10-19",
+    "text": "情绪上来时先停半拍：是换对这件事的说法，还是只把表情按下去？—— James Gross 再评价 × 表达压抑",
+    "href": "piece-05-reappraisal.html",
+    "source": "《先换个说法》"
   },
   "pieces": [
     {
@@ -14,10 +19,16 @@
       "file": "piece-01-habit.html",
       "title": "两分钟启动",
       "section": "生活里的心理",
-      "tags": ["习惯", "动机"],
+      "tags": [
+        "习惯",
+        "动机"
+      ],
       "desc": "凌晨写计划很燃，早上却动不了——问题多半不在意志力，而在触发与起步门槛。",
       "theory": "William James 习惯路径；Peter Gollwitzer 执行意图；Duhigg/Clear 作流行转述（有条件说明）",
-      "figures": ["William James", "Peter Gollwitzer"],
+      "figures": [
+        "William James",
+        "Peter Gollwitzer"
+      ],
       "mins": 7
     },
     {
@@ -25,10 +36,16 @@
       "file": "piece-02-attention.html",
       "title": "口袋里的注意力税",
       "section": "生活里的心理",
-      "tags": ["注意", "手机"],
+      "tags": [
+        "注意",
+        "手机"
+      ],
       "desc": "手机黑着屏放在桌上，也会分走一部分认知带宽。不是「自制力差」，是环境在加税。",
       "theory": "William James 注意；选择注意轻触 Treisman；当代持续部分注意 / 数字福祉",
-      "figures": ["William James", "Anne Treisman"],
+      "figures": [
+        "William James",
+        "Anne Treisman"
+      ],
       "mins": 7
     },
     {
@@ -36,10 +53,15 @@
       "file": "piece-03-growth.html",
       "title": "错题本上的成长型",
       "section": "学习与动机",
-      "tags": ["学习", "心态"],
+      "tags": [
+        "学习",
+        "心态"
+      ],
       "desc": "「我不是学这科的料」一出口，练习就停了。能力观怎么说，行动就怎么跟。",
       "theory": "Carol Dweck 成长型/固定型心态；诚实提及复现与边界，不作万能鸡汤",
-      "figures": ["Carol Dweck"],
+      "figures": [
+        "Carol Dweck"
+      ],
       "mins": 8
     },
     {
@@ -47,10 +69,33 @@
       "file": "piece-04-loneliness.html",
       "title": "连接很多，为何仍空",
       "section": "研究速览",
-      "tags": ["孤独", "数字生活"],
+      "tags": [
+        "孤独",
+        "数字生活"
+      ],
       "desc": "公开讨论里，「孤独」早已不只是个人心情；从弱连接到被接住，质量比人头像更要紧。",
       "theory": "Baumeister & Leary 归属需要；John Cacioppo 一脉孤独研究（高阶表述，无假数据）",
-      "figures": ["Baumeister & Leary", "John Cacioppo"],
+      "figures": [
+        "Baumeister & Leary",
+        "John Cacioppo"
+      ],
+      "mins": 8
+    },
+    {
+      "id": "piece-05-reappraisal",
+      "file": "piece-05-reappraisal.html",
+      "title": "先换个说法",
+      "section": "生活里的心理",
+      "tags": [
+        "情绪",
+        "调节"
+      ],
+      "desc": "催促短信一来就想回怼，或是笑着说没事、夜里反复回放——差一步：先改解释，还是只压表情。",
+      "theory": "James Gross 认知再评价与表达压抑；Richard Lazarus 评价理论轻触；策略视情境，不作一刀切",
+      "figures": [
+        "James Gross",
+        "Richard Lazarus"
+      ],
       "mins": 8
     }
   ]
