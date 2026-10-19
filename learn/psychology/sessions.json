@@ -9,9 +9,9 @@
   ],
   "today": {
     "date": "2026-10-19",
-    "text": "情绪上来时先停半拍：是换对这件事的说法，还是只把表情按下去？—— James Gross 再评价 × 表达压抑",
-    "href": "piece-05-reappraisal.html",
-    "source": "《先换个说法》"
+    "text": "截止前还在刷无关页面——不是懒，是近处的小爽感压过了远处的大好处。—— George Ainslie 双曲贴现 × 现时偏向",
+    "href": "piece-06-procrastination.html",
+    "source": "《今晚再说》"
   },
   "pieces": [
     {
@@ -95,6 +95,23 @@
       "figures": [
         "James Gross",
         "Richard Lazarus"
+      ],
+      "mins": 8
+    },
+    {
+      "id": "piece-06-procrastination",
+      "file": "piece-06-procrastination.html",
+      "title": "今晚再说",
+      "section": "生活里的心理",
+      "tags": [
+        "拖延",
+        "时间"
+      ],
+      "desc": "截止前还在刷无关页面——不是「懒」，是近处的小爽感压过了远处的大好处。",
+      "theory": "George Ainslie 双曲贴现 / 现时偏向；延迟满足线索轻触",
+      "figures": [
+        "George Ainslie",
+        "Walter Mischel"
       ],
       "mins": 8
     }
