@@ -83,28 +83,22 @@ ol a:hover{background:#f1ece2}
 
 <script>
 (function(){
-  var HASH='c0d6fab1c1127b3237ea80fbc552098916630f3d4cc6ec2b3de09ceaf6f45ad8';
+  var K='ODIwNTE3';
   var gate=document.getElementById('gate');
   var content=document.getElementById('content');
   function show(){ if(gate) gate.style.display='none'; if(content) content.style.display='block'; }
-  async function sha(s){
-    var b=new TextEncoder().encode(s);
-    var d=await crypto.subtle.digest('SHA-256',b);
-    return Array.from(new Uint8Array(d)).map(function(x){return x.toString(16).padStart(2,'0')}).join('');
-  }
-  if(sessionStorage.getItem('shibali_ok')==='1'){ show(); }
+  try{ if(sessionStorage.getItem('shibali_ok')==='1'){ show(); } }catch(e){}
   var btn=document.getElementById('go'), inp=document.getElementById('pw'), err=document.getElementById('err');
-  if(btn){
-    var tryUnlock=async function(){
-      var v=(inp.value||'').trim();
-      if(!v){ err.textContent='请输入口令'; return; }
-      if(await sha(v)===HASH){ sessionStorage.setItem('shibali_ok','1'); show(); }
-      else { err.textContent='口令不对'; inp.value=''; inp.focus(); }
-    };
-    btn.addEventListener('click', tryUnlock);
-    inp.addEventListener('keydown', function(e){ if(e.key==='Enter') tryUnlock(); });
-    setTimeout(function(){ inp.focus(); }, 200);
+  function ok(v){ try{ return btoa(v)===K; }catch(e){ return false; } }
+  function tryUnlock(){
+    var v=(inp.value||'').trim();
+    if(!v){ if(err) err.textContent='请输入口令'; return; }
+    if(ok(v)){ try{ sessionStorage.setItem('shibali_ok','1'); }catch(e){} show(); }
+    else { if(err) err.textContent='口令不对'; inp.value=''; inp.focus(); }
   }
+  if(btn){ btn.addEventListener('click', tryUnlock);
+    inp.addEventListener('keydown', function(e){ if(e.key==='Enter') tryUnlock(); });
+    setTimeout(function(){ inp.focus(); }, 200); }
 })();
 </script>
 
