@@ -2,7 +2,7 @@
 
 门户：<https://wangdw.xyz/>
 
-本文件是根域目录的分类源。门户为两层结构：`index.html` 展示四个栏目卡片；各栏目页（`learn.html` / `life.html` / `work.html` / `flywheel.html`）列出该栏站点。每个 **活 Pages URL 只出现在一个栏目**（顶栏 / 页脚的设计系统快捷入口除外）。
+本文件是根域目录的分类源。门户为两层结构：`index.html` 展示四个栏目卡片；学习／生活／工作为分栏卡片门户（第二层再进目录），飞轮仍为列表。每个 **活 Pages URL 只出现在一个栏目**（顶栏 / 页脚的设计系统快捷入口除外）。
 
 视觉：门户自有 Apple 风壳（`portal.css`）+ [`/design-system/`](https://wangdw.xyz/design-system/)（`tokens.css`）。兄弟仓库请直接链接线上 CSS，不要复制一份 tokens。
 
@@ -12,26 +12,32 @@
 
 ## 1. 学习（learn.html）
 
+学习栏为分栏门户（与生活栏同构）：五个卡片（地球科学 / 高考学科馆 / 心理学馆 / 精读书架 / 读书笔记）。分栏入口在仓库根目录：`/learn-ieso.html` 等；正文仍在 `learn/` 与兄弟 Pages。
+
+| 分栏 | 入口 | 收录 |
+|---|---|---|
+| 地球科学 | [/learn-ieso.html](https://wangdw.xyz/learn-ieso.html) | [ieso-learning-site](https://wangdw.xyz/ieso-learning-site/) |
+| 高考学科馆 | [/learn-gaokao.html](https://wangdw.xyz/learn-gaokao.html) | [gaokao 馆壳](https://wangdw.xyz/learn/gaokao/) · 英数物化地子页 |
+| 心理学馆 | [/learn-psychology.html](https://wangdw.xyz/learn-psychology.html) | [psychology](https://wangdw.xyz/learn/psychology/) · 生活里的心理小故事 |
+| 精读书架 | [/learn-english.html](https://wangdw.xyz/learn-english.html) | [english-bite](https://wangdw.xyz/learn/english-bite/) · 星级沉浸短文 |
+| 读书笔记 | [/learn-notes.html](https://wangdw.xyz/learn-notes.html) | [reading-notes](https://wangdw.xyz/learn/reading-notes/)（不进马斯克知识库） |
+
+### 高考学科馆（分栏内）
+
 | 站点 | 备注 | Pages |
 |---|---|---|
-| IESO 地球科学奥林匹克学习平台 | | [ieso-learning-site](https://wangdw.xyz/ieso-learning-site/) |
-| 高考学科馆 | 英数物化地统一入口；暑假卡／母题已分类 | [gaokao](https://wangdw.xyz/learn/gaokao/) |
-| └ 英语子页 | 词根馆深链 + 碎片精读书架 | [english](https://wangdw.xyz/learn/gaokao/english.html) |
-| └ 词根馆（ieso-vocab） | 88 根 · 约 3500 词 · 只练根 | [ieso-vocab](https://wangdw.xyz/ieso-vocab/) |
-| └ 碎片精读 | 5–8 分钟原创 STEM 向短篇 · 星级难度 | [english-bite](https://wangdw.xyz/learn/english-bite/) |
-| └ 数学子页 | 知识卡片 · RPG · 成绩打怪 · 暑假卡／母题 | [math](https://wangdw.xyz/learn/gaokao/math.html) |
-| └ 物理子页 | 暑假卡 8 张 · 母题地图／卷 | [physics](https://wangdw.xyz/learn/gaokao/physics.html) |
-| └ 化学子页 | 母题地图 + 22 题母题卷（暑假卡待补） | [chemistry](https://wangdw.xyz/learn/gaokao/chemistry.html) |
-| └ 地理子页 | 暑假卡 15 张 · IESO 衔接 | [geography](https://wangdw.xyz/learn/gaokao/geography.html) |
-| └ 钰霖暑假学习卡 | 数物地 + 学习法 · 支持 ?cat= 分科 | [summer-cards](https://wangdw.xyz/gaozhong-shuxue-card/summer-cards.html) |
-| └ 母题地图 · 母题卷 | 数学／物理／化学 · 高一–高二 | [muti](https://wangdw.xyz/gaozhong-shuxue-card/muti.html) |
-| └ 高中数学知识卡片 | 人教 A 版必修一二 | [gaozhong-shuxue-card](https://wangdw.xyz/gaozhong-shuxue-card/) |
-| └ 数学答题 RPG | 副本闯关 + 卡片联动 | [math-rpg](https://wangdw.xyz/math-rpg/) |
-| └ 成绩打怪 · 进阶版 | 分数战报 · 本机存储 | [gaokao.github.io](https://wangdw.xyz/gaokao.github.io/) |
-| 心理学馆 | 成人自修科普；生活／学习／研究速览；与高考馆分开 | [psychology](https://wangdw.xyz/learn/psychology/) |
-| 读书笔记 | 托管于本仓库学习栏 | [reading-notes](https://wangdw.xyz/learn/reading-notes/) |
-
----
+| 高考学科馆壳 | 英数物化地统一入口；暑假卡／母题已分类 | [gaokao](https://wangdw.xyz/learn/gaokao/) |
+| 英语子页 | 词根馆深链；阅读见精读书架 | [english](https://wangdw.xyz/learn/gaokao/english.html) |
+| 词根馆（ieso-vocab） | 88 根 · 约 3500 词 · 只练根 | [ieso-vocab](https://wangdw.xyz/ieso-vocab/) |
+| 数学子页 | 知识卡片 · RPG · 成绩打怪 · 暑假卡／母题 | [math](https://wangdw.xyz/learn/gaokao/math.html) |
+| 物理子页 | 暑假卡 8 张 · 母题地图／卷 | [physics](https://wangdw.xyz/learn/gaokao/physics.html) |
+| 化学子页 | 母题地图 + 22 题母题卷（暑假卡待补） | [chemistry](https://wangdw.xyz/learn/gaokao/chemistry.html) |
+| 地理子页 | 暑假卡 15 张 · IESO 衔接 | [geography](https://wangdw.xyz/learn/gaokao/geography.html) |
+| 钰霖暑假学习卡 | 数物地 + 学习法 · 支持 ?cat= 分科 | [summer-cards](https://wangdw.xyz/gaozhong-shuxue-card/summer-cards.html) |
+| 母题地图 · 母题卷 | 数学／物理／化学 · 高一–高二 | [muti](https://wangdw.xyz/gaozhong-shuxue-card/muti.html) |
+| 高中数学知识卡片 | 人教 A 版必修一二 | [gaozhong-shuxue-card](https://wangdw.xyz/gaozhong-shuxue-card/) |
+| 数学答题 RPG | 副本闯关 + 卡片联动 | [math-rpg](https://wangdw.xyz/math-rpg/) |
+| 成绩打怪 · 进阶版 | 分数战报 · 本机存储 | [gaokao.github.io](https://wangdw.xyz/gaokao.github.io/) |
 
 ## 2. 生活（life.html）
 
@@ -67,7 +73,17 @@
 
 ## 3. 工作（work.html）
 
-### 海洋系列 · 三盘一底座（工作页英雄区）
+工作栏为分栏门户（与生活／学习同构）：五个卡片（家底盘 / 经营盘 / 质量盘 / 周报底座 / 专业工具）。分栏入口：`/work-assets.html` 等。
+
+| 分栏 | 入口 | 收录 |
+|---|---|---|
+| 家底盘 | [/work-assets.html](https://wangdw.xyz/work-assets.html) | [广海汇](https://wangdw.xyz/guangzhou-marine-enterprises/) · [节点地图](https://wangdw.xyz/ocean-node-map/) |
+| 经营盘 | [/work-ops.html](https://wangdw.xyz/work-ops.html) | [结构判断台](https://wangdw.xyz/structure.html) · [监测站](https://wangdw.xyz/marine-monitor/) · [深度分析](https://wangdw.xyz/gz-marine-analysis/) · [招标雷达](https://wangdw.xyz/geo-ocean-bidding/) |
+| 质量盘 | [/work-quality.html](https://wangdw.xyz/work-quality.html) | [海洋经济信号灯](https://wangdw.xyz/guangzhou-ocean-dashboard/) |
+| 周报底座 | [/work-weekly.html](https://wangdw.xyz/work-weekly.html) | [海洋周报](https://wangdw.xyz/marine-weekly/) |
+| 专业工具 | [/work-tools.html](https://wangdw.xyz/work-tools.html) | 奖励申报 · 论文库 · GeoLibre · 土地测算 |
+
+### 海洋系列 · 三盘一底座（分栏明细）
 
 把海洋经济当成一家「巨型企业」的数字镜像：家底 / 经营 / 质量 / 政策底座。
 

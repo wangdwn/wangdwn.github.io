@@ -9,6 +9,91 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/design-system/tokens.css">
 <link rel="stylesheet" href="/portal.css">
+<style>
+.tiles {
+  max-width: 1080px; margin: 0 auto;
+  padding: 0 22px clamp(36px, 5vw, 56px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media (max-width: 720px) {
+  .tiles { grid-template-columns: 1fr; gap: 14px; }
+}
+.tile {
+  position: relative; overflow: hidden;
+  border-radius: var(--portal-radius);
+  min-height: clamp(220px, 28vw, 280px);
+  padding: clamp(24px, 3.5vw, 36px);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06), 0 16px 48px rgba(0,0,0,.1);
+  transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s;
+  -webkit-tap-highlight-color: transparent;
+}
+.tile:hover, .tile:focus-visible {
+  transform: scale(1.015);
+  box-shadow: 0 4px 16px rgba(0,0,0,.08), 0 24px 64px rgba(0,0,0,.14);
+}
+.tile:active { transform: scale(.995); }
+.tile__media {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  transform: scale(1.02);
+  transition: transform .6s cubic-bezier(.22,1,.36,1);
+}
+.tile:hover .tile__media { transform: scale(1.06); }
+.tile__shade {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.14) 0%, rgba(0,0,0,.32) 42%, rgba(0,0,0,.74) 100%),
+    radial-gradient(120% 80% at 100% 0%, var(--glow) 0%, transparent 55%);
+}
+.tile--assets { --glow: rgba(59,130,246,.42); --accent: #9ecfff; }
+.tile--ops { --glow: rgba(13,148,136,.40); --accent: #7dffd4; }
+.tile--quality { --glow: rgba(217,119,6,.38); --accent: #ffd08a; }
+.tile--weekly { --glow: rgba(220,80,60,.34); --accent: #ffb0a0; }
+.tile--tools { --glow: rgba(100,120,160,.40); --accent: #c8d4e8; }
+.tile--assets .tile__media { background-image: url('/assets/portal/work-assets.jpg?v=1'); }
+.tile--ops .tile__media { background-image: url('/assets/portal/work-ops.jpg?v=1'); }
+.tile--quality .tile__media { background-image: url('/assets/portal/work-quality.jpg?v=1'); }
+.tile--weekly .tile__media { background-image: url('/assets/portal/work-weekly.jpg?v=1'); }
+.tile--tools .tile__media { background-image: url('/assets/portal/work-tools.jpg?v=1'); }
+.tile__label {
+  position: relative; z-index: 1;
+  font-size: 13px; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+  text-shadow: 0 1px 8px rgba(0,0,0,.35);
+}
+.tile__title {
+  position: relative; z-index: 1;
+  font-size: clamp(26px, 4.5vw, 34px);
+  font-weight: 700; letter-spacing: -.03em; line-height: 1.1;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 16px rgba(0,0,0,.4);
+}
+.tile__desc {
+  position: relative; z-index: 1;
+  font-size: clamp(14px, 2vw, 16px);
+  color: rgba(255,255,255,.88); max-width: 18em; letter-spacing: -.01em;
+  text-shadow: 0 1px 10px rgba(0,0,0,.35);
+}
+.tile__cta {
+  position: relative; z-index: 1;
+  margin-top: 18px;
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 15px; font-weight: 600; color: #fff;
+  min-height: 40px;
+}
+.tile__cta::after { content: "→"; transition: transform .2s; }
+.tile:hover .tile__cta::after { transform: translateX(4px); }
+.section-label {
+  max-width: 1080px; margin: 0 auto;
+  padding: 8px 22px 12px;
+  font-size: 13px; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--work);
+}
+</style>
 </head>
 <body class="cat-work">
 <header class="topbar">
@@ -29,77 +114,56 @@
     <a class="cat-hero__back" href="https://wangdw.xyz/">← 德王府</a>
     <p class="cat-hero__eyebrow">Work</p>
     <h1 class="cat-hero__title">工作</h1>
-    <p class="cat-hero__lead">海洋系列三盘一底座，以及奖励申报、论文库与测算工具。</p>
+    <p class="cat-hero__lead">海洋系列三盘一底座，以及专业工具 —— 一栏一门，点进去再看。</p>
   </header>
 
-  <div class="pans" aria-label="海洋四盘">
-    <div class="pan pan--a">
-      <span class="pan__glow" aria-hidden="true"></span>
-      <span class="pan__tag">A · 家底</span>
-      <div class="pan__q">广州涉海企业，谁值得跟？</div>
-      <div class="pan__role">广海汇·企业全景看板</div>
-      <a class="pan__cta" href="https://wangdw.xyz/guangzhou-marine-enterprises/">打开家底盘</a>
-      <div class="pan__subs">子模块：<a href="https://wangdw.xyz/ocean-node-map/">涉海创新节点地图</a></div>
-    </div>
-    <div class="pan pan--b">
-      <span class="pan__glow" aria-hidden="true"></span>
-      <span class="pan__tag">B · 经营</span>
-      <div class="pan__q">结构判断：家底 / 经营 / 质量</div>
-      <div class="pan__role">监测研判台 · 可溯源指标</div>
-      <a class="pan__cta" href="https://wangdw.xyz/structure.html">打开结构判断台</a>
-      <div class="pan__subs">并入：
-        <a href="https://wangdw.xyz/marine-monitor/">监测站</a> ·
-        <a href="https://wangdw.xyz/gz-marine-analysis/">深度分析</a> ·
-        <a href="https://wangdw.xyz/geo-ocean-bidding/">招标雷达</a>
-      </div>
-    </div>
-    <div class="pan pan--c">
-      <span class="pan__glow" aria-hidden="true"></span>
-      <span class="pan__tag">C · 质量</span>
-      <div class="pan__q">现在，健康吗？</div>
-      <div class="pan__role">海洋经济信号灯 · 五路预警</div>
-      <a class="pan__cta" href="https://wangdw.xyz/guangzhou-ocean-dashboard/">打开质量盘</a>
-    </div>
-    <div class="pan pan--d">
-      <span class="pan__glow" aria-hidden="true"></span>
-      <span class="pan__tag">D · 底座</span>
-      <div class="pan__q">历史趋势，怎么走的？</div>
-      <div class="pan__role">海洋周报·时间序列档案</div>
-      <a class="pan__cta" href="https://wangdw.xyz/marine-weekly/">打开底座</a>
-    </div>
-  </div>
+  <p class="section-label">海洋系列</p>
+  <section class="tiles" aria-label="海洋分栏">
+    <a class="tile tile--assets" href="/work-assets.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">A · Assets</span>
+      <h2 class="tile__title">家底盘</h2>
+      <p class="tile__desc">广海汇 · 企业全景与节点地图</p>
+      <span class="tile__cta">进入家底盘</span>
+    </a>
+    <a class="tile tile--ops" href="/work-ops.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">B · Operations</span>
+      <h2 class="tile__title">经营盘</h2>
+      <p class="tile__desc">结构判断 · 监测 · 招标雷达</p>
+      <span class="tile__cta">进入经营盘</span>
+    </a>
+    <a class="tile tile--quality" href="/work-quality.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">C · Quality</span>
+      <h2 class="tile__title">质量盘</h2>
+      <p class="tile__desc">海洋经济信号灯 · 五路预警</p>
+      <span class="tile__cta">进入质量盘</span>
+    </a>
+    <a class="tile tile--weekly" href="/work-weekly.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">D · Archive</span>
+      <h2 class="tile__title">周报底座</h2>
+      <p class="tile__desc">海洋周报 · 时间序列档案</p>
+      <span class="tile__cta">进入周报底座</span>
+    </a>
+  </section>
 
   <p class="section-label">专业工具</p>
-  <div class="list">
-    <a class="item" href="https://wangdw.xyz/awards-guide/">
-      <div class="item__text">
-        <div class="item__name">地海测·科技奖励申报指南</div>
-        <div class="item__desc">地质海洋测绘领域 · 科技奖励与职称评审申报手册</div>
-      </div>
-      <span class="item__go">打开</span>
+  <section class="tiles" aria-label="专业工具" style="padding-top:0">
+    <a class="tile tile--tools" href="/work-tools.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Tools</span>
+      <h2 class="tile__title">专业工具</h2>
+      <p class="tile__desc">奖励申报 · 论文库 · GIS · 测算</p>
+      <span class="tile__cta">进入专业工具</span>
     </a>
-    <a class="item" href="https://wangdw.xyz/paper-db/">
-      <div class="item__text">
-        <div class="item__name">高端论文数据库</div>
-        <div class="item__desc">地质灾害与矿产资源方向 · 中英双语标题</div>
-      </div>
-      <span class="item__go">打开</span>
-    </a>
-    <a class="item" href="https://wangdw.xyz/geolibre-manual/">
-      <div class="item__text">
-        <div class="item__name">GeoLibre 使用手册</div>
-        <div class="item__desc">开源 GIS 平台中文手册 · 插件教程 · SQL 工作区</div>
-      </div>
-      <span class="item__go">打开</span>
-    </a>
-    <a class="item" href="https://wangdw.xyz/parcel-decision-workbench/">
-      <div class="item__text">
-        <div class="item__name">土地出让测算与监测校准</div>
-        <div class="item__desc">企业视角测算模型 · 纯静态原型</div>
-      </div>
-      <span class="item__go">打开</span>
-    </a>
-  </div>
+  </section>
 </main>
 <footer class="footer">
   <a href="https://wangdw.xyz/">德王府</a> · <a href="https://github.com/wangdwn/wangdwn.github.io/blob/main/SITES.md">SITES.md</a>

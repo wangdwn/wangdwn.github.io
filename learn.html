@@ -9,6 +9,91 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/design-system/tokens.css">
 <link rel="stylesheet" href="/portal.css">
+<style>
+.tiles {
+  max-width: 1080px; margin: 0 auto;
+  padding: 0 22px clamp(36px, 5vw, 56px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media (max-width: 720px) {
+  .tiles { grid-template-columns: 1fr; gap: 14px; }
+}
+.tile {
+  position: relative; overflow: hidden;
+  border-radius: var(--portal-radius);
+  min-height: clamp(220px, 28vw, 280px);
+  padding: clamp(24px, 3.5vw, 36px);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06), 0 16px 48px rgba(0,0,0,.1);
+  transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s;
+  -webkit-tap-highlight-color: transparent;
+}
+.tile:hover, .tile:focus-visible {
+  transform: scale(1.015);
+  box-shadow: 0 4px 16px rgba(0,0,0,.08), 0 24px 64px rgba(0,0,0,.14);
+}
+.tile:active { transform: scale(.995); }
+.tile__media {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  transform: scale(1.02);
+  transition: transform .6s cubic-bezier(.22,1,.36,1);
+}
+.tile:hover .tile__media { transform: scale(1.06); }
+.tile__shade {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.14) 0%, rgba(0,0,0,.32) 42%, rgba(0,0,0,.74) 100%),
+    radial-gradient(120% 80% at 100% 0%, var(--glow) 0%, transparent 55%);
+}
+.tile--ieso { --glow: rgba(0,113,227,.40); --accent: #9ecfff; }
+.tile--gaokao { --glow: rgba(30,90,200,.38); --accent: #8ab4ff; }
+.tile--psy { --glow: rgba(80,120,220,.36); --accent: #b8c8ff; }
+.tile--english { --glow: rgba(0,130,200,.38); --accent: #7ed0ff; }
+.tile--notes { --glow: rgba(40,100,180,.40); --accent: #a8d0ff; }
+.tile--ieso .tile__media { background-image: url('/assets/portal/learn-ieso.jpg?v=1'); }
+.tile--gaokao .tile__media { background-image: url('/assets/portal/learn-gaokao.jpg?v=1'); }
+.tile--psy .tile__media { background-image: url('/assets/portal/learn-psychology.jpg?v=1'); }
+.tile--english .tile__media { background-image: url('/assets/portal/learn-english.jpg?v=1'); }
+.tile--notes .tile__media { background-image: url('/assets/portal/learn-notes.jpg?v=1'); }
+.tile__label {
+  position: relative; z-index: 1;
+  font-size: 13px; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+  text-shadow: 0 1px 8px rgba(0,0,0,.35);
+}
+.tile__title {
+  position: relative; z-index: 1;
+  font-size: clamp(26px, 4.5vw, 34px);
+  font-weight: 700; letter-spacing: -.03em; line-height: 1.1;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 16px rgba(0,0,0,.4);
+}
+.tile__desc {
+  position: relative; z-index: 1;
+  font-size: clamp(14px, 2vw, 16px);
+  color: rgba(255,255,255,.88); max-width: 18em; letter-spacing: -.01em;
+  text-shadow: 0 1px 10px rgba(0,0,0,.35);
+}
+.tile__cta {
+  position: relative; z-index: 1;
+  margin-top: 18px;
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 15px; font-weight: 600; color: #fff;
+  min-height: 40px;
+}
+.tile__cta::after { content: "→"; transition: transform .2s; }
+.tile:hover .tile__cta::after { transform: translateX(4px); }
+.section-label {
+  max-width: 1080px; margin: 0 auto;
+  padding: 8px 22px 12px;
+  font-size: 13px; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--learn);
+}
+</style>
 </head>
 <body class="cat-learn">
 <header class="topbar">
@@ -29,38 +114,52 @@
     <a class="cat-hero__back" href="https://wangdw.xyz/">← 德王府</a>
     <p class="cat-hero__eyebrow">Learn</p>
     <h1 class="cat-hero__title">学习</h1>
-    <p class="cat-hero__lead">地球科学备考、高考学科馆、心理学馆、读书笔记 —— 练与记、终身自修都在这里。</p>
+    <p class="cat-hero__lead">地球科学、高考学科馆、心理学馆、精读书架与读书笔记 —— 一栏一门，点进去再看。</p>
   </header>
-  <div class="list">
-    <a class="item" href="https://wangdw.xyz/ieso-learning-site/">
-      <div class="item__text">
-        <div class="item__name">IESO 地球科学奥林匹克学习平台</div>
-        <div class="item__desc">地质海洋行业 · 备考资源 · 真题训练</div>
-      </div>
-      <span class="item__go">打开</span>
+
+  <p class="section-label">分栏</p>
+  <section class="tiles" aria-label="学习分栏">
+    <a class="tile tile--ieso" href="/learn-ieso.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Earth Science</span>
+      <h2 class="tile__title">地球科学</h2>
+      <p class="tile__desc">IESO 备考 · 真题与资源</p>
+      <span class="tile__cta">进入地球科学</span>
     </a>
-    <a class="item" href="/learn/gaokao/">
-      <div class="item__text">
-        <div class="item__name">高考学科馆</div>
-        <div class="item__desc">英数物化地 · 暑假学习卡与母题卷已分类挂入</div>
-      </div>
-      <span class="item__go">打开</span>
+    <a class="tile tile--gaokao" href="/learn-gaokao.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Gaokao Hub</span>
+      <h2 class="tile__title">高考学科馆</h2>
+      <p class="tile__desc">英数物化地 · 母题与学习卡</p>
+      <span class="tile__cta">进入高考馆</span>
     </a>
-    <a class="item" href="/learn/psychology/">
-      <div class="item__text">
-        <div class="item__name">心理学馆</div>
-        <div class="item__desc">生活里的心理 · 学习与动机 · 研究速览 · 小故事科普</div>
-      </div>
-      <span class="item__go">打开</span>
+    <a class="tile tile--psy" href="/learn-psychology.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Psychology</span>
+      <h2 class="tile__title">心理学馆</h2>
+      <p class="tile__desc">生活里的心理 · 小故事科普</p>
+      <span class="tile__cta">进入心理学馆</span>
     </a>
-    <a class="item" href="/learn/reading-notes/">
-      <div class="item__text">
-        <div class="item__name">读书笔记</div>
-        <div class="item__desc">姚班式精读 · 《奇点更近》全书笔记与判断</div>
-      </div>
-      <span class="item__go">打开</span>
+    <a class="tile tile--english" href="/learn-english.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">English Bite</span>
+      <h2 class="tile__title">精读书架</h2>
+      <p class="tile__desc">沉浸短文 · 星级深度难度</p>
+      <span class="tile__cta">进入精读书架</span>
     </a>
-  </div>
+    <a class="tile tile--notes" href="/learn-notes.html">
+      <span class="tile__media" aria-hidden="true"></span>
+      <span class="tile__shade" aria-hidden="true"></span>
+      <span class="tile__label">Reading Notes</span>
+      <h2 class="tile__title">读书笔记</h2>
+      <p class="tile__desc">姚班式精读 · 判断与笔记</p>
+      <span class="tile__cta">进入读书笔记</span>
+    </a>
+  </section>
 </main>
 <footer class="footer">
   <a href="https://wangdw.xyz/">德王府</a> · <a href="https://github.com/wangdwn/wangdwn.github.io/blob/main/SITES.md">SITES.md</a>
