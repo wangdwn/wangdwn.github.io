@@ -36,6 +36,11 @@ ol a{display:flex;align-items:baseline;gap:14px;padding:15px 4px;text-decoration
 h1{font-size:28px;letter-spacing:.14em;text-align:center;margin:0 0 8px}
 .tagline{text-align:center;color:var(--muted);font-size:13px;letter-spacing:.24em;margin-bottom:30px}
 .copy{border:1px solid var(--line);background:#fbf9f4;border-radius:10px;padding:18px 20px;font-size:12.5px;line-height:1.95;color:#4a453d}
+
+/* 防复制加强 */
+html,body,.wrap,.wrap *{-webkit-user-select:none!important;-moz-user-select:none!important;-ms-user-select:none!important;user-select:none!important;-webkit-user-drag:none!important;}
+::selection{background:transparent!important;color:inherit!important}
+::-moz-selection{background:transparent!important;color:inherit!important}
 </style></head><body oncontextmenu="return false"><div id="gate"><div class="gate-box"><div class="gate-title">十八里铺</div><div class="gate-sub">本作品仅限授权阅读，请输入访问口令</div><input id="pw" type="password" autocomplete="off" placeholder="口令"><button id="go" type="button">进入</button><div id="err"></div></div></div><div class="wm"></div>
 <div class="wrap" id="content" style="display:none">
 <h1>十八里铺</h1><div class="tagline">长 篇 小 说</div>
