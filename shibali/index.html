@@ -28,6 +28,9 @@ blockquote{margin:1.4em 1.2em;padding-left:1em;border-left:3px solid var(--line)
 #err{color:#a33;font-size:12px;height:18px;margin-top:8px}
 @media print{body{display:none!important}}
 
+html,body,.wrap,.wrap *{-webkit-user-select:none!important;-moz-user-select:none!important;-ms-user-select:none!important;user-select:none!important;-webkit-user-drag:none!important;}
+::selection{background:transparent!important;color:inherit!important}
+
 ol{list-style:none;padding:0;margin:0 0 40px;border-top:1px solid var(--line)}
 ol li{border-bottom:1px solid var(--line)}
 ol a{display:flex;align-items:baseline;gap:14px;padding:15px 4px;text-decoration:none;color:var(--ink)}
@@ -36,11 +39,6 @@ ol a{display:flex;align-items:baseline;gap:14px;padding:15px 4px;text-decoration
 h1{font-size:28px;letter-spacing:.14em;text-align:center;margin:0 0 8px}
 .tagline{text-align:center;color:var(--muted);font-size:13px;letter-spacing:.24em;margin-bottom:30px}
 .copy{border:1px solid var(--line);background:#fbf9f4;border-radius:10px;padding:18px 20px;font-size:12.5px;line-height:1.95;color:#4a453d}
-
-/* 防复制加强 */
-html,body,.wrap,.wrap *{-webkit-user-select:none!important;-moz-user-select:none!important;-ms-user-select:none!important;user-select:none!important;-webkit-user-drag:none!important;}
-::selection{background:transparent!important;color:inherit!important}
-::-moz-selection{background:transparent!important;color:inherit!important}
 </style></head><body oncontextmenu="return false"><div id="gate"><div class="gate-box"><div class="gate-title">十八里铺</div><div class="gate-sub">本作品仅限授权阅读，请输入访问口令</div><input id="pw" type="password" autocomplete="off" placeholder="口令"><button id="go" type="button">进入</button><div id="err"></div></div></div><div class="wm"></div>
 <div class="wrap" id="content" style="display:none">
 <h1>十八里铺</h1><div class="tagline">长 篇 小 说</div>
@@ -52,5 +50,4 @@ html,body,.wrap,.wrap *{-webkit-user-select:none!important;-moz-user-select:none
 <li><a href="5.html"><span class="no">五</span><span class="cn">信箱</span><span class="wc">12092 字</span></a></li></ol>
 <div class="copy"><b>版权声明</b><br>© 2026《十八里铺》· 作者保留全部权利，受《中华人民共和国著作权法》保护。未经书面许可，不得复制、转载、摘编、改编、镜像、传播或商用。侵权必究。</div>
 <div class="foot">全文已发 5 章 · 约 44959 字</div>
-</div><script>(function(){var K="ODIwNTE3";var gate=document.getElementById("gate"),content=document.getElementById("content");function show(){if(gate)gate.style.display="none";if(content)content.style.display="block";}try{if(sessionStorage.getItem("shibali_ok")==="1"){show();}}catch(e){}var btn=document.getElementById("go"),inp=document.getElementById("pw"),err=document.getElementById("err");function ok(v){try{return btoa(v)===K;}catch(e){return false;}}function tryUnlock(){var v=(inp.value||"").trim();if(!v){if(err)err.textContent="请输入口令";return;}if(ok(v)){try{sessionStorage.setItem("shibali_ok","1");}catch(e){}show();}else{if(err)err.textContent="口令不对";inp.value="";inp.focus();}}if(btn){btn.addEventListener("click",tryUnlock);inp.addEventListener("keydown",function(e){if(e.key==="Enter")tryUnlock();});setTimeout(function(){inp.focus();},200);}})();</script><script>(function(){var block=function(e){e.preventDefault();e.stopPropagation();return false;};["copy","cut","contextmenu","dragstart","selectstart","beforecopy"].forEach(function(t){document.addEventListener(t,block,{capture:true});});document.addEventListener("keydown",function(e){var k=(e.key||"").toLowerCase(),m=e.ctrlKey||e.metaKey;if(m&&["c","x","a","s","p","u"].indexOf(k)>=0){e.preventDefault();e.stopPropagation();return false;}}, {capture:true});})();</script>
-</body></html>
+</div><script>(function(){var b=function(e){e.preventDefault();e.stopPropagation();return false;};["copy","cut","contextmenu","dragstart","selectstart","beforecopy"].forEach(function(t){document.addEventListener(t,b,{capture:true});});document.addEventListener("keydown",function(e){var k=(e.key||"").toLowerCase(),m=e.ctrlKey||e.metaKey;if(m&&["c","x","a","s","p","u"].indexOf(k)>=0){e.preventDefault();e.stopPropagation();return false;}},{capture:true});})();</script><script>(function(){var K="ODIwNTE3";var gate=document.getElementById("gate"),content=document.getElementById("content");function show(){if(gate)gate.style.display="none";if(content)content.style.display="block";}try{if(sessionStorage.getItem("shibali_ok")==="1"){show();}}catch(e){}var btn=document.getElementById("go"),inp=document.getElementById("pw"),err=document.getElementById("err");function ok(v){try{return btoa(v)===K;}catch(e){return false;}}function tryUnlock(){var v=(inp.value||"").trim();if(!v){if(err)err.textContent="请输入口令";return;}if(ok(v)){try{sessionStorage.setItem("shibali_ok","1");}catch(e){}show();}else{if(err)err.textContent="口令不对";inp.value="";inp.focus();}}if(btn){btn.addEventListener("click",tryUnlock);inp.addEventListener("keydown",function(e){if(e.key==="Enter")tryUnlock();});setTimeout(function(){inp.focus();},200);}})();</script></body></html>
