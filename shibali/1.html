@@ -23,10 +23,30 @@ blockquote{margin:1.4em 1.2em;padding-left:1em;border-left:3px solid var(--line)
 .wm{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.038;
  background-image:repeating-linear-gradient(-32deg,transparent 0 118px,#000 118px 120px)}
 @media print{body{display:none!important}}
+
+#gate{position:fixed;inset:0;z-index:99;background:var(--paper);display:flex;align-items:center;justify-content:center;padding:24px}
+#gate .gate-box{max-width:340px;width:100%;text-align:center;font-family:-apple-system,"PingFang SC",sans-serif}
+#gate .gate-title{font-size:22px;letter-spacing:.2em;margin-bottom:8px}
+#gate .gate-sub{font-size:12.5px;color:var(--muted);margin-bottom:22px}
+#pw{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;font-size:15px;text-align:center;letter-spacing:.1em;outline:none}
+#pw:focus{border-color:#b9a98d}
+#go{margin-top:12px;width:100%;padding:11px;border:0;border-radius:8px;background:#1a1a1a;color:#fff;font-size:14px;cursor:pointer}
+#err{color:#a33;font-size:12px;height:18px;margin-top:8px}
+
 </style></head>
 <body oncontextmenu="return false">
+<div id="gate">
+  <div class="gate-box">
+    <div class="gate-title">十八里铺</div>
+    <div class="gate-sub">本作品仅限授权阅读，请输入访问口令</div>
+    <input id="pw" type="password" autocomplete="off" placeholder="口令">
+    <button id="go" type="button">进入</button>
+    <div id="err"></div>
+  </div>
+</div>
+
 <div class="wm"></div>
-<div class="wrap">
+<div class="wrap" id="content" style="display:none">
 <div class="nav"><a href="index.html">目录</a><a href="2.html">二 · 刨子·父亲 →</a><span></span></div>
 <h1 class="ch">一 · 一间房</h1>
 <div class="sub">十八里铺 · 长篇小说</div>
@@ -206,4 +226,32 @@ blockquote{margin:1.4em 1.2em;padding-left:1em;border-left:3px solid var(--line)
   }, {capture:true});
 })();
 </script>
+
+<script>
+(function(){
+  var HASH='09ad2413cfda4916c43a39a0303cf7761480aca6199a2b0f833e3da70ae4c966';
+  var gate=document.getElementById('gate');
+  var content=document.getElementById('content');
+  function show(){ if(gate) gate.style.display='none'; if(content) content.style.display='block'; }
+  async function sha(s){
+    var b=new TextEncoder().encode(s);
+    var d=await crypto.subtle.digest('SHA-256',b);
+    return Array.from(new Uint8Array(d)).map(function(x){return x.toString(16).padStart(2,'0')}).join('');
+  }
+  if(sessionStorage.getItem('shibali_ok')==='1'){ show(); }
+  var btn=document.getElementById('go'), inp=document.getElementById('pw'), err=document.getElementById('err');
+  if(btn){
+    var tryUnlock=async function(){
+      var v=(inp.value||'').trim();
+      if(!v){ err.textContent='请输入口令'; return; }
+      if(await sha(v)===HASH){ sessionStorage.setItem('shibali_ok','1'); show(); }
+      else { err.textContent='口令不对'; inp.value=''; inp.focus(); }
+    };
+    btn.addEventListener('click', tryUnlock);
+    inp.addEventListener('keydown', function(e){ if(e.key==='Enter') tryUnlock(); });
+    setTimeout(function(){ inp.focus(); }, 200);
+  }
+})();
+</script>
+
 </body></html>
