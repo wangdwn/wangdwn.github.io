@@ -129,7 +129,7 @@
 | AI 智学工坊 | | [ai-learning-hub](https://wangdw.xyz/ai-learning-hub/) |
 | 马斯克知识库 | | [muskpedia](https://wangdw.xyz/muskpedia/) |
 | 极简 Markdown 编辑器 | 知识飞轮写作工具 | [md-viewer](https://wangdw.xyz/md-viewer/) |
-| 命理实验室 | 八字／铁板学术小工具；Pages 已开；robots 仍 Disallow（软私密，未改） | [mingli-lab](https://wangdw.xyz/mingli-lab/) |
+| 命理实验室 | 填生日→白话读懂→对照原典；八字／铁板／检索／轻量合盘；Pages 已开；robots 仍 Disallow | [mingli-lab](https://wangdw.xyz/mingli-lab/) |
 | 设计系统 | 同时出现在顶栏；目录卡片在本栏 | [design-system](https://wangdw.xyz/design-system/) |
 
 ---
