@@ -27,9 +27,9 @@
 | 站点 | 备注 | Pages |
 |---|---|---|
 | 高考学科馆壳 | 英数物化地统一入口；暑假卡／母题已分类 | [gaokao](https://wangdw.xyz/learn/gaokao/) |
-| 英语子页 | 词根馆深链；词光外链（紫光网页／磁光仓库）；阅读见精读书架 | [english](https://wangdw.xyz/learn/gaokao/english.html) |
+| 英语子页 | 词根馆深链；词光外链；阅读见精读书架 | [english](https://wangdw.xyz/learn/gaokao/english.html) |
 | 词根馆（ieso-vocab） | 88 根 · 约 3500 词 · 只练根 | [ieso-vocab](https://wangdw.xyz/ieso-vocab/) |
-| 词光 · Word Atlas | 一词一画、主动回忆。紫光是网页，磁光是同一套产品的代码和词库；都不是本站 Pages，只在英语子页深链 | [紫光](https://0xlei.tech/words/) · [磁光](https://github.com/designfuchen/word-atlas) |
+| 词光 | 一词一画、主动回忆。不是本站 Pages，只在英语子页深链 | [词光](https://0xlei.tech/words/) |
 | 数学子页 | 知识卡片 · RPG · 成绩打怪 · 暑假卡／母题 | [math](https://wangdw.xyz/learn/gaokao/math.html) |
 | 物理子页 | 暑假卡 8 张 · 母题地图／卷 | [physics](https://wangdw.xyz/learn/gaokao/physics.html) |
 | 化学子页 | 母题地图 + 22 题母题卷（暑假卡待补） | [chemistry](https://wangdw.xyz/learn/gaokao/chemistry.html) |
