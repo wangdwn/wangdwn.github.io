@@ -340,3 +340,25 @@ body.bite .brand__dot{background:linear-gradient(135deg,var(--learn),#34c759)}
   .b-tag--gk{ background:rgba(240,160,144,.15); color:#f0a090; }
   .b-chip--level{ background:rgba(240,160,144,.12); color:#f0a090; }
 }
+
+/* 朗读 / 译文 / 配图 */
+.b-tools{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+.b-tool{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 14px;border-radius:980px;border:1px solid var(--rule);background:var(--sheet);font-size:13px;font-weight:600;color:var(--ink-2);cursor:pointer;font-family:var(--sans)}
+.b-tool.is-on{border-color:var(--learn);color:var(--learn);background:var(--learn-soft)}
+.b-figure{margin:0 0 18px}
+.b-figure img{display:block;width:100%;height:auto;border-radius:14px;object-fit:cover;max-height:320px}
+.b-figure figcaption{margin-top:8px;font-size:12px;color:var(--ink-muted)}
+.b-para{margin:0 0 1.15em}
+.b-para:last-child{margin-bottom:0}
+.b-zh{display:none;margin-top:.45em;font-family:var(--sans);font-size:14.5px;line-height:1.75;color:var(--ink-muted)}
+body.bite.show-zh .b-zh{display:block}
+.b-speak{background:none;border:0;cursor:pointer;font-size:14px;opacity:.45;padding:0 3px;border-radius:6px;vertical-align:text-top;font-family:var(--sans)}
+.b-speak:hover,.b-speak.is-on{opacity:1;background:var(--learn-soft)}
+.gloss__speak{background:none;border:0;cursor:pointer;color:#fafaf9;font-size:15px;margin-left:6px;opacity:.8}
+.gloss__exzh{margin-top:4px;font-size:13px;color:#d6d3d1}
+@media (prefers-color-scheme: dark){
+  .gloss__speak{color:#1c1917}
+  .gloss__exzh{color:#44403c}
+}
+
+.b-card__cover{display:block;width:calc(100% + 36px);height:150px;object-fit:cover;margin:-18px -18px 14px;border-radius:16px 16px 0 0}

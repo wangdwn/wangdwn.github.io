@@ -23,9 +23,28 @@
       activeGw = el || null;
       if (activeGw) activeGw.classList.add('is-on');
       document.getElementById('g-word').textContent = key;
+      let wsp = document.getElementById('g-wspeak');
+      if (!wsp) { wsp = document.createElement('button'); wsp.id='g-wspeak'; wsp.type='button'; wsp.className='gloss__speak'; wsp.textContent='\uD83D\uDD0A'; wsp.setAttribute('aria-label','读单词'); document.getElementById('g-word').insertAdjacentElement('afterend', wsp); }
+      wsp.onclick = ev => { ev.stopPropagation(); biteSpeak(key, wsp); };
       document.getElementById('g-ph').textContent = g.ph || '';
       document.getElementById('g-cn').textContent = g.cn || '';
-      document.getElementById('g-ex').textContent = g.ex || '';
+      const exEl = document.getElementById('g-ex');
+      exEl.textContent = '';
+      if (g.ex) {
+        const sb = document.createElement('button');
+        sb.type = 'button'; sb.className = 'gloss__speak'; sb.textContent = '\uD83D\uDD0A';
+        sb.setAttribute('aria-label', '读例句');
+        sb.addEventListener('click', ev => { ev.stopPropagation(); biteSpeak(g.ex, sb); });
+        exEl.appendChild(sb);
+        exEl.appendChild(document.createTextNode(' ' + g.ex));
+      }
+      let exzh = document.getElementById('g-exzh');
+      if (!exzh) {
+        exzh = document.createElement('div');
+        exzh.id = 'g-exzh'; exzh.className = 'gloss__exzh';
+        exEl.insertAdjacentElement('afterend', exzh);
+      }
+      exzh.textContent = g.exzh || '';
     const rootEl = document.getElementById('g-root');
     if (rootEl) {
       if (g.root) {
@@ -462,3 +481,31 @@
 
   global.BiteSession = { init: init };
 })(window);
+
+/* 朗读：浏览器语音 */
+function biteSpeak(text, btn) {
+  if (!window.speechSynthesis || !text) return;
+  window.speechSynthesis.cancel();
+  var u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US';
+  u.rate = text.split(/\s+/).length > 6 ? 0.95 : 0.85;
+  var voices = window.speechSynthesis.getVoices();
+  var v = voices.filter(function (x) { return x.lang === 'en-US'; })[0]
+       || voices.filter(function (x) { return /^en/i.test(x.lang); })[0];
+  if (v) u.voice = v;
+  document.querySelectorAll('.b-speak.is-on,.gloss__speak.is-on').forEach(function (b) { b.classList.remove('is-on'); });
+  if (btn) btn.classList.add('is-on');
+  u.onend = function () { if (btn) btn.classList.remove('is-on'); };
+  window.speechSynthesis.speak(u);
+}
+function biteSpeakAll() {
+  var paras = Array.prototype.map.call(document.querySelectorAll('.b-en .b-para'), function (p) {
+    return p.getAttribute('data-en') || '';
+  }).filter(Boolean);
+  biteSpeak(paras.join(' '), document.getElementById('read-all'));
+}
+function biteToggleZh() {
+  document.body.classList.toggle('show-zh');
+  var b = document.getElementById('toggle-zh');
+  if (b) b.classList.toggle('is-on', document.body.classList.contains('show-zh'));
+}
