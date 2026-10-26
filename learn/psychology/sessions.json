@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-26",
   "title": "心理学馆",
   "template": [
     "小故事",
@@ -8,10 +8,10 @@
     "当代回响"
   ],
   "today": {
-    "date": "2026-10-19",
-    "text": "截止前还在刷无关页面——不是懒，是近处的小爽感压过了远处的大好处。—— George Ainslie 双曲贴现 × 现时偏向",
-    "href": "piece-06-procrastination.html",
-    "source": "《今晚再说》"
+    "date": "2026-10-26",
+    "text": "刷到别人家的进度条就难受——不是你突然变差，是人天生会拿自己跟他人对照。—— Leon Festinger 社会比较",
+    "href": "piece-07-comparison.html",
+    "source": "《别人家的进度条》"
   },
   "pieces": [
     {
@@ -112,6 +112,22 @@
       "figures": [
         "George Ainslie",
         "Walter Mischel"
+      ],
+      "mins": 8
+    },
+    {
+      "id": "piece-07-comparison",
+      "file": "piece-07-comparison.html",
+      "title": "别人家的进度条",
+      "section": "生活里的心理",
+      "tags": [
+        "社会比较",
+        "自我评价"
+      ],
+      "desc": "刷到同学升职、同事出书、同龄人环球——不是「你不够好」，是人天生会拿自己跟他人对照。",
+      "theory": "Leon Festinger 社会比较理论（1954）；向上/向下比较轻触",
+      "figures": [
+        "Leon Festinger"
       ],
       "mins": 8
     }
