@@ -354,7 +354,10 @@ body.bite .brand__dot{background:linear-gradient(135deg,var(--learn),#34c759)}
 body.bite.show-zh .b-zh{display:block}
 .b-speak{background:none;border:0;cursor:pointer;font-size:14px;opacity:.45;padding:0 3px;border-radius:6px;vertical-align:text-top;font-family:var(--sans)}
 .b-speak:hover,.b-speak.is-on{opacity:1;background:var(--learn-soft)}
+.b-speak.is-bad,#read-all.is-bad{opacity:1;color:var(--bad)}
 .gloss__speak{background:none;border:0;cursor:pointer;color:#fafaf9;font-size:15px;margin-left:6px;opacity:.8}
+.gloss__speak.is-on{opacity:1}
+.gloss__speak.is-bad{opacity:1;color:#fecaca}
 .gloss__exzh{margin-top:4px;font-size:13px;color:#d6d3d1}
 @media (prefers-color-scheme: dark){
   .gloss__speak{color:#1c1917}

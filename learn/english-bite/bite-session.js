@@ -482,28 +482,104 @@
   global.BiteSession = { init: init };
 })(window);
 
-/* 朗读：浏览器语音 */
+/* 朗读：站点内预生成英语音频，手机不需要安装英语语音 */
+var __biteAudio = null;
+var __biteMap = null;
+var __biteMapPromise = null;
+var __biteToken = 0;
+function loadBiteAudioMap() {
+  if (__biteMap) return Promise.resolve(__biteMap);
+  if (__biteMapPromise) return __biteMapPromise;
+  __biteMapPromise = fetch('/learn/english-bite/audio/index.json')
+    .then(function (r) { if (!r.ok) throw new Error('audio index'); return r.json(); })
+    .then(function (j) { __biteMap = j; return j; })
+    .catch(function (e) { __biteMapPromise = null; throw e; });
+  return __biteMapPromise;
+}
+function biteAudioHit(map, text) {
+  if (!map || !text) return null;
+  var t = String(text).trim();
+  if (map.words && map.words[t]) return { kind: 'w', id: map.words[t] };
+  if (map.sentences && map.sentences[t]) return { kind: 's', id: map.sentences[t] };
+  if (map.passages && map.passages[t]) return { kind: 'p', id: map.passages[t] };
+  var lower = t.toLowerCase();
+  if (map.wordsLower && map.wordsLower[lower]) return { kind: 'w', id: map.wordsLower[lower] };
+  return null;
+}
+function freshBiteAudio() {
+  if (__biteAudio) {
+    try { __biteAudio.pause(); } catch (e) {}
+  }
+  var audio = __biteAudio || new Audio();
+  audio.setAttribute('playsinline', '');
+  audio.setAttribute('webkit-playsinline', '');
+  __biteAudio = audio;
+  try { audio.play(); } catch (e) {}
+  return audio;
+}
+function playBiteSrc(audio, src, btn, onended) {
+  audio.onended = onended || function () { if (btn) btn.classList.remove('is-on'); };
+  audio.onerror = function () {
+    if (btn) { btn.classList.remove('is-on'); btn.classList.add('is-bad'); }
+  };
+  audio.src = src;
+  audio.load();
+  var play = audio.play();
+  if (play && play.catch) {
+    play.catch(function () {
+      if (btn) { btn.classList.remove('is-on'); btn.classList.add('is-bad'); }
+    });
+  }
+}
 function biteSpeak(text, btn) {
-  if (!window.speechSynthesis || !text) return;
-  window.speechSynthesis.cancel();
-  var u = new SpeechSynthesisUtterance(text);
-  u.lang = 'en-US';
-  u.rate = text.split(/\s+/).length > 6 ? 0.95 : 0.85;
-  var voices = window.speechSynthesis.getVoices();
-  var v = voices.filter(function (x) { return x.lang === 'en-US'; })[0]
-       || voices.filter(function (x) { return /^en/i.test(x.lang); })[0];
-  if (v) u.voice = v;
-  document.querySelectorAll('.b-speak.is-on,.gloss__speak.is-on').forEach(function (b) { b.classList.remove('is-on'); });
+  if (!text) return;
+  var token = ++__biteToken;
+  document.querySelectorAll('.b-speak.is-on,.gloss__speak.is-on,#read-all.is-on,.b-speak.is-bad,.gloss__speak.is-bad,#read-all.is-bad').forEach(function (b) {
+    b.classList.remove('is-on');
+    b.classList.remove('is-bad');
+  });
   if (btn) btn.classList.add('is-on');
-  u.onend = function () { if (btn) btn.classList.remove('is-on'); };
-  window.speechSynthesis.speak(u);
+  var audio = freshBiteAudio();
+  loadBiteAudioMap().then(function (map) {
+    if (token !== __biteToken) return;
+    var hit = biteAudioHit(map, text);
+    if (!hit) throw new Error('missing audio');
+    playBiteSrc(audio, '/learn/english-bite/audio/' + hit.kind + '/' + hit.id + '.mp3', btn);
+  }).catch(function () {
+    if (btn) { btn.classList.remove('is-on'); btn.classList.add('is-bad'); }
+  });
 }
 function biteSpeakAll() {
+  var btn = document.getElementById('read-all');
+  var token = ++__biteToken;
   var paras = Array.prototype.map.call(document.querySelectorAll('.b-en .b-para'), function (p) {
     return p.getAttribute('data-en') || '';
   }).filter(Boolean);
-  biteSpeak(paras.join(' '), document.getElementById('read-all'));
+  document.querySelectorAll('.b-speak.is-on,.gloss__speak.is-on,#read-all.is-on').forEach(function (b) {
+    b.classList.remove('is-on');
+  });
+  if (btn) btn.classList.add('is-on');
+  var i = 0;
+  var audio = freshBiteAudio();
+  function next() {
+    if (token !== __biteToken) return;
+    if (i >= paras.length) {
+      if (btn) btn.classList.remove('is-on');
+      return;
+    }
+    var text = paras[i++];
+    loadBiteAudioMap().then(function (map) {
+      if (token !== __biteToken) return;
+      var hit = biteAudioHit(map, text);
+      if (!hit) throw new Error('missing audio');
+      playBiteSrc(audio, '/learn/english-bite/audio/' + hit.kind + '/' + hit.id + '.mp3', btn, next);
+    }).catch(function () {
+      if (btn) { btn.classList.remove('is-on'); btn.classList.add('is-bad'); }
+    });
+  }
+  next();
 }
+loadBiteAudioMap().catch(function () {});
 function biteToggleZh() {
   document.body.classList.toggle('show-zh');
   var b = document.getElementById('toggle-zh');
