@@ -32,6 +32,7 @@
 | 词光 | 一词一画、主动回忆。不是本站 Pages，只在英语子页深链 | [词光](https://0xlei.tech/words/) |
 | 数学子页 | 知识卡片 · RPG · 成绩打怪 · 暑假卡／母题 | [math](https://wangdw.xyz/learn/gaokao/math.html) |
 | 物理子页 | 暑假卡 8 张 · 母题地图／卷 | [physics](https://wangdw.xyz/learn/gaokao/physics.html) |
+| 物理学图谱 · 交互拓展 | 15 章 3D 场景 · 322 道互动练习 | [physics-atlas](https://wangdw.xyz/physics-atlas/) |
 | 化学子页 | 母题地图 + 22 题母题卷（暑假卡待补） | [chemistry](https://wangdw.xyz/learn/gaokao/chemistry.html) |
 | 地理子页 | 暑假卡 15 张 · IESO 衔接 | [geography](https://wangdw.xyz/learn/gaokao/geography.html) |
 | 钰霖暑假学习卡 | 数物地 + 学习法 · 支持 ?cat= 分科 | [summer-cards](https://wangdw.xyz/gaozhong-shuxue-card/summer-cards.html) |
