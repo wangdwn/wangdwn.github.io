@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-11-02",
   "title": "心理学馆",
   "template": [
     "小故事",
@@ -8,10 +8,10 @@
     "当代回响"
   ],
   "today": {
-    "date": "2026-10-26",
-    "text": "刷到别人家的进度条就难受——不是你突然变差，是人天生会拿自己跟他人对照。—— Leon Festinger 社会比较",
-    "href": "piece-07-comparison.html",
-    "source": "《别人家的进度条》"
+    "date": "2026-11-02",
+    "text": "还没试就缩回去——不是懒，是「我能不能做成」的信念先拦了路。—— Albert Bandura 自我效能",
+    "href": "piece-08-efficacy.html",
+    "source": "《我行吗》"
   },
   "pieces": [
     {
@@ -128,6 +128,22 @@
       "theory": "Leon Festinger 社会比较理论（1954）；向上/向下比较轻触",
       "figures": [
         "Leon Festinger"
+      ],
+      "mins": 8
+    },
+    {
+      "id": "piece-08-efficacy",
+      "file": "piece-08-efficacy.html",
+      "title": "我行吗",
+      "section": "生活里的心理",
+      "tags": [
+        "自我效能",
+        "动机"
+      ],
+      "desc": "想举手发言、想接新项目、想学新工具，脑子先说「我大概不行」——不是懒，是「能不能做成」的判断在拦路。",
+      "theory": "Albert Bandura 自我效能（社会认知）；掌握经验／替代经验／言语说服／身心状态轻触",
+      "figures": [
+        "Albert Bandura"
       ],
       "mins": 8
     }
