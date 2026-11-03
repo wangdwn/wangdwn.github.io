@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noarchive,nocache"><title>第四章 联合生产与资本化</title><style>
+:root{--ink:#1a1a1a;--paper:#f7f4ee;--muted:#8a8378;--line:#ddd6c9}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--paper);color:var(--ink)}
+body{font:18px/2.05 "Songti SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,serif;
+ -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;padding:0 20px}
+.wrap{max-width:720px;margin:0 auto;padding:44px 0 90px;position:relative;z-index:1}
+h1.ch{font-size:24px;font-weight:600;letter-spacing:.06em;margin:0 0 6px;text-align:center}
+.sub{text-align:center;color:var(--muted);font-size:12.5px;letter-spacing:.2em;margin-bottom:38px}
+p{margin:0 0 1.35em;text-indent:2em;text-align:justify;text-justify:inter-ideograph}
+h2{font-size:17px;margin:2.2em 0 1em;text-align:center;letter-spacing:.08em;font-weight:600}
+h3{font-size:16px;margin:1.8em 0 .8em}
+hr.sep{border:0;text-align:center;margin:2.4em 0;height:1em}
+hr.sep:before{content:"＊　＊　＊";color:var(--line);letter-spacing:.6em;font-size:13px}
+blockquote{margin:1.4em 1.2em;padding-left:1em;border-left:3px solid var(--line);color:#3d3830;text-indent:0;font-size:17px;font-family:"Kaiti SC","STKaiti","KaiTi","Songti SC",serif;background:linear-gradient(90deg,rgba(0,0,0,.022),transparent 60%);padding:8px 0 8px 14px;border-radius:2px}
+blockquote p{text-indent:2em;margin:0 0 .9em}
+blockquote p.oral-h{text-indent:0;font-family:-apple-system,"PingFang SC",sans-serif;font-size:12.5px;letter-spacing:.18em;color:#8a8378;margin:0 0 .8em}
+.nav{display:flex;justify-content:space-between;gap:10px;margin:0 0 30px;font-size:13px;font-family:-apple-system,"PingFang SC",sans-serif}
+.nav a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}
+.foot{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.9;font-family:-apple-system,"PingFang SC",sans-serif;text-align:center}
+.wm{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.038;background-image:repeating-linear-gradient(-32deg,transparent 0 118px,#000 118px 120px)}
+#gate{position:fixed;inset:0;z-index:99;background:var(--paper);display:flex;align-items:center;justify-content:center;padding:24px}
+#gate .gate-box{max-width:340px;width:100%;text-align:center;font-family:-apple-system,"PingFang SC",sans-serif}
+#gate .gate-title{font-size:22px;letter-spacing:.2em;margin-bottom:8px}
+#gate .gate-sub{font-size:12.5px;color:var(--muted);margin-bottom:22px}
+#pw{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;font-size:15px;text-align:center;letter-spacing:.1em;outline:none}
+#go{margin-top:12px;width:100%;padding:11px;border:0;border-radius:8px;background:#1a1a1a;color:#fff;font-size:14px;cursor:pointer}
+#err{color:#a33;font-size:12px;height:18px;margin-top:8px}
+@media print{body{display:none!important}}
+
+html,body,.wrap,.wrap *{-webkit-user-select:none!important;-moz-user-select:none!important;-ms-user-select:none!important;user-select:none!important;-webkit-user-drag:none!important;}
+::selection{background:transparent!important;color:inherit!important}
+
+ol{list-style:none;padding:0;margin:0 0 40px;border-top:1px solid var(--line)}
+ol li{border-bottom:1px solid var(--line)}
+ol a{display:flex;align-items:baseline;gap:14px;padding:15px 4px;text-decoration:none;color:var(--ink)}
+.no{color:#7a3b2e;font-size:14px;width:1.4em;flex:none}.cn{flex:1}
+.wc{color:var(--muted);font-size:12px;font-family:-apple-system,"PingFang SC",sans-serif}
+h1{font-size:28px;letter-spacing:.14em;text-align:center;margin:0 0 8px}
+.tagline{text-align:center;color:var(--muted);font-size:13px;letter-spacing:.24em;margin-bottom:30px}
+.copy{border:1px solid var(--line);background:#fbf9f4;border-radius:10px;padding:18px 20px;font-size:12.5px;line-height:1.95;color:#4a453d}
+
+.pg{display:block;width:100%;height:auto;margin:0 0 6px;background:#fff;border:1px solid var(--line)}
+.pgnum{text-align:center;color:#b3ada1;font-size:11px;margin:0 0 22px;
+ font-family:-apple-system,"PingFang SC",sans-serif;letter-spacing:.1em}
+.part{color:var(--accent);font-size:12px;letter-spacing:.2em;margin:30px 0 8px;
+ font-family:-apple-system,"PingFang SC",sans-serif}
+.vol{margin:0 0 34px}
+.vol h3{font-size:17px;margin:0 0 4px;font-weight:600}
+.vol h3 a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+.vol .meta{color:var(--muted);font-size:12px;letter-spacing:.1em;margin:0 0 10px;
+ font-family:-apple-system,"PingFang SC",sans-serif}
+</style></head><body oncontextmenu="return false" oncopy="return false" oncut="return false" ondragstart="return false" onselectstart="return false"><div id="gate"><div class="gate-box"><div class="gate-title">风险、不确定性与利润</div><div class="gate-sub">本书仅限授权阅读，请输入访问口令</div><input id="pw" type="password" autocomplete="off" placeholder="口令"><button id="go" type="button">进入</button><div id="err"></div></div></div><div class="wm"></div><div class="wrap" id="content" style="display:none"><div class="nav"><a href="3.html">← 三</a><span>第四章</span><a href="5.html">五 →</a></div><div class="nav" style="margin-top:-18px"><a href="index.html">全书目录</a><span>4 / 12</span><a href="/brief/">简报</a></div><h1 class="ch">第四章 · 联合生产与资本化</h1>
+<div class="sub">奈特《风险、不确定性与利润》1921　原书第 93 页起</div>
+<img class="pg" src="p/107.jpg" alt="第93页" loading="lazy">
+<div class="pgnum">— 93 —</div>
+<img class="pg" src="p/108.jpg" alt="第94页" loading="lazy">
+<div class="pgnum">— 94 —</div>
+<img class="pg" src="p/109.jpg" alt="第95页" loading="lazy">
+<div class="pgnum">— 95 —</div>
+<img class="pg" src="p/110.jpg" alt="第96页" loading="lazy">
+<div class="pgnum">— 96 —</div>
+<img class="pg" src="p/111.jpg" alt="第97页" loading="lazy">
+<div class="pgnum">— 97 —</div>
+<img class="pg" src="p/112.jpg" alt="第98页" loading="lazy">
+<div class="pgnum">— 98 —</div>
+<img class="pg" src="p/113.jpg" alt="第99页" loading="lazy">
+<div class="pgnum">— 99 —</div>
+<img class="pg" src="p/114.jpg" alt="第100页" loading="lazy">
+<div class="pgnum">— 100 —</div>
+<img class="pg" src="p/115.jpg" alt="第101页" loading="lazy">
+<div class="pgnum">— 101 —</div>
+<img class="pg" src="p/116.jpg" alt="第102页" loading="lazy">
+<div class="pgnum">— 102 —</div>
+<img class="pg" src="p/117.jpg" alt="第103页" loading="lazy">
+<div class="pgnum">— 103 —</div>
+<img class="pg" src="p/118.jpg" alt="第104页" loading="lazy">
+<div class="pgnum">— 104 —</div>
+<img class="pg" src="p/119.jpg" alt="第105页" loading="lazy">
+<div class="pgnum">— 105 —</div>
+<img class="pg" src="p/120.jpg" alt="第106页" loading="lazy">
+<div class="pgnum">— 106 —</div>
+<img class="pg" src="p/121.jpg" alt="第107页" loading="lazy">
+<div class="pgnum">— 107 —</div>
+<img class="pg" src="p/122.jpg" alt="第108页" loading="lazy">
+<div class="pgnum">— 108 —</div>
+<img class="pg" src="p/123.jpg" alt="第109页" loading="lazy">
+<div class="pgnum">— 109 —</div>
+<img class="pg" src="p/124.jpg" alt="第110页" loading="lazy">
+<div class="pgnum">— 110 —</div>
+<img class="pg" src="p/125.jpg" alt="第111页" loading="lazy">
+<div class="pgnum">— 111 —</div>
+<img class="pg" src="p/126.jpg" alt="第112页" loading="lazy">
+<div class="pgnum">— 112 —</div>
+<img class="pg" src="p/127.jpg" alt="第113页" loading="lazy">
+<div class="pgnum">— 113 —</div>
+<img class="pg" src="p/128.jpg" alt="第114页" loading="lazy">
+<div class="pgnum">— 114 —</div>
+<img class="pg" src="p/129.jpg" alt="第115页" loading="lazy">
+<div class="pgnum">— 115 —</div>
+<img class="pg" src="p/130.jpg" alt="第116页" loading="lazy">
+<div class="pgnum">— 116 —</div>
+<img class="pg" src="p/131.jpg" alt="第117页" loading="lazy">
+<div class="pgnum">— 117 —</div>
+<img class="pg" src="p/132.jpg" alt="第118页" loading="lazy">
+<div class="pgnum">— 118 —</div>
+<img class="pg" src="p/133.jpg" alt="第119页" loading="lazy">
+<div class="pgnum">— 119 —</div>
+<img class="pg" src="p/134.jpg" alt="第120页" loading="lazy">
+<div class="pgnum">— 120 —</div>
+<img class="pg" src="p/135.jpg" alt="第121页" loading="lazy">
+<div class="pgnum">— 121 —</div>
+<img class="pg" src="p/136.jpg" alt="第122页" loading="lazy">
+<div class="pgnum">— 122 —</div>
+<img class="pg" src="p/137.jpg" alt="第123页" loading="lazy">
+<div class="pgnum">— 123 —</div>
+<img class="pg" src="p/138.jpg" alt="第124页" loading="lazy">
+<div class="pgnum">— 124 —</div>
+<img class="pg" src="p/139.jpg" alt="第125页" loading="lazy">
+<div class="pgnum">— 125 —</div>
+<img class="pg" src="p/140.jpg" alt="第126页" loading="lazy">
+<div class="pgnum">— 126 —</div>
+<img class="pg" src="p/141.jpg" alt="第127页" loading="lazy">
+<div class="pgnum">— 127 —</div>
+<img class="pg" src="p/142.jpg" alt="第128页" loading="lazy">
+<div class="pgnum">— 128 —</div>
+<img class="pg" src="p/143.jpg" alt="第129页" loading="lazy">
+<div class="pgnum">— 129 —</div>
+<img class="pg" src="p/144.jpg" alt="第130页" loading="lazy">
+<div class="pgnum">— 130 —</div>
+<img class="pg" src="p/145.jpg" alt="第131页" loading="lazy">
+<div class="pgnum">— 131 —</div>
+<img class="pg" src="p/146.jpg" alt="第132页" loading="lazy">
+<div class="pgnum">— 132 —</div>
+<img class="pg" src="p/147.jpg" alt="第133页" loading="lazy">
+<div class="pgnum">— 133 —</div>
+<img class="pg" src="p/148.jpg" alt="第134页" loading="lazy">
+<div class="pgnum">— 134 —</div>
+<img class="pg" src="p/149.jpg" alt="第135页" loading="lazy">
+<div class="pgnum">— 135 —</div>
+<img class="pg" src="p/150.jpg" alt="第136页" loading="lazy">
+<div class="pgnum">— 136 —</div>
+<img class="pg" src="p/151.jpg" alt="第137页" loading="lazy">
+<div class="pgnum">— 137 —</div>
+<img class="pg" src="p/152.jpg" alt="第138页" loading="lazy">
+<div class="pgnum">— 138 —</div>
+<img class="pg" src="p/153.jpg" alt="第139页" loading="lazy">
+<div class="pgnum">— 139 —</div>
+<img class="pg" src="p/154.jpg" alt="第140页" loading="lazy">
+<div class="pgnum">— 140 —</div></div><script>(function(){var kill=function(e){try{if(e.clipboardData){e.clipboardData.setData("text/plain","");e.clipboardData.setData("text/html","");}}catch(x){}e.preventDefault();e.stopPropagation();return false;};["copy","cut","beforecopy","contextmenu","dragstart","selectstart"].forEach(function(t){document.addEventListener(t,kill,{capture:true});});document.addEventListener("keydown",function(e){var k=(e.key||"").toLowerCase(),m=e.ctrlKey||e.metaKey;if(m&&["c","x","a","s","p","u"].indexOf(k)>=0){return kill(e);}},{capture:true});var lock=function(){document.querySelectorAll("*").forEach(function(el){el.style.setProperty("-webkit-user-select","none","important");el.style.setProperty("user-select","none","important");});};lock();document.addEventListener("DOMContentLoaded",lock);setInterval(lock,1500);})();</script><script>(function(){var K="ODIwNTE3";var gate=document.getElementById("gate"),content=document.getElementById("content");function show(){if(gate)gate.style.display="none";if(content)content.style.display="block";}try{if(sessionStorage.getItem("shibali_ok")==="1"){show();}}catch(e){}var btn=document.getElementById("go"),inp=document.getElementById("pw"),err=document.getElementById("err");function ok(v){try{return btoa(v)===K;}catch(e){return false;}}function tryUnlock(){var v=(inp.value||"").trim();if(!v){if(err)err.textContent="请输入口令";return;}if(ok(v)){try{sessionStorage.setItem("shibali_ok","1");}catch(e){}show();}else{if(err)err.textContent="口令不对";inp.value="";inp.focus();}}if(btn){btn.addEventListener("click",tryUnlock);inp.addEventListener("keydown",function(e){if(e.key==="Enter")tryUnlock();});setTimeout(function(){inp.focus();},200);}})();</script></body></html>
