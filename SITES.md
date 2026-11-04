@@ -51,7 +51,7 @@
 | 日记 | [/life-diary.html](https://wangdw.xyz/life-diary.html) | 《小子日记》→ [/novels/diary.html](https://wangdw.xyz/novels/diary.html) |
 | 随笔 | [/life-essays.html](https://wangdw.xyz/life-essays.html) | 生活记 + 随笔 e01–e20 + 杂文 z01–z06（各只列一次；旧 `novels/essays/` · `novels/zawen/` 索引跳转至此） |
 | 诗歌 | [/life-poetry.html](https://wangdw.xyz/life-poetry.html) | 短章 + 自作 p01–p51（各只列一次；旧 `novels/poems/` 索引跳转至此） |
-| 阅读 | [/life-reading.html](https://wangdw.xyz/life-reading.html) | 《闲书》书评 + 诗经两册（`/shijing/`）；读书笔记仍在学习栏 |
+| 阅读 | [/life-reading.html](https://wangdw.xyz/life-reading.html) | 《闲书》书评 + 诗经两册（`/shijing/`）＋ 书与刊：奈特全书 `/novels/books/knight/` · 每周期刊 `/novels/periodicals/`；读书笔记仍在学习栏 |
 | 城市与日常 | [/life-city.html](https://wangdw.xyz/life-city.html) | 城脉千年 · 装机优化工具 |
 
 ### 城市与日常（分栏内）
