@@ -1,0 +1,119 @@
+{
+ "week": "2026-11-09",
+ "issue": 2,
+ "items": [
+  {
+   "src": "TIME",
+   "date": "2026-11-08",
+   "line": "政策",
+   "title": "共和党中期改画选区，全盘落空",
+   "url": "https://time.com/article/2026/11/08/republican-redistricting-2026-midterm-elections/",
+   "zh": "2025 年夏，特朗普推动多州打破“十年一划”的惯例，提前重画国会选区，指望全国多拿至多 10 席。结果在得州、北卡、俄亥俄、阿拉巴马、佛州这些被重画过的选区，民主党反而接连拿下，并夺回众议院，成为五十年来最大一轮蓝色浪潮。莱斯大学 Mark Jones 的判断很直白：党或总统极不受欢迎时，改线救不了局。",
+   "rel": "制度工具用尽，也挡不住基本盘。做政策判断别把“技术性操作”当胜负手——区划、口径、统计范围改了，人心没改，账还是那样算。"
+  },
+  {
+   "src": "TIME",
+   "date": "2026-11-08",
+   "line": "AI",
+   "title": "当 AI 坐进总统的战情室：一次差点酿成对峙的误判",
+   "url": "https://time.com/article/2026/11/08/what-happens-when-ai-is-the-president-s-advisor-/",
+   "zh": "CNN 九月报道：一名军事分析师用聊天机器人做中国船只的情报评估，AI 判该船载有核材料，美军飞机已升空准备拦截，才发现判断错误。作者 Keren Yarhi-Milo 认为真正的风险不是“超级智能”，而是 AI 把决策者原有的假设，以客观分析的名义原样还给他。",
+   "rel": "这正是你用 AI 出研判时最该防的闭环：它顺着你的口径给结论，还带着数据的权威感。凡是要害判断，必须留一道“反方口径”的人工校验，别让机器替你把偏见盖章。"
+  },
+  {
+   "src": "TIME",
+   "date": "2026-11-06",
+   "line": "能源气候",
+   "title": "民主党回来了，气候政策换了面孔",
+   "url": "https://time.com/article/2026/11/06/democrats-new-climate-agenda-midterm-elections/",
+   "zh": "两年最反气候的政府之后，中期选举让气候派看到希望，但别指望回到“绿色新政＋通胀削减法案”的老路。新科民主党参议员——得州的 Talarico、堪萨斯的 Hamilton——公开讲的是“保住油气岗位、全能源战略”。真正的推手换成了电价负担、伊朗战争、吃电的数据中心和对华竞争：气候政策会以“能源可负担”的名义出现。",
+   "rel": "气候议题落地，越来越挂在能源账本上。你做海洋经济、碳汇、能源规划，得会用“成本—电价—产业”这套话说，只讲减排没人听。"
+  },
+  {
+   "src": "TIME",
+   "date": "2026-11-07",
+   "line": "地缘",
+   "title": "欧洲连环炸弹威胁：全是虚惊，打的却是整套航空系统",
+   "url": "https://time.com/article/2026/11/07/europe-bomb-threats-raise-fear-new-warfare/",
+   "zh": "11 月 2 日起，匿名电话与邮件对欧洲数十个航班发炸弹威胁：米兰机场排爆、Wizz Air 伦敦—保加利亚航班中途备降布达佩斯，周四一天二十多班受影响，周五更扩到 Sky News、保加利亚 Nova TV、爱尔兰 RTÉ 等新闻机构被疏散。全部查为虚惊，但数千人行程被打乱，航空链条被反复掐断。",
+   "rel": "低成本、高频次的“假威胁”已经能搅动一国交通与舆论。做风险评估，“没有实质破坏”不等于“没有损失”，社会成本得单独记一笔。"
+  },
+  {
+   "src": "TIME",
+   "date": "2026-11-06",
+   "line": "地缘",
+   "title": "欧洲右翼开始跟特朗普切割",
+   "url": "https://time.com/article/2026/11/06/europe-far-right-leaders-backing-away-from-trump-after-midterm-losses/",
+   "zh": "共和党丢掉参众两院后，欧洲极右翼出现了微妙的距离感。德国选择党魏德尔对 T-online 说，特朗普当年承诺不搞干预主义外交，伊朗战争把这个承诺打破了，“后果反噬了共和党”；梅洛尼、西班牙 Vox 这些曾以与他同框为荣的人，正悄悄收声。",
+   "rel": "意识形态同盟在选票面前最脆。跟人谈合作、谈“共同价值”，先看对方国内政治的承压线在哪，别把口号当承诺。"
+  },
+  {
+   "src": "WIRED",
+   "date": "2026-11-08",
+   "line": "AI",
+   "title": "世界模型：AI 从文字走进三维",
+   "url": "https://www.wired.com/story/world-models-will-soon-be-inescapable-what-you-need-to-know/",
+   "zh": "世界模型让 AI 在三维空间里模拟真实物理规律，用来训练机器人和自动驾驶理解现实世界；Wired 判断它很快会变得无处不在。",
+   "rel": "这决定下一轮产业落地在哪——不是写稿子，是设备、车辆、施工、勘探的“虚拟预演”。地质、海洋装备这类重现场的行当，最先受益，也最先被替代。"
+  },
+  {
+   "src": "NEW YORKER",
+   "date": "2026-11-08",
+   "line": "写作",
+   "title": "译者谈：童年该怎么译",
+   "url": "https://www.newyorker.com/books/this-week-in-fiction/yasushi-inoue-11-16-26",
+   "zh": "J. Martin Holman 谈他译井上靖《某位女性的死》：这些短篇原本散落在五十、六十年代的不同集子里，他合成一册。1988 年为译《本觉坊遗文》初见井上靖，后来被其自传性的少年短篇吸住，越读越放不下。",
+   "rel": "写作参考。老手写童年靠具体场景，不靠抒情；译者把散篇编成一册，也是“先有结构再动人”。你写《十八里铺》的童年段落，可借这个法子。"
+  }
+ ],
+ "downloads": [
+  {
+   "name": "The Economist",
+   "issue": "7th/13th November, 2026",
+   "date": "2026-11-07",
+   "mb": "13.1",
+   "new": true,
+   "url": "https://freemagazinespdf.com/the-economist-7th-13th-november-2026/"
+  },
+  {
+   "name": "Newsweek",
+   "issue": "November 13, 2026",
+   "date": "2026-11-13",
+   "mb": "15.6",
+   "new": true,
+   "url": "https://freemagazinespdf.com/newsweek-usa-november-13-2026/"
+  },
+  {
+   "name": "The Spectator",
+   "issue": "November 7, 2026",
+   "date": "2026-11-07",
+   "mb": "9.5",
+   "new": true,
+   "url": "https://freemagazinespdf.com/the-spectator-november-7-2026/"
+  },
+  {
+   "name": "The New Yorker",
+   "issue": "November 09, 2026",
+   "date": "2026-11-09",
+   "mb": "13.7",
+   "new": false,
+   "url": "https://freemagazinespdf.com/the-new-yorker-november-09-2026/"
+  },
+  {
+   "name": "Wired",
+   "issue": "November/December 2026",
+   "date": "2026-10-07",
+   "mb": "25.2",
+   "new": false,
+   "url": "https://freemagazinespdf.com/wired-usa-tits-out-november-december-2026/"
+  },
+  {
+   "name": "Bloomberg Businessweek",
+   "issue": "November 2026",
+   "date": "2026-11-01",
+   "mb": "28.5",
+   "new": false,
+   "url": "https://freemagazinespdf.com/bloomberg-businessweek-usa-november-2026/"
+  }
+ ]
+}
