@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "title": "心理学馆",
   "template": [
     "小故事",
@@ -8,10 +8,10 @@
     "当代回响"
   ],
   "today": {
-    "date": "2026-11-02",
-    "text": "还没试就缩回去——不是懒，是「我能不能做成」的信念先拦了路。—— Albert Bandura 自我效能",
-    "href": "piece-08-efficacy.html",
-    "source": "《我行吗》"
+    "date": "2026-11-09",
+    "text": "通宵记下的，第二天反而空——不是你不够努力，是记忆的巩固，常常发生在睡着以后。",
+    "href": "piece-09-sleep.html",
+    "source": "《夜里还亮着》"
   },
   "pieces": [
     {
@@ -144,6 +144,24 @@
       "theory": "Albert Bandura 自我效能（社会认知）；掌握经验／替代经验／言语说服／身心状态轻触",
       "figures": [
         "Albert Bandura"
+      ],
+      "mins": 8
+    },
+    {
+      "id": "piece-09-sleep",
+      "file": "piece-09-sleep.html",
+      "title": "夜里还亮着",
+      "section": "生活里的心理",
+      "tags": [
+        "睡眠",
+        "记忆"
+      ],
+      "desc": "通宵记下的，第二天反而空——不是你不够努力，是记忆的巩固，常常发生在睡着以后。",
+      "theory": "Jenkins & Dallenbach 睡眠间隔与记忆保持；Müller & Pilzecker 巩固轻触；Aserinsky & Kleitman REM（1953）轻触",
+      "figures": [
+        "Jenkins & Dallenbach",
+        "Müller & Pilzecker",
+        "Aserinsky & Kleitman"
       ],
       "mins": 8
     }
