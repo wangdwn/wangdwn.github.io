@@ -1,0 +1,120 @@
+{
+ "week": "2026-11-16",
+ "issue": 3,
+ "items": [
+  {
+   "src": "NEWSWEEK",
+   "date": "2026-11-20",
+   "line": "政策",
+   "page": "p.22",
+   "title": "“跛脚鸭”特朗普：选票能拦住立法，拦不住战争权",
+   "url": "https://freemagazinespdf.com/newsweek-usa-november-20-2026/",
+   "zh": "11 月 3 日中期选举，民主党夺回参众两院，Ossoff 赢 18 点、Cooper 20 点、Talarico 在得州赢 12 点。Newsweek 的判断是“跛脚鸭”只成立一半：国会能卡住立法与预算，但战争权、制裁、关税这些不需过会的工具仍在总统手里。博尔顿的话被引作注脚——“这场选举就是对特朗普的公投”。",
+   "rel": "看美国政策走向，别只盯国会山。真正决定未来一年的是那些“不需要国会”的工具：战争权、制裁、关税、行政令。写报告引用美方决策，把立法线和行政线分开算，才不会把“输了中期选举”误读成“什么都干不成”。"
+  },
+  {
+   "src": "WIRED",
+   "date": "2026-11-13",
+   "line": "政策",
+   "page": "",
+   "title": "FAA 全国停飞五小时：断的是通信骨干，不是雷达",
+   "url": "https://www.wired.com/story/the-faa-nationwide-ground-stop-is-over/",
+   "zh": "11 月 13 日下午，FAA 以“特殊情形与安全原因”下令全国停飞，已起飞的允许落地，新航班一律不准起飞。诱因是空管系统通信故障：波士顿、芝加哥、纽约等核心空管中心的无线电频率相继中断，矛头指向 FTI——空管系统的私有通信骨干网，正在把几十年的铜缆换成光纤。停飞五小时，6,300 多架次取消，是 9·11 以来最严重的一次。",
+   "rel": "关键基础设施的单点，常常不是设备，是“设备之间那条线”。你做城市、海洋、地质项目的风险评估，把通信与调度单列一条，比罗列设备清单有用得多——设备坏了能换，链路断了全线停摆。"
+  },
+  {
+   "src": "NEWSWEEK",
+   "date": "2026-11-20",
+   "line": "AI",
+   "page": "p.17",
+   "title": "数据中心成了选举负资产：电价账压过税收账",
+   "url": "https://freemagazinespdf.com/newsweek-usa-november-20-2026/",
+   "zh": "民主党阵营这轮砸了 1.4 亿美元打“反数据中心”广告，主打居民电费；俄亥俄 Wood County 的广告直接点名 Jon Husted 给外州公司让了 25 亿美元。特朗普 8 月在 Truth Social 上说，不要数据中心的地方“只会落后和贫穷”。共和党临选前推《Ratepayer Protection Act》想补救，没赶上。",
+   "rel": "算力布局的硬约束不是土地和补贴，是居民电费。你写能源规划、做园区可行性，先把“每度电谁买单”算清楚，再谈税收与就业；电价这条账算不平，项目在 ballot 上就先输了。"
+  },
+  {
+   "src": "WIRED",
+   "date": "2026-11-14",
+   "line": "AI",
+   "page": "",
+   "title": "AI 把勒索软件的门槛打下来了",
+   "url": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
+   "zh": "Wired 安全专栏 Kernel Panic 的判断：全自动勒索还没到，但“看起来不怎么高明”的攻击者已经能用 AI 工具造成成规模的破坏。研究者去重后的勒索与数据勒索声称案件数，近年明显上扬。",
+   "rel": "你的书稿、调研底稿、客户资料都在本机和网盘里。别拿“我不值得被攻击”当防线——AI 降的是攻击成本，不是目标门槛。离线副本加异地备份，仍然是唯一靠得住的保险。"
+  },
+  {
+   "src": "NEW YORKER",
+   "date": "2026-11-16",
+   "line": "能源气候",
+   "page": "p.38",
+   "title": "快火：不到 3% 的火，烧掉近 90% 的房子",
+   "url": "https://freemagazinespdf.com/the-new-yorker-november-16-2026/",
+   "zh": "Eric Klinenberg 写“Burn Rate”：城市连片大火在 20 世纪几乎被消防体系、建材与规范消灭，90 年代住宅又推进到林草交界带，火回来了——2018 营地大火、2023 拉海纳、2025 帕利塞德与伊顿。生态学家 Balch 把 2001–2020 年六万多场野火与两亿条房产记录并起来算：单日扩张超过 1,620 公顷的“快火”不到总数的 3%，却造成近 90% 的建筑损毁。保险端则在“缩水式通胀”：保费涨、保障缩。",
+   "rel": "这条跟你手上的地质与城市风险是同一套逻辑：风险不在“大火”，在“快火”；防灾不能按户算，要按社区算。你书里写外围区调查精度低、隐患点多，正好可以引这项研究做方法参照——把“社区级评估”当成单位，而不是把每栋房子当孤岛。"
+  },
+  {
+   "src": "NEWSWEEK",
+   "date": "2026-11-20",
+   "line": "地缘",
+   "page": "p.19",
+   "title": "“是战争，笨蛋”：伊朗战事拖垮了共和党",
+   "url": "https://freemagazinespdf.com/newsweek-usa-november-20-2026/",
+   "zh": "2 月 28 日美以联合打击伊朗，德黑兰以区域打击与掐住霍尔木兹海峡回应，油气价格全球飙升。特朗普自己承认“部分原因是伊朗”，万斯选后第二天在 X 上写：“我们输在战争。”伊朗半官方通讯社 Tasnim 把特朗普与卡特并排做成图，标题是“从卡特到特朗普，伊朗如何让美国总统栽跟头”。",
+   "rel": "霍尔木兹一卡，油价、运价、保费、国内物价、选票，一条链全动。你做海洋经济与能源通道研究，这是现成的因果链样本；写情景分析时，把“海峡风险”作为独立变量单列，比笼统写“地缘紧张”有用。"
+  },
+  {
+   "src": "NEW YORKER",
+   "date": "2026-11-16",
+   "line": "写作",
+   "page": "p.16",
+   "title": "Jill Lepore：1912 与 2026，社会主义又回来了",
+   "url": "https://freemagazinespdf.com/the-new-yorker-november-16-2026/",
+   "zh": "Lepore 拿 1912 年做锚：社会党 12 万党员、300 种报刊、《Appeal to Reason》订户 75 万，Debs 那年竞选总统。今天扛旗的是 DSA，13 万成员、两位众议员，Mamdani 上了《时代》封面；今夏发布的新“纲领”主张废参议院、总统与最高法院改为国会下属。她不急着判对错，先把两次浪潮的机关一件件拆开对照。",
+   "rel": "写作参考。你写《十八里铺》或政策稿都能借这手：先钉一个精确的历史坐标，再用人物、数字、报头把当下拴在同一根轴上；观点不喊，让对照自己说话。这比“自古以来”式的铺陈有力。"
+  }
+ ],
+ "downloads": [
+  {
+   "mag": "The Economist",
+   "issue": "14th/20th November, 2026",
+   "mb": "10.9",
+   "url": "https://freemagazinespdf.com/the-economist-uk-edition-14th-20th-november-2026/",
+   "new": true
+  },
+  {
+   "mag": "Newsweek",
+   "issue": "November 20, 2026",
+   "mb": "15.2",
+   "url": "https://freemagazinespdf.com/newsweek-usa-november-20-2026/",
+   "new": true
+  },
+  {
+   "mag": "The New Yorker",
+   "issue": "November 16, 2026",
+   "mb": "10.2",
+   "url": "https://freemagazinespdf.com/the-new-yorker-november-16-2026/",
+   "new": true
+  },
+  {
+   "mag": "The Spectator",
+   "issue": "November 7, 2026",
+   "mb": "9.5",
+   "url": "https://freemagazinespdf.com/the-spectator-november-7-2026/",
+   "new": false
+  },
+  {
+   "mag": "Wired",
+   "issue": "November/December 2026",
+   "mb": "25.2",
+   "url": "https://freemagazinespdf.com/wired-usa-tits-out-november-december-2026/",
+   "new": false
+  },
+  {
+   "mag": "Bloomberg Businessweek",
+   "issue": "November 2026",
+   "mb": "28.5",
+   "url": "https://freemagazinespdf.com/bloomberg-businessweek-usa-november-2026/",
+   "new": false
+  }
+ ]
+}
