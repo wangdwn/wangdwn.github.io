@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "title": "心理学馆",
   "template": [
     "小故事",
@@ -8,10 +8,10 @@
     "当代回响"
   ],
   "today": {
-    "date": "2026-11-09",
-    "text": "通宵记下的，第二天反而空——不是你不够努力，是记忆的巩固，常常发生在睡着以后。",
-    "href": "piece-09-sleep.html",
-    "source": "《夜里还亮着》"
+    "date": "2026-11-16",
+    "text": "划掉的原价一看就心动——不是你不会算，是判断常常被最先出现的那个数拉住。",
+    "href": "piece-10-anchoring.html",
+    "source": "《先看到的那个数》"
   },
   "pieces": [
     {
@@ -162,6 +162,24 @@
         "Jenkins & Dallenbach",
         "Müller & Pilzecker",
         "Aserinsky & Kleitman"
+      ],
+      "mins": 8
+    },
+    {
+      "id": "piece-10-anchoring",
+      "file": "piece-10-anchoring.html",
+      "title": "先看到的那个数",
+      "section": "生活里的心理",
+      "tags": [
+        "决策",
+        "判断"
+      ],
+      "desc": "划掉的原价一看就心动——不是你不会算，是判断常常被最先出现的那个数拉住。",
+      "theory": "Amos Tversky & Daniel Kahneman 锚定与调整；Herbert Simon 有限理性轻触",
+      "figures": [
+        "Amos Tversky",
+        "Daniel Kahneman",
+        "Herbert Simon"
       ],
       "mins": 8
     }
