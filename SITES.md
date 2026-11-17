@@ -80,7 +80,7 @@
 | 分栏 | 入口 | 收录 |
 |---|---|---|
 | 家底盘 | [/work-assets.html](https://wangdw.xyz/work-assets.html) | [广海汇](https://wangdw.xyz/guangzhou-marine-enterprises/) · [节点地图](https://wangdw.xyz/ocean-node-map/) |
-| 经营盘 | [/work-ops.html](https://wangdw.xyz/work-ops.html) | [结构判断台](https://wangdw.xyz/structure.html) · [监测站](https://wangdw.xyz/marine-monitor/) · [深度分析](https://wangdw.xyz/gz-marine-analysis/) · [招标雷达](https://wangdw.xyz/geo-ocean-bidding/) · [自然资源资产复核](https://wangdw.xyz/natural-resource-assets/) |
+| 经营盘 | [/work-ops.html](https://wangdw.xyz/work-ops.html) | [结构判断台](https://wangdw.xyz/structure.html) · [监测站](https://wangdw.xyz/marine-monitor/) · [深度分析](https://wangdw.xyz/gz-marine-analysis/) · [招标雷达](https://wangdw.xyz/geo-ocean-bidding/) · [自然资源资产复核](https://wangdw.xyz/natural-resource-assets/) · [海事城市榜单对照](https://wangdw.xyz/maritime-rankings/) |
 | 质量盘 | [/work-quality.html](https://wangdw.xyz/work-quality.html) | [海洋经济信号灯](https://wangdw.xyz/guangzhou-ocean-dashboard/) · [海洋监测能力评估](https://wangdw.xyz/marine-monitor-eval/) |
 | 周报底座 | [/work-weekly.html](https://wangdw.xyz/work-weekly.html) | [海洋周报](https://wangdw.xyz/marine-weekly/) |
 | 专业工具 | [/work-tools.html](https://wangdw.xyz/work-tools.html) | 奖励申报 · 论文库 · GeoLibre · 土地测算 |
