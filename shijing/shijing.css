@@ -348,3 +348,40 @@
     -webkit-backdrop-filter: blur(10px);
     padding: 10px 0;
   }
+
+  /* ===== 翻页（一页一帧） ===== */
+  .page{display:none;}
+  .page.active{display:block; animation:sjfade .35s ease;}
+  @keyframes sjfade{from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:none;}}
+  .page-head{max-width:860px; margin:0 auto; padding:30px 20px 0;}
+  .page-head .page-tag{
+    font-size:.78rem; letter-spacing:.25em; color:var(--gold);
+    font-family:"Noto Sans SC","PingFang SC",sans-serif;
+  }
+  .page .wrap{padding-bottom:36px;}
+  .navbar{
+    position:fixed; left:0; right:0; bottom:0; z-index:100;
+    display:flex; justify-content:center; align-items:center; gap:20px;
+    padding:13px 16px; background:rgba(247,241,227,.94);
+    border-top:1px solid var(--line);
+    backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+    font-family:"Noto Sans SC","PingFang SC",sans-serif;
+  }
+  .navbar button{
+    border:1px solid var(--cinnabar); background:#fff8ec; color:var(--cinnabar);
+    padding:7px 20px; border-radius:22px; font-family:inherit; font-size:.9rem;
+    letter-spacing:.12em; cursor:pointer;
+  }
+  .navbar button:disabled{opacity:.3; cursor:default;}
+  .navbar .pager{font-size:.85rem; color:#6b5f4d; letter-spacing:.1em; min-width:64px; text-align:center;}
+  body.sj{padding-bottom:64px;}
+  /* 目录页的 sj-toc 点击跳页样式 */
+  .sj-toc a[data-goto]{cursor:pointer;}
+  /* 植物卡片（实践） */
+  .plant-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:22px;}
+  @media(max-width:640px){.plant-grid{grid-template-columns:1fr;}}
+  .plant-card{background:#fffaf0; border:1px solid var(--line); border-radius:10px; padding:18px 20px; box-shadow:0 2px 6px rgba(0,0,0,.04);}
+  .plant-card .plant-name{font-size:1.12rem; color:var(--cinnabar); font-weight:700; letter-spacing:.05em;}
+  .plant-card .plant-name span{font-size:.85rem; color:#6b5f4d; font-weight:400; letter-spacing:0;}
+  .plant-card .plant-src{font-size:.85rem; color:var(--gold); margin-top:5px; letter-spacing:.04em;}
+  .plant-card .plant-desc{font-size:.9rem; color:#5a5242; margin-top:8px; line-height:1.75;}
