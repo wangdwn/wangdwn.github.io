@@ -168,6 +168,25 @@
         "游戏竞技",
         "脑科学"
       ]
+    },
+    {
+      "id": "s10",
+      "file": "session-10.html",
+      "title": "The Mind of an Octopus",
+      "topic": "动物智能·同源对照",
+      "level": "趣味入门",
+      "depth": 2,
+      "difficulty": 2,
+      "depthStars": "★★☆☆☆",
+      "diffStars": "★★☆☆☆",
+      "wordCount": 205,
+      "mins": 5,
+      "lead": "一只章鱼，五亿个神经元，三分之二在八条手臂里。它可能是我们最接近「外星智慧」的生物。",
+      "tags": [
+        "动物智能",
+        "同源对照",
+        "科学美国人"
+      ]
     }
   ]
 }

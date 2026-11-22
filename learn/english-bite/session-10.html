@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
+<title>The Mind of an Octopus · 英语碎片精读 · 同源对照</title>
+<meta name="description" content="动物智能 · 趣味入门 · 同源对照">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/design-system/tokens.css">
+<link rel="stylesheet" href="/portal.css">
+<link rel="stylesheet" href="/learn/english-bite/bite.css">
+</head>
+<body class="cat-learn bite">
+<div class="bite-progress" aria-hidden="true"><i id="prog"></i></div>
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="https://wangdw.xyz/"><span class="brand__dot" aria-hidden="true"></span>德王府</a>
+    <nav class="nav-links" aria-label="栏目">
+      <a class="is-active" href="/learn.html">学习</a>
+      <a href="/life.html">生活</a>
+      <a href="/work.html">工作</a>
+      <a href="/flywheel.html">飞轮</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <header class="b-hero">
+    <a class="b-back" href="/learn/gaokao/english.html">← 英语馆</a>
+    <p class="b-kicker">Session 10 · 动物智能 · 同源对照 · 趣味入门</p>
+    <h1 class="b-title">The Mind of an Octopus</h1>
+    <p class="b-lead">一只章鱼，五亿个神经元，三分之二在八条手臂里。它不是我们的近亲，却独立进化出了聪明的大脑——科学家说，它可能是我们最接近「外星智慧」的生物。</p>
+    <div class="b-meta">
+      <span class="b-chip"><b>~205</b> 词</span>
+      <span class="b-chip"><b>~5</b> 分钟</span>
+      <span class="b-chip b-chip--level">趣味入门</span>
+      <span class="b-chip b-stars" title="内容深度">深度 <b aria-label="深度 2/5">★★☆☆☆</b></span>
+      <span class="b-chip b-stars" title="词汇与推断难度">难度 <b aria-label="难度 2/5">★★☆☆☆</b></span>
+      <span class="b-chip">同源对照</span>
+    </div>
+  </header>
+  <div class="b-howto">
+    <details>
+      <summary>本篇怎么读（同源对照）</summary>
+      <ol>
+        <li>先看下方「外媒原文」：感受原版英文的节奏，超纲词点一下可查。</li>
+        <li>再读「改写版」：已把生词和长句降到你现在的水平，贴高中课标、不超纲。</li>
+        <li>两边对照，看看同一件事，原文怎么写、改写怎么帮你读懂——这就是「同源」。</li>
+        <li>最后做配对与填空（约两分钟）。</li>
+      </ol>
+    </details>
+  </div>
+  <div class="b-main">
+    <section class="b-source" aria-label="外媒原文">
+      <div class="b-source__label">外媒原文 · 节选（Scientific American）</div>
+      <p>Octopuses and their relatives (cuttlefish and squid) represent an island of mental complexity in the sea of <span class="gw" data-w="invertebrate">invertebrate</span> animals. Our most recent common <span class="gw gaokao" data-w="ancestor">ancestor</span> is so distant—more than twice as ancient as the first dinosaurs—that they represent an entirely independent experiment in the <span class="gw" data-w="evolution">evolution</span> of large brains and <span class="gw gaokao" data-w="complex">complex</span> behavior. They are probably the closest we will come to meeting an intelligent alien.</p>
+      <p>A common octopus has about 500 million <span class="gw" data-w="neuron">neurons</span> in its body. Human beings have many more—something nearing 100 billion—but the octopus is in the same range as various <span class="gw" data-w="mammal">mammals</span>, close to the range of dogs. In an octopus, the majority of neurons are in the arms themselves—nearly twice as many in total as in the central brain.</p>
+      <div class="b-source__cite">— "The Mind of an Octopus", Peter Godfrey-Smith, Scientific American, 2017</div>
+    </section>
+    <figure class="b-figure"><img src="/learn/english-bite/img/s10.jpg" alt="章鱼"><figcaption>章鱼 · 为本篇配图</figcaption></figure>
+    <div class="b-tools"><button type="button" class="b-tool" id="read-all" onclick="biteSpeakAll()">&#128266; 朗读改写版</button><button type="button" class="b-tool" id="toggle-zh" onclick="biteToggleZh()">显示译文</button></div>
+    <article class="b-article" id="article"><div class="b-en">
+        <div class="b-para" data-en="The octopus is a strange kind of genius. It has no bones, and it can change its color and shape in a second. But what really surprises scientists is its mind."><button type="button" class="b-speak" aria-label="朗读本段" onclick="biteSpeak(this.parentNode.getAttribute('data-en'),this)">&#128266;</button> <p>The octopus is a strange kind of <span class="gw" data-w="genius">genius</span>. It has no bones, and it can change its color and shape in a second. But what really surprises scientists is its mind.</p><p class="b-zh">章鱼是一种奇怪的「天才」。它没有骨头，能在一秒内改变颜色和形状。但真正让科学家惊讶的，是它的心智。</p></div>
+        <div class="b-para" data-en="An octopus has about 500 million nerve cells, or neurons. That may sound small next to the 100 billion neurons in a human brain, but it is close to the number in a dog's brain. And here is the strange part: most of an octopus's neurons are not in its brain at all. Nearly two-thirds of them live in its eight arms. Each arm can feel and even taste on its own."><button type="button" class="b-speak" aria-label="朗读本段" onclick="biteSpeak(this.parentNode.getAttribute('data-en'),this)">&#128266;</button> <p>An octopus has about 500 million nerve cells, or <span class="gw gaokao" data-w="neuron">neurons</span>. That may sound small next to the 100 billion neurons in a human brain, but it is close to the number in a dog's brain. And here is the strange part: most of an octopus's neurons are not in its brain at all. Nearly two-thirds of them live in its eight arms. Each arm can feel and even taste on its own.</p><p class="b-zh">一只章鱼大约有 5 亿个神经细胞，也就是神经元。跟人脑的 1000 亿个相比，这听起来很少，但它接近狗的大脑数量。最奇怪的地方在于：章鱼大部分的神经元根本不在大脑里，近三分之二分布在它的八条手臂上。每条手臂都能自己感受，甚至自己「品尝」。</p></div>
+        <div class="b-para" data-en="Octopuses are also clever problem-solvers. In aquariums, they have learned to open jars to get food, and some have even turned off lights by shooting water at the bulbs. They can find their way through simple mazes and remember the best route to a reward."><button type="button" class="b-speak" aria-label="朗读本段" onclick="biteSpeak(this.parentNode.getAttribute('data-en'),this)">&#128266;</button> <p>Octopuses are also clever problem-solvers. In <span class="gw" data-w="aquarium">aquariums</span>, they have learned to open jars to get food, and some have even turned off lights by shooting water at the bulbs. They can find their way through simple <span class="gw" data-w="maze">mazes</span> and remember the best route to a reward.</p><p class="b-zh">章鱼也是聪明的解题高手。在水族馆里，它们学会了打开罐子取食，有的甚至朝灯泡喷水来关灯。它们能穿过简单的迷宫，并记住通往奖励的最佳路线。</p></div>
+        <div class="b-para" data-en="Why does all this matter? Because the octopus is not our close relative. Our shared ancestor lived long before the dinosaurs. Yet the octopus built a complex brain and smart behavior on its own, along a completely different path from ours. If we ever want to imagine what an intelligent alien might be like, the octopus may be the closest thing we can meet."><button type="button" class="b-speak" aria-label="朗读本段" onclick="biteSpeak(this.parentNode.getAttribute('data-en'),this)">&#128266;</button> <p>Why does all this matter? Because the octopus is not our close <span class="gw gaokao" data-w="relative">relative</span>. Our shared <span class="gw gaokao" data-w="ancestor">ancestor</span> lived long before the dinosaurs. Yet the octopus built a <span class="gw gaokao" data-w="complex">complex</span> brain and smart behavior on its own, along a completely different path from ours. If we ever want to imagine what an intelligent alien might be like, the octopus may be the closest thing we can meet.</p><p class="b-zh">这些为什么重要？因为章鱼并不是我们的近亲。我们共同的祖先生活在恐龙出现之前很久。然而，章鱼沿着一条与人类完全不同的路，独立演化出了复杂的大脑和聪明的行为。如果我们想想象智慧外星人长什么样，章鱼也许是我们能遇到的最接近的存在。</p></div>
+</div></article>
+    <section class="b-words" aria-labelledby="words-h">
+      <h2 id="words-h">本篇词汇 · 点一下再看</h2>
+      <div class="b-wordgrid" id="wordgrid"></div>
+    </section>
+    <section class="b-check" aria-labelledby="check-h">
+      <h2 id="check-h">记词 · 读懂</h2>
+      <p class="sub">围绕记忆与理解；对错立刻反馈，不排名。星级：深度 ★★☆☆☆ · 难度 ★★☆☆☆</p>
+      <div id="quiz"></div>
+      <div class="b-done" id="done">
+        <h3>本篇收工</h3>
+        <p id="done-msg"></p>
+        <div class="acts">
+          <a class="b-btn b-btn--primary" href="/learn/gaokao/english.html">回英语馆</a>
+          <a class="b-btn b-btn--ghost" href="/learn/english-bite/">书架</a>
+          <button type="button" class="b-btn b-btn--ghost" id="retry">重做练习</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="b-footer">改写自外媒原文（节选+改写，贴高中课标不超纲）· 属<a href="/learn/gaokao/english.html">高考英语馆</a> · 与<a href="https://wangdw.xyz/ieso-vocab/">词根馆</a>互补</footer>
+<div class="gloss" id="gloss" role="dialog" aria-live="polite" aria-hidden="true">
+  <button type="button" class="gloss__close" id="gloss-close" aria-label="关闭">×</button>
+  <div><span class="gloss__word" id="g-word"></span><span class="gloss__ph" id="g-ph"></span><span class="gloss__badge" id="g-badge" hidden>高考常考</span></div>
+  <div class="gloss__cn" id="g-cn"></div>
+  <div class="gloss__ex" id="g-ex"></div>
+  <div class="gloss__root" id="g-root" hidden></div>
+</div>
+<script src="/learn/english-bite/bite-session.js"></script>
+<script>
+window.BITE_DATA = {"id": "s10", "level": "趣味入门", "depth": 2, "difficulty": 2, "depthStars": "★★☆☆☆", "diffStars": "★★☆☆☆", "wordCount": 205, "source": {"outlet": "Scientific American", "title": "The Mind of an Octopus", "author": "Peter Godfrey-Smith", "date": "2017-01-01"}, "gloss": {"genius": {"ph": "/ˈdʒiːniəs/", "cn": "天才", "ex": "The octopus is a genius at solving problems.", "gaokao": true, "exzh": "章鱼是解决问题的天才。"}, "neuron": {"ph": "/ˈnjʊərɒn/", "cn": "神经元；神经细胞", "ex": "The brain is made of billions of neurons.", "gaokao": false, "exzh": "大脑由数十亿个神经元组成。"}, "aquarium": {"ph": "/əˈkweəriəm/", "cn": "水族馆", "ex": "We watched the fish at the aquarium.", "gaokao": false, "exzh": "我们在水族馆看鱼。"}, "maze": {"ph": "/meɪz/", "cn": "迷宫", "ex": "The octopus found its way through the maze.", "gaokao": false, "exzh": "章鱼在迷宫里找到了路。"}, "relative": {"ph": "/ˈrelətɪv/", "cn": "亲戚；相对的", "ex": "The octopus is not a close relative of humans.", "gaokao": true, "exzh": "章鱼不是人类的近亲。"}, "ancestor": {"ph": "/ˈænsestə(r)/", "cn": "祖先", "ex": "Our shared ancestor lived long before the dinosaurs.", "gaokao": true, "exzh": "我们共同的祖先生活在恐龙之前很久。"}, "complex": {"ph": "/ˈkɒmpleks/", "cn": "复杂的", "ex": "The octopus has a complex brain.", "gaokao": true, "exzh": "章鱼有复杂的大脑。"}, "invertebrate": {"ph": "/ɪnˈvɜːtɪbrət/", "cn": "无脊椎动物", "ex": "The octopus is an invertebrate animal.", "gaokao": false, "exzh": "章鱼是一种无脊椎动物。"}, "evolution": {"ph": "/ˌiːvəˈluːʃn/", "cn": "进化；演化", "ex": "Evolution built the octopus brain independently.", "gaokao": false, "exzh": "进化独立地造就了章鱼的大脑。"}, "mammal": {"ph": "/ˈmæml/", "cn": "哺乳动物", "ex": "Dogs and humans are both mammals.", "gaokao": false, "exzh": "狗和人都是哺乳动物。"}}, "activities": [{"type": "match", "q": "中文义与英文词配对。", "pairs": [{"cn": "神经元", "en": "neuron"}, {"cn": "祖先", "en": "ancestor"}, {"cn": "迷宫", "en": "maze"}, {"cn": "复杂的", "en": "complex"}]}, {"type": "cloze", "q": "选词填空。", "text": "The octopus is not our close {{0}}. Most of its {{1}} are in its arms. It can learn to open jars in an {{2}} and find its way through a {{3}}.", "bank": ["relative", "neurons", "aquarium", "maze"], "answers": ["relative", "neurons", "aquarium", "maze"]}]};
+BiteSession.init(window.BITE_DATA);
+</script>
+</body>
+</html>

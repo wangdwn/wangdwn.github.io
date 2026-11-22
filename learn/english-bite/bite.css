@@ -227,6 +227,21 @@ body.bite .brand__dot{background:linear-gradient(135deg,var(--learn),#34c759)}
 .b-method h2{font-family:var(--serif); font-size:20px; font-weight:700; margin-bottom:12px}
 .b-method ol{padding-left:1.2em; font-size:14px; color:var(--ink-2); line-height:1.75}
 .b-method li{margin-bottom:.55em}
+
+/* 同源对照：外媒原文区块 */
+.b-source{
+  margin-top:20px; padding:18px 18px 16px; border-radius:16px;
+  background:var(--paper); border:1px solid var(--rule-soft);
+  border-left:3px solid rgba(124,58,237,.55);
+}
+.b-source__label{font-size:12px; font-weight:700; letter-spacing:.05em; color:#6d28d9; margin-bottom:12px}
+.b-source p{font-family:var(--serif); font-size:16px; line-height:1.75; color:var(--ink-2); margin-bottom:12px}
+.b-source p:last-child{margin-bottom:0}
+.b-source__cite{font-size:12px; color:var(--ink-muted); margin-top:6px; font-style:italic}
+@media (prefers-color-scheme: dark){
+  .b-source{background:rgba(124,58,237,.06); border-left-color:rgba(167,139,250,.6)}
+  .b-source__label{color:#a78bfa}
+}
 .b-method b{color:var(--ink)}
 
 .b-footer{
