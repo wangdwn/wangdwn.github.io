@@ -333,11 +333,13 @@ body.bite .brand__dot{background:linear-gradient(135deg,var(--learn),#34c759)}
 .b-tag--g1{ background:rgba(22,163,74,.12); color:#15803d; }
 .b-tag--g2{ background:rgba(0,113,227,.12); color:#0071e3; }
 .b-tag--gk{ background:rgba(154,59,46,.12); color:#9a3b2e; }
+.b-tag--esports{ background:rgba(124,58,237,.12); color:#6d28d9; }
 @media (prefers-color-scheme: dark){
   .b-stars b, .b-card__stars b{ color:#fbbf24; }
   .b-tag--g1{ background:rgba(52,199,89,.18); color:#86efac; }
   .b-tag--g2{ background:rgba(100,181,255,.15); color:#64b5ff; }
   .b-tag--gk{ background:rgba(240,160,144,.15); color:#f0a090; }
+  .b-tag--esports{ background:rgba(167,139,250,.18); color:#a78bfa; }
   .b-chip--level{ background:rgba(240,160,144,.12); color:#f0a090; }
 }
 

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-11-20",
   "note": "原创短文，贴近高考阅读篇幅与词汇密度，非真题原文。更新时按 高一试读→高二→高考冲刺 阶梯投放。",
   "scale": {
     "depth": "内容深度 1–5（概念链条、学科跨度）",
@@ -148,6 +148,25 @@
       "tags": [
         "环境",
         "化学"
+      ]
+    },
+    {
+      "id": "s09",
+      "file": "session-09.html",
+      "title": "Faster Than a Blink: How Pro Gamers Train Their Reflexes",
+      "topic": "游戏竞技·电竞",
+      "level": "话题探索",
+      "depth": 3,
+      "difficulty": 3,
+      "depthStars": "★★★☆☆",
+      "diffStars": "★★★☆☆",
+      "wordCount": 318,
+      "mins": 7,
+      "lead": "职业选手零点几秒的反应，是天赋还是练出来的？答案藏在训练室，也藏在一门叫「运动科学」的课里。",
+      "tags": [
+        "电竞",
+        "游戏竞技",
+        "脑科学"
       ]
     }
   ]
