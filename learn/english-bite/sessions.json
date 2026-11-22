@@ -187,6 +187,26 @@
         "同源对照",
         "科学美国人"
       ]
+    },
+    {
+      "id": "s11",
+      "file": "session-11.html",
+      "title": "Potatoes in Space",
+      "topic": "太空·科技",
+      "level": "趣味入门",
+      "depth": 2,
+      "difficulty": 2,
+      "depthStars": "★★☆☆☆",
+      "diffStars": "★★☆☆☆",
+      "wordCount": 185,
+      "mins": 5,
+      "lead": "如果人类将来在月球建家，我们吃什么？答案可能是最不起眼的土豆。",
+      "tags": [
+        "太空",
+        "科技",
+        "同源对照",
+        "卫报"
+      ]
     }
   ]
 }
