@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-23",
   "title": "心理学馆",
   "template": [
     "小故事",
@@ -8,10 +8,10 @@
     "当代回响"
   ],
   "today": {
-    "date": "2026-11-16",
-    "text": "划掉的原价一看就心动——不是你不会算，是判断常常被最先出现的那个数拉住。",
-    "href": "piece-10-anchoring.html",
-    "source": "《先看到的那个数》"
+    "date": "2026-11-23",
+    "text": "那点尴尬你记得一下午——不是全场都在盯，是那盏灯多半只在你心里亮着。",
+    "href": "piece-11-spotlight.html",
+    "source": "《只有你还记得》"
   },
   "pieces": [
     {
@@ -180,6 +180,25 @@
         "Amos Tversky",
         "Daniel Kahneman",
         "Herbert Simon"
+      ],
+      "mins": 8
+    },
+    {
+      "id": "piece-11-spotlight",
+      "file": "piece-11-spotlight.html",
+      "title": "只有你还记得",
+      "section": "生活里的心理",
+      "tags": [
+        "社交判断",
+        "自我意识"
+      ],
+      "desc": "发言卡壳、衣领有渍、群里发错一个字——不是全场都在看，是人常常高估自己在别人眼里的分量。",
+      "theory": "Thomas Gilovich、Victoria Medvec & Kenneth Savitsky 聚光灯效应；David Elkind 假想观众轻触",
+      "figures": [
+        "Thomas Gilovich",
+        "Victoria Medvec",
+        "Kenneth Savitsky",
+        "David Elkind"
       ],
       "mins": 8
     }
