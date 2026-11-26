@@ -246,7 +246,14 @@ a:focus-visible { outline: 3px solid rgba(0,113,227,.45); outline-offset: 3px; b
 .cat-life .cat-hero__banner { background-image: url('/assets/portal/life.jpg'); }
 .cat-work .cat-hero__banner { background-image: url('/assets/portal/work.jpg'); }
 .cat-flywheel .cat-hero__banner { background-image: url('/assets/portal/flywheel.jpg'); }
-.cat-hero > * { position: relative; z-index: 1; }
+/* 生活 subcategory heroes: same local tiles as the life.html hub */
+.cat-life .cat-hero__banner--novel { background-image: url('/assets/portal/life-novel.jpg?v=3'); }
+.cat-life .cat-hero__banner--diary { background-image: url('/assets/portal/life-diary.jpg?v=3'); }
+.cat-life .cat-hero__banner--essay { background-image: url('/assets/portal/life-essay.jpg?v=3'); }
+.cat-life .cat-hero__banner--poetry { background-image: url('/assets/portal/life-poetry.jpg?v=3'); }
+.cat-life .cat-hero__banner--reading { background-image: url('/assets/portal/life-reading.jpg?v=3'); }
+.cat-life .cat-hero__banner--city { background-image: url('/assets/portal/life-city.jpg?v=3'); }
+.cat-hero > *:not(.cat-hero__banner) { position: relative; z-index: 1; }
 
 .footer {
   text-align: center;
@@ -272,10 +279,34 @@ a:focus-visible { outline: 3px solid rgba(0,113,227,.45); outline-offset: 3px; b
 .item--feature .item__banner {
   display: block;
   height: 120px;
-  background:
+  background-color: #2c2826;
+  background-image:
     linear-gradient(120deg, rgba(28,25,23,.55), rgba(28,25,23,.15)),
-    url("https://images.unsplash.com/photo-1508804185872-d7aad8140a9a?auto=format&fit=crop&w=1200&q=70") center/cover no-repeat;
+    var(--feature-cover, none);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+/* Local covers. Category defaults keep 学习 / 工作 featured cards filled
+   if a card has no per-work class. Per-card rules sit on the banner so
+   they override the inherited default. */
+.cat-learn .item--feature { --feature-cover: url("/assets/portal/learn.jpg"); }
+.cat-life .item--feature { --feature-cover: url("/assets/portal/life.jpg"); }
+.cat-work .item--feature { --feature-cover: url("/assets/portal/work.jpg"); }
+.item__banner.cover-learn-english { --feature-cover: url("/assets/portal/learn-english.jpg?v=1"); }
+.item__banner.cover-learn-gaokao { --feature-cover: url("/assets/portal/learn-gaokao.jpg?v=1"); }
+.item__banner.cover-learn-ieso { --feature-cover: url("/assets/portal/learn-ieso.jpg?v=1"); }
+.item__banner.cover-learn-notes { --feature-cover: url("/assets/portal/learn-notes.jpg?v=1"); }
+.item__banner.cover-learn-psychology { --feature-cover: url("/assets/portal/learn-psychology.jpg?v=1"); }
+.item__banner.cover-shibali { --feature-cover: url("/assets/portal/life-shibali.jpg?v=1"); }
+.item__banner.cover-tayue { --feature-cover: url("/assets/portal/life-tayue.jpg?v=1"); }
+.item__banner.cover-mucian { --feature-cover: url("/assets/portal/life-mucian.jpg?v=1"); }
+.item__banner.cover-xiaoziji { --feature-cover: url("/assets/portal/life-xiaoziji.jpg?v=1"); }
+.item__banner.cover-life-city { --feature-cover: url("/assets/portal/life-city.jpg?v=3"); }
+.item__banner.cover-work-assets { --feature-cover: url("/assets/portal/work-assets.jpg?v=1"); }
+.item__banner.cover-work-ops { --feature-cover: url("/assets/portal/work-ops.jpg?v=1"); }
+.item__banner.cover-work-quality { --feature-cover: url("/assets/portal/work-quality.jpg?v=1"); }
+.item__banner.cover-work-weekly { --feature-cover: url("/assets/portal/work-weekly.jpg?v=1"); }
 .item--feature .item__body {
   display: flex;
   align-items: center;
