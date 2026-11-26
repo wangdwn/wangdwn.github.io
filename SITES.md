@@ -47,7 +47,7 @@
 
 | 分栏 | 入口 | 收录 |
 |---|---|---|
-| 小说 | [/life-novels.html](https://wangdw.xyz/life-novels.html) | 《木棉泣血》→ [/novels/mucian-qixue.html](https://wangdw.xyz/novels/mucian-qixue.html) |
+| 小说 | [/life-novels.html](https://wangdw.xyz/life-novels.html) | 《木棉泣血》→ [/novels/mucian-qixue.html](https://wangdw.xyz/novels/mucian-qixue.html) | · 《十八里铺》→ [/shibali/](https://wangdw.xyz/shibali/) · 《他八个月》→ [/tayue/](https://wangdw.xyz/tayue/)（需口令）
 | 日记 | [/life-diary.html](https://wangdw.xyz/life-diary.html) | 《小子日记》→ [/novels/diary.html](https://wangdw.xyz/novels/diary.html) |
 | 随笔 | [/life-essays.html](https://wangdw.xyz/life-essays.html) | 生活记 + 随笔 e01–e20 + 杂文 z01–z06（各只列一次；旧 `novels/essays/` · `novels/zawen/` 索引跳转至此） |
 | 诗歌 | [/life-poetry.html](https://wangdw.xyz/life-poetry.html) | 短章 + 自作 p01–p51（各只列一次；旧 `novels/poems/` 索引跳转至此） |
